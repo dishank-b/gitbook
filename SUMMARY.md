@@ -82,6 +82,7 @@
 * [TensorFlow](tensorflow.md)
 * [Pytorch](pytorch/README.md)
   * [RNN/LSTM in Pytorch](pytorch/rnn-lstm-in-pytorch.md)
+  * [Dataset/ Data loader](pytorch/dataset-data-loader.md)
 * [Silly mistakes and solutions](doubts.md)
 * [Resources](resources.md)
 * [ROS for python3](ros-for-python3.md)
