@@ -122,5 +122,9 @@ Backward is the function which actually calculates the gradient through the back
 
 {% embed url="https://jdhao.github.io/2017/11/12/pytorch-computation-graph/" %}
 
+* **register\_buffer\(\):**
+
+These are used to tracks those variables of the model which are not parameters of the model but still needed to be tracked, such as the running mean and variance of the batchnorm layer. For these variables we use buffers. These are not updated using sgd when called using model.parameters\(\). When they are loaded with state\_dict\(\). 
+
 
 
