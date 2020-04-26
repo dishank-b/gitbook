@@ -79,6 +79,7 @@
 * [How To Do Research](how-to-do-research.md)
 * [Python](python-tricks-and-tips/README.md)
   * [Pip](python-tricks-and-tips/pip.md)
+  * [Gotchas](python-tricks-and-tips/gotchas.md)
 * [TensorFlow](tensorflow.md)
 * [Pytorch](pytorch/README.md)
   * [RNN/LSTM in Pytorch](pytorch/rnn-lstm-in-pytorch.md)
