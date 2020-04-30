@@ -19,6 +19,7 @@
     * [Posterior Predictive Distribution](probability-and-statistics-1/bayesian-inference/posterior-predictive-distribution.md)
   * [Regression](probability-and-statistics-1/regression.md)
   * [Monte Carlo](probability-and-statistics-1/monte-carlo.md)
+* [Linear Algebra](linear-algebra.md)
 * [Deep Learning](deep-learning/README.md)
   * [Probabilistic View](deep-learning/probabilistic-view.md)
   * [Backpropagation](deep-learning/backpropagation.md)
