@@ -15,13 +15,13 @@ Finding point matches in stereo vision is restricted by [epipolar geometry](http
 
 ### Image Rectification Diagram
 
-![](../../.gitbook/assets/image%20%28146%29.png)
+![](../../.gitbook/assets/image%20%28147%29.png)
 
 ### Algorithm
 
 ![](../../.gitbook/assets/image%20%2846%29.png)
 
-![](../../.gitbook/assets/image%20%28143%29.png)
+![](../../.gitbook/assets/image%20%28144%29.png)
 
 ![](../../.gitbook/assets/image%20%2881%29.png)
 

@@ -194,7 +194,7 @@ $$
 
 #### Sarsa\(λ\) Algorithm:
 
-![sarsa](../.gitbook/assets/image%20%28141%29.png)
+![sarsa](../.gitbook/assets/image%20%28142%29.png)
 
 ### Off-Policy Learning
 
@@ -220,7 +220,7 @@ E_{X\sim P}[f(X)] = \sum P(X)f(X)\\
 = E_{X\sim Q}[\frac{P(X)}{Q(X)}f(X)]
 $$
 
-![Off-Policy Monte Carlo](../.gitbook/assets/image%20%28149%29.png)
+![Off-Policy Monte Carlo](../.gitbook/assets/image%20%28150%29.png)
 
 ![](../.gitbook/assets/image%20%283%29.png)
 
@@ -251,7 +251,7 @@ $$
 
 ![](../.gitbook/assets/image%20%2858%29.png)
 
-![](../.gitbook/assets/image%20%2893%29.png)
+![](../.gitbook/assets/image%20%2894%29.png)
 
 ### Exploration Vs Exploitation
 

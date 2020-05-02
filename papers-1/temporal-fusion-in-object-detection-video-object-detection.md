@@ -28,7 +28,7 @@ description: Summaries of few paper in the above topic.
 
 * **This module helps then to shifts part of channels along the temporal dimension. Hence able to help propagate feature information across frames. This module is computational free**
 
-![](../.gitbook/assets/image%20%2895%29.png)
+![](../.gitbook/assets/image%20%2896%29.png)
 
 ### [**Mobile Video Object Detection with Temporally-Aware Feature Maps**](https://arxiv.org/pdf/1711.06368v2.pdf)
 
@@ -46,7 +46,7 @@ Basically, they add LSTM to feature map part, hence feature map at $$t$$ can use
 * Their method, find the semantic similarity between two regions proposals outputed by RPN in spatio-temporal dimension using cosine similarity. Now they use semantic similarity to do the feature aggregation of proposals.  That's it, so now every reference proposals is aggregated with nearest proposals and now they are passed ahead in network as normal proposal. 
 * This method doesn't seem to be able to deployed in online setting. Or may be, if use instead of global we use proposals used till frame $$t$$i.e finding semantic similarity with proposals from past frames only.
 
-![](../.gitbook/assets/image%20%28125%29.png)
+![](../.gitbook/assets/image%20%28126%29.png)
 
 \*\*\*\*
 
@@ -63,7 +63,7 @@ Basically, they add LSTM to feature map part, hence feature map at $$t$$ can use
 * STSN performs object detection in a video frame by learning to spatially sample features from the adjacent frames.
 * They train our STSN end-to-end on a large set of video frames labeled with bounding boxes.
 
-![](../.gitbook/assets/image%20%28105%29.png)
+![](../.gitbook/assets/image%20%28106%29.png)
 
 ## Motion Propogation/ Tracking based
 
@@ -77,11 +77,11 @@ Basically, they add LSTM to feature map part, hence feature map at $$t$$ can use
   * **Motion-guided propagation:** This is for removing false negatives i.e. when objects presents are not detected in some frames. In this detections from one frame is propogated to other using optimal flow vector of each bouding box. 
 * They do Tubelet Re-scoring which include high confidence socring, sptail max pooling and tubelet classification. It is mainly for gloabal consistency of short tebuelets. See from the paper what these actually means. 
 
-![](../.gitbook/assets/image%20%2889%29.png)
+![](../.gitbook/assets/image%20%2890%29.png)
 
 ### [Object Detection from Video Tubelets with Convolutional Neural Networks](https://arxiv.org/pdf/1604.04053.pdf)
 
-![](../.gitbook/assets/image%20%28100%29.png)
+![](../.gitbook/assets/image%20%28101%29.png)
 
 * This work is share some of the authors from above paper and have kinda similar idea. 
 
@@ -91,5 +91,5 @@ Basically, they add LSTM to feature map part, hence feature map at $$t$$ can use
 
 * This is basically feature aggregration over frames using optical flow. 
 
-![](../.gitbook/assets/image%20%28108%29.png)
+![](../.gitbook/assets/image%20%28109%29.png)
 

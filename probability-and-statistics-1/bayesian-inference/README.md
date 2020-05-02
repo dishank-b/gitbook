@@ -39,7 +39,7 @@ But many times we can have some bias for specific hypothesis i.e have some prior
 **Bayesian Estimate** are more narrower than non-bayesian due to use of prior which makes distribution more confined. And generally give more closer and accurate distribution. Using beliefs allows us to get more confident answer.   
 But sometimes using bayesian can be wrong, like what if you have wrong prior i.e you said some values are impossible then bayesian estimate will not consider those values, but may be those value are possible and should not have probability **zero.**   
 
-![](../../.gitbook/assets/image%20%2898%29.png)
+![](../../.gitbook/assets/image%20%2899%29.png)
 
 **Note:** Lets say you are using bayesian inference, but your prior ininformative i.e. it is uniform or doesn't really favour any prior parameter/hypothesis. Then does bayesian inference is any better than non-bayesian estimation? So baiscally, it seems that bayesian inference is only useful when you actually have some prior information, and using ininformative prior is not of any good. 
 

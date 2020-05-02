@@ -4,7 +4,7 @@
 
 As deep RL have parameters $$\theta$$ , hence our objective is to get $$\theta$$ such that **reward** of each state in an episode is maximized. 
 
-![](../../.gitbook/assets/image%20%28102%29.png)
+![](../../.gitbook/assets/image%20%28103%29.png)
 
 **Note: Here we are not considering discounted reward**
 
@@ -12,7 +12,7 @@ As deep RL have parameters $$\theta$$ , hence our objective is to get $$\theta$$
 
 ![](../../.gitbook/assets/image%20%2862%29.png)
 
-![](../../.gitbook/assets/image%20%28103%29.png)
+![](../../.gitbook/assets/image%20%28104%29.png)
 
 ### Stationary Distribution: Markov Chains
 
@@ -27,13 +27,13 @@ Seeing the equation above, eigen vector of a transition matrix P is always an st
 
 ## Expectation makes objective function smooth
 
-![](../../.gitbook/assets/image%20%28121%29.png)
+![](../../.gitbook/assets/image%20%28122%29.png)
 
 Taking expectation of a function makes it smoother, allowing it differential wrt to the parameter. Look at example above. The reward function above is non-differentiable, but expectation makes it differentiable, making gradient based learning feasible for RL. 
 
 ## Types of RL Algos
 
-![](../../.gitbook/assets/image%20%28134%29.png)
+![](../../.gitbook/assets/image%20%28135%29.png)
 
 ### Model-Based RL Algo
 
@@ -41,7 +41,7 @@ Taking expectation of a function makes it smoother, allowing it differential wrt
 
 ### Value-Based RL Algo
 
-![](../../.gitbook/assets/image%20%28111%29.png)
+![](../../.gitbook/assets/image%20%28112%29.png)
 
 ### Direct Policy Gradients
 
@@ -49,7 +49,7 @@ Taking expectation of a function makes it smoother, allowing it differential wrt
 
 ### Actor-Critic
 
-![](../../.gitbook/assets/image%20%28137%29.png)
+![](../../.gitbook/assets/image%20%28138%29.png)
 
 ## Trade-Offs
 

@@ -44,7 +44,7 @@ The green box have a model which can estimate the return. Blue box use gradient 
 In above image we are calculting the gradient of objective function. Note the the gradient is calculated in term of gradient of log of probability of trajectory and total reward of the trajectory.   
 **Note: Here is** $$\pi_\theta$$ **does not mean policy but the probability distribution.** $$\pi_\theta(\tau) = p_\theta(\tau)$$ ****
 
-![](../../../.gitbook/assets/image%20%28106%29.png)
+![](../../../.gitbook/assets/image%20%28107%29.png)
 
 **Finally,** the gradient of of objecting funtion is written in terms of expectation of gradient of log of policy multiplied by total reward. 
 
@@ -121,7 +121,7 @@ _**The above part states that in finite horizon problme, a optimal policy is a t
 
 ### Analysing the Variance in Gradient
 
-![](../../../.gitbook/assets/image%20%2890%29.png)
+![](../../../.gitbook/assets/image%20%2891%29.png)
 
 ## Policy Objective in term of Action-Value function
 
@@ -133,7 +133,7 @@ In simpler terms our **RL objective is:**  $$E_{s_1 \sim p(s_1)}[V^\pi(s_1)]$$
 
 **Note: Here we are not considering discounted reward**
 
-![](../../../.gitbook/assets/image%20%28115%29.png)
+![](../../../.gitbook/assets/image%20%28116%29.png)
 
 ## Policy Optimization
 

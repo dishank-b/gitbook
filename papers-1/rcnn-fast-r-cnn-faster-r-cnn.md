@@ -83,7 +83,7 @@ Hence even if region of proposals are of differnt size, we get contant size feat
 
 It is a type of max pooling to convert features in the projected region of the image of any size, h x w, into a small fixed window, H x W. The input region is divided into H x W grids, approximately every subwindow of size h/H x w/W. Then apply max-pooling in each grid.
 
-![](../.gitbook/assets/image%20%28147%29.png)
+![](../.gitbook/assets/image%20%28148%29.png)
 
 ### Training
 
@@ -138,7 +138,7 @@ This papers main contribution is to a CNN network called RPN \(region proposal n
 
 ### Pipeline
 
-![Faster-RCNN block diagram. The magenta colored blocks are active only during training. The numbers indicate size of the tensors.](../.gitbook/assets/image%20%28113%29.png)
+![Faster-RCNN block diagram. The magenta colored blocks are active only during training. The numbers indicate size of the tensors.](../.gitbook/assets/image%20%28114%29.png)
 
 ![Pipeline](../.gitbook/assets/image%20%2811%29.png)
 
@@ -166,7 +166,7 @@ Just assume the output of RPN to be as same of Selective Search\(SS\) in case of
   
 To generate region proposals, we slide a small network over the convolutional feature map output by the last shared convolutional layer - this is the last layer of feature network. This small network takes as input an n × n spatial window of the input convolutional feature map. Each sliding window is mapped to a lower-dimensional feature \(256-d for ZF and 512-d for VGG, with ReLU \[33\] following\). This feature is fed into two sibling fully- connected layers—a box-regression layer \(reg\) and a box-classification layer \(cls\). We use n = 3 in this paper, noting that the effective receptive field on the input image is large. This mini-network is illustrated at a single position in Figure below. Note that be- cause the mini-network operates in a sliding-window fashion, the fully-connected layers are shared across all spatial locations. This architecture is naturally im- plemented with an n×n convolutional layer followed by two sibling 1 × 1 convolutional layers \(for reg and cls, respectively\).
 
-![RPN architecture](../.gitbook/assets/image%20%28116%29.png)
+![RPN architecture](../.gitbook/assets/image%20%28117%29.png)
 
 **Anchors:**
 
@@ -200,7 +200,7 @@ This is detection network is the last part from Fast RCNN paper, part including 
 
 Crop the convolutional feature map using each proposal and then resize each crop to a fixed sized $$14 \times 14 \times \mathit{convdepth}$$ using interpolation \(usually bilinear\). After cropping, max pooling with a 2x2 kernel is used to get a final $$7 \times 7 \times \mathit{convdepth}$$feature map for each proposal.
 
-![](../.gitbook/assets/image%20%28107%29.png)
+![](../.gitbook/assets/image%20%28108%29.png)
 
 \*\*\*\*
 
@@ -274,7 +274,7 @@ In this paper, we adopt a pragmatic 4-step training algorithm to learn shared fe
 
 #### Scale and Ratio of Anchor boxes
 
-![](../.gitbook/assets/image%20%28144%29.png)
+![](../.gitbook/assets/image%20%28145%29.png)
 
 **With 3 scales and 3 ratios, 69.9% mAP is obtained which is only little improvement over that of 3 scales and 1 ratio.** But still 3 scales and 3 ratios are used.
 
@@ -319,7 +319,7 @@ where $$y_{ij}$$ is the label of a cell \(i, j\) in the true mask for the region
 
 ## RCNN Family in 1 figure
 
-![RCNN Family Architecture](../.gitbook/assets/image%20%2899%29.png)
+![RCNN Family Architecture](../.gitbook/assets/image%20%28100%29.png)
 
 ## YOLO: You look only once \([Paper](https://arxiv.org/abs/1506.02640)\)
 
@@ -390,7 +390,7 @@ RetinaNet composed of three sub networks:
   * one subnetwork performs convolutional object classification. 
   * second is used for bounding box regression
 
-![Architecture](../.gitbook/assets/image%20%28119%29.png)
+![Architecture](../.gitbook/assets/image%20%28120%29.png)
 
 #### FPN Backbone
 

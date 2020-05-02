@@ -11,7 +11,7 @@ Two of NMS:
 
 ### Greedy
 
-![Greedy NMS algo](../.gitbook/assets/image%20%28140%29.png)
+![Greedy NMS algo](../.gitbook/assets/image%20%28141%29.png)
 
 ### Optimal
 

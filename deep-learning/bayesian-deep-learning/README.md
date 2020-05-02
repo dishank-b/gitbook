@@ -12,13 +12,13 @@ However, evaluating this posterior is not tractable without approximation techni
 
 ### Bayesian Inference
 
-![](../../.gitbook/assets/image%20%28129%29.png)
+![](../../.gitbook/assets/image%20%28130%29.png)
 
 ### Priors in weights in NNs
 
 We can apply this process to neural networks and come up with the probability distribution over the network weights, $$w$$ , given the training data, $$p ( w|D )$$ .
 
-![](../../.gitbook/assets/image%20%28135%29.png)
+![](../../.gitbook/assets/image%20%28136%29.png)
 
 ![](../../.gitbook/assets/image%20%2828%29.png)
 

@@ -23,7 +23,7 @@ description: This describes techniques to have stable GAN training
 * Use std\_dev=0.02 for initializaing weights of truncated normal initializers.
 * affinelayer implementation of pix2pix have 4x4 kernels.
 
-![](../.gitbook/assets/image%20%28142%29.png)
+![](../.gitbook/assets/image%20%28143%29.png)
 
 * Note two things in above. 
   * Adding of discriminator dependency on the generator optimizer.

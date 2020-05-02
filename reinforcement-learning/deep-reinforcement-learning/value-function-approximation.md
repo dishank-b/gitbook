@@ -29,7 +29,7 @@ But is the problem that we don't know the target value funtion $$v_\pi(s)$$ in r
 
 **Feature Vector:** We represent state using a vector as below. 
 
-![](../../.gitbook/assets/image%20%28110%29.png)
+![](../../.gitbook/assets/image%20%28111%29.png)
 
 Using this state feature vector and weights. Linear approximation is as follows:
 
@@ -116,7 +116,7 @@ $$
 
 ### Linear approximation:
 
-![](../../.gitbook/assets/image%20%28120%29.png)
+![](../../.gitbook/assets/image%20%28121%29.png)
 
 $$
 \hat{q}(s,a,w) = x(s,a)^Tw = \sum x_j(s,a)w_j
@@ -140,7 +140,7 @@ $$
 
 **Same goes with forward and backward view TD\(lambda\).**
 
-![Sarsa Control with action-value funtion approximation](../../.gitbook/assets/image%20%28127%29.png)
+![Sarsa Control with action-value funtion approximation](../../.gitbook/assets/image%20%28128%29.png)
 
 ### Gradient Temporal-Difference Learning
 
@@ -174,7 +174,7 @@ $$
 
 #### Experience Replay in Deep Q-Networks
 
-![Deep Q network using experience replay](../../.gitbook/assets/image%20%28128%29.png)
+![Deep Q network using experience replay](../../.gitbook/assets/image%20%28129%29.png)
 
 ### Least Square Control
 
@@ -184,9 +184,9 @@ Approximate action-value funtion.
 
 Minimize least square error between $$\hat{q}(s,a,w)$$ and $${q}_\pi(s,a,w)$$ from experiences generated using policy $$\pi$$ consisting of &lt;\(state, actoin\), value&gt; pairs $$D = \{<(s_1,a_1), v_1^\pi>,<(s_2,a_2), v_2^\pi>,...<(s_t,a_t), v_t^\pi>\}$$
 
-![](../../.gitbook/assets/image%20%2891%29.png)
+![](../../.gitbook/assets/image%20%2892%29.png)
 
-![](../../.gitbook/assets/image%20%28145%29.png)
+![](../../.gitbook/assets/image%20%28146%29.png)
 
 ![](../../.gitbook/assets/image%20%2850%29.png)
 
