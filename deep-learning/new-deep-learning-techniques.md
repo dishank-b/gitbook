@@ -64,7 +64,7 @@ In this, it shown how we can architecture, i.e depth\(no of layers\), feature ma
 
 #### Time Complexity of Neural Network:
 
-![](../.gitbook/assets/image%20%2825%29.png)
+![](../.gitbook/assets/image%20%2826%29.png)
 
 Here l is the index of a convolutional layer, and d is the depth \(number of convolutional layers\). nl is the number of filters \(also known as “width”\) in the l-th layer. nl−1 is also known as the number of input channels of the l-th layer. sl is the spatial size \(length\) of the filter. ml is the spatial size of the output feature map. 
 

@@ -12,21 +12,21 @@ However, evaluating this posterior is not tractable without approximation techni
 
 ### Bayesian Inference
 
-![](../../.gitbook/assets/image%20%28130%29.png)
+![](../../.gitbook/assets/image%20%28131%29.png)
 
 ### Priors in weights in NNs
 
 We can apply this process to neural networks and come up with the probability distribution over the network weights, $$w$$ , given the training data, $$p ( w|D )$$ .
 
-![](../../.gitbook/assets/image%20%28136%29.png)
+![](../../.gitbook/assets/image%20%28137%29.png)
 
-![](../../.gitbook/assets/image%20%2828%29.png)
+![](../../.gitbook/assets/image%20%2829%29.png)
 
-![](../../.gitbook/assets/image%20%2820%29.png)
+![](../../.gitbook/assets/image%20%2821%29.png)
 
-![](../../.gitbook/assets/image%20%2823%29.png)
+![](../../.gitbook/assets/image%20%2824%29.png)
 
-![](../../.gitbook/assets/image%20%2882%29.png)
+![](../../.gitbook/assets/image%20%2883%29.png)
 
 {% file src="../../.gitbook/assets/bayesiandeeplearning.pdf" caption="Bayesian Learning of weights in NN" %}
 

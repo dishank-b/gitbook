@@ -13,12 +13,12 @@ Link of paper: [https://arxiv.org/abs/1809.05590](https://arxiv.org/abs/1809.055
 * They used same base architecture as Faster RCNN.
 * Added extra fully connected layers to output uncertainties, which is pretty standard. 
 
-![](../../.gitbook/assets/image%20%2867%29.png)
+![](../../.gitbook/assets/image%20%2868%29.png)
 
 * **They also predict uncertainties for RPN network. Although the RPN predicted undercertainties is not been used further in the architecure i.e either with NMS or postprocessing, but it is used for RPN regression loss attenuation.**
 * They regress $$\log \sigma^2$$instead of $$\sigma^2$$for numerical stability. 
 
-![](../../.gitbook/assets/image%20%2886%29.png)
+![](../../.gitbook/assets/image%20%2887%29.png)
 
 ### Insights/Discussion
 

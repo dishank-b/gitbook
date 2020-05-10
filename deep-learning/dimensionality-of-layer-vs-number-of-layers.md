@@ -27,14 +27,14 @@ B={x\|2/3&lt;d\(x,0\)&lt;1}
   
 Number of neurons in layers decides the dimension in which we want to transform our data. i.e. having three unit means that data will we transformed and represented in three dimensions.
 
-![](../.gitbook/assets/image%20%2845%29.png)
+![](../.gitbook/assets/image%20%2846%29.png)
 
 Now even we have 100 layers but all only 2 hidden neurons in each than network will not be able to classify the data, as it is not possible to separate the data in 2D.   
 With only two hidden units, a network is topologically incapable of separating the data in this way, and doomed to failure on this dataset.
 
 Now to separate this kind of data, one has to transform this in 3D, only then it can be separated. To represent this in 3D, one should have 3 neurons in a hidden layer. 
 
-![Transformation of original data in 3D](../.gitbook/assets/image%20%2875%29.png)
+![Transformation of original data in 3D](../.gitbook/assets/image%20%2876%29.png)
 
 ### Conclusion:
 

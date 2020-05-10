@@ -16,7 +16,7 @@ This paper discusses the idea of calibrating the uncertainty/probabilities predi
 
 So, It is said to be calibrated probability if the predicted probability is equal to the empiriacal probabililty. For ex, if detector makes prediction with 0.9 probability, then 90% of those prediction should be correct. Hence, the uncertainty of detector should match the natural frequency.
 
-![](../../.gitbook/assets/image%20%2880%29.png)
+![](../../.gitbook/assets/image%20%2881%29.png)
 
 ### Uncertainty Recalibration
 

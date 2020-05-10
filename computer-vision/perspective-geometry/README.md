@@ -11,7 +11,7 @@
 
 ## Homogenous Representation
 
-![](../../.gitbook/assets/image%20%2827%29.png)
+![](../../.gitbook/assets/image%20%2828%29.png)
 
 Each point  `(x,y)` in the image is actually a ray in 3D world, the ray can be reresented as `(kx, ky,k)` and when `k=1` it gives the point in the image.   
 Get it like this, all the point on the ray in the 3D world will be at the same point on image. Also, that ray will through the center of the camera.   
@@ -23,13 +23,13 @@ Lets consider three points $$x=[6,9,3]$$ , $$y=[12,18,6]$$ and `z=[2,3,1]` in 3D
 
 ## **Homography**
 
-![](../../.gitbook/assets/image%20%28123%29.png)
+![](../../.gitbook/assets/image%20%28124%29.png)
 
 Homography is the condition when image of same plane is taken with two different position. There is a mapping between two points $$x$$ and $$x'$$ in both images respectively which represent the same point $$X$$ in the 3D world. This mapping between coordinates of the image of same plane is called **Homography.**
 
 ### **Matrix**
 
-![](../../.gitbook/assets/image%20%28102%29.png)
+![](../../.gitbook/assets/image%20%28103%29.png)
 
 * The homography preserves the colliniearity of points. i.e. if three points are collinear in one image then they will be collinear even after the homography. 
 * Since $$H$$ and $$kH$$ will be same here, hence numper of unknown in $$H$$ are 8 and not 9.
@@ -39,19 +39,19 @@ Homography is the condition when image of same plane is taken with two different
 
 ### Camera Model
 
-![](../../.gitbook/assets/image%20%2855%29.png)
+![](../../.gitbook/assets/image%20%2856%29.png)
 
 ### Projection Matrix: From 3D to image coordinates
 
-![](../../.gitbook/assets/image%20%2871%29.png)
+![](../../.gitbook/assets/image%20%2872%29.png)
 
-![](../../.gitbook/assets/image%20%2885%29.png)
+![](../../.gitbook/assets/image%20%2886%29.png)
 
 
 
 ![](../../.gitbook/assets/image%20%287%29.png)
 
-![](../../.gitbook/assets/image%20%28124%29.png)
+![](../../.gitbook/assets/image%20%28125%29.png)
 
 * **This is important as it can be used to find relation between 3D world and 2D image.**
 * ![](https://lh5.googleusercontent.com/mRwOBoL8tsjyvA6T48uX2tAFXOdfYL-uE1qu-BDyKBfzQRHZNzj5Ctp7HROX58ZXpIDGzjas7Yb2lwwZdugotlfyk_ziqZMjZXMJbUfG5KPrH2jEfx7L62KOfd9Mgxivyp4Dxa3l)

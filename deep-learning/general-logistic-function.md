@@ -14,7 +14,7 @@ You can get the **sigmoid function** form above with the following values:
 
 $$A$$= 0 and all other parameters to be 1.
 
-![Graph with changing values of B](../.gitbook/assets/image%20%2889%29.png)
+![Graph with changing values of B](../.gitbook/assets/image%20%2890%29.png)
 
 
 

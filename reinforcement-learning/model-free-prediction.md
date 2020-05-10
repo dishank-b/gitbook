@@ -34,7 +34,7 @@ Two types: First Time and Every Time
 * Value is estimated by mean return V \(s\) = S\(s\)/N\(s\) 
 * Again, V \(s\) → v π \(s\) as N\(s\) → ∞
 
-![Understand this for clear distinction](../.gitbook/assets/image%20%2819%29.png)
+![Understand this for clear distinction](../.gitbook/assets/image%20%2820%29.png)
 
 #### Incremental Update:
 
@@ -161,7 +161,7 @@ Every time-step:
 - Policy Evaluation: Sarsa using above equation  
 - Police Improvement: $$\epsilon$$ - Greedy policy improvement
 
-![Sarsa](../.gitbook/assets/image%20%2829%29.png)
+![Sarsa](../.gitbook/assets/image%20%2830%29.png)
 
 #### n-step Sarsa:
 
@@ -194,7 +194,7 @@ $$
 
 #### Sarsa\(λ\) Algorithm:
 
-![sarsa](../.gitbook/assets/image%20%28142%29.png)
+![sarsa](../.gitbook/assets/image%20%28143%29.png)
 
 ### Off-Policy Learning
 
@@ -220,7 +220,7 @@ E_{X\sim P}[f(X)] = \sum P(X)f(X)\\
 = E_{X\sim Q}[\frac{P(X)}{Q(X)}f(X)]
 $$
 
-![Off-Policy Monte Carlo](../.gitbook/assets/image%20%28150%29.png)
+![Off-Policy Monte Carlo](../.gitbook/assets/image%20%28151%29.png)
 
 ![](../.gitbook/assets/image%20%283%29.png)
 
@@ -245,13 +245,13 @@ $$
 Q_*(s,a) = R_s^a + \gamma \sum_{s^`\in S}P_{ss'}^a \max_{a'} Q_*(s',a')
 $$
 
-![](../.gitbook/assets/image%20%2879%29.png)
+![](../.gitbook/assets/image%20%2880%29.png)
 
 ## Summary
 
-![](../.gitbook/assets/image%20%2858%29.png)
+![](../.gitbook/assets/image%20%2859%29.png)
 
-![](../.gitbook/assets/image%20%2894%29.png)
+![](../.gitbook/assets/image%20%2895%29.png)
 
 ### Exploration Vs Exploitation
 

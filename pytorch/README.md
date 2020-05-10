@@ -63,7 +63,7 @@ for i, name in zip([x, y, z], "xyz"):
 grad: {i.grad}\ngrad_fn: {i.grad_fn}\nis_leaf: {i.is_leaf}\n")
 ```
 
-![](../.gitbook/assets/image%20%2831%29.png)
+![](../.gitbook/assets/image%20%2832%29.png)
 
 **Data**: It’s the data a variable is holding. _**x**_ holds a 1x1 tensor with the value equal to 1.0 while _**y**_ holds 2.0. **z** holds the product of two i.e. 2.0
 
@@ -83,7 +83,7 @@ On calling `backward()`, gradients are populated only for the nodes which have b
 
 On turning `requires_grad = True` PyTorch will start tracking the operation and store the gradient functions at each step as follows:
 
-![](../.gitbook/assets/image%20%2824%29.png)
+![](../.gitbook/assets/image%20%2825%29.png)
 
 #### -detach\(\)
 

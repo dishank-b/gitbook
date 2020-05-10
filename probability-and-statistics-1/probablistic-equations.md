@@ -78,7 +78,7 @@ $$
 
 There are times when we would like to use Bayes Theorem to update a belief, but there is no way to calculate the probability of the event observed, P\(F\). All hope is not lost. In such situations we can still calculate the relative probability of events. For example, imagine we would like to answer the question, is even A or event B more likely given an observation F. We can express this mathematically as calculating whether P\(A\|F\)/P\(B\|F\) is greater than or equal to 1. Both of those terms can be expanded using Bayes, and when they are expanded the P\(F\) term cancels out: 
 
-![](../.gitbook/assets/image%20%2856%29.png)
+![](../.gitbook/assets/image%20%2857%29.png)
 
 ### Distributing two variables over Third Variable
 

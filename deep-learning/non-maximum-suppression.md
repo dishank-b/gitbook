@@ -11,11 +11,11 @@ Two of NMS:
 
 ### Greedy
 
-![Greedy NMS algo](../.gitbook/assets/image%20%28141%29.png)
+![Greedy NMS algo](../.gitbook/assets/image%20%28142%29.png)
 
 ### Optimal
 
-![](../.gitbook/assets/image%20%2874%29.png)
+![](../.gitbook/assets/image%20%2875%29.png)
 
 ### Hyper-parameters
 

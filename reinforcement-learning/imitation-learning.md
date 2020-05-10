@@ -24,12 +24,12 @@ Imitation learning is also known as behaviour cloning. It is simple the supervis
 * Here in the above image, they have left and right camera, so basically they also training data with left and right image pair with corrected action. Hence when a vehicle drift out, training data have samples similar to those. Hence, it will be able to correct the trajectory of the vehicle.   
   In general terms, we can add noise to out collected distribution to create more training data along with corrected actions for the noise. Hence in this way, we will have an algorithm trained on data, such that it can correct itself when go wrong.
 
-  ![](../.gitbook/assets/image%20%2841%29.png)  
+  ![](../.gitbook/assets/image%20%2842%29.png)  
   https://images.nvidia.com/content/tegra/automotive/images/2016/solutions/pdf/end-to-end-dl-using-px.pdf
 
 * **DAgger: Dataset Aggregation** If run it for long enough and some assumptions are true, then this is guaranteed to work.  IT solves the problem of distributional drift.  
 
-![](../.gitbook/assets/image%20%28149%29.png)
+![](../.gitbook/assets/image%20%28150%29.png)
 
 * If your model is so perfect that it doesn't make mistakes, then it is safe to assume that there will be no distributional shift and behaviour cloning will directly work. 
 
@@ -45,7 +45,7 @@ Imitation learning is also known as behaviour cloning. It is simple the supervis
 
   * **Output a mixture of Gaussians:** Outputs N means, N variances, and N weights adding upto one.  
 
-  ![Mixture of Gaussian](../.gitbook/assets/image%20%2895%29.png)
+  ![Mixture of Gaussian](../.gitbook/assets/image%20%2896%29.png)
 
   * **Latent Vairable Model:** Inject some noise \(random number\) along with the input state
   * **Autoregressive Discretization:** Discretize the continous n dimensional varibale into n variables. 

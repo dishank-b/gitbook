@@ -140,7 +140,7 @@ $$
 * Similarly bayesian inference can be applied for category state $$S$$ .
 * A major result from this subsection is that the two states of any object can be updated easily given an additional measurement from a different component of the robotic system using bayes theorem. 
 
-![First: Proposed Anchor boxes, Second: Posterior with Proposed anchor boxes as prior and output from boundingbox regressor as liklihood,  Third: output after combining all outputs using bayesian inferencence inplace of NMS](../../.gitbook/assets/image%20%2859%29.png)
+![First: Proposed Anchor boxes, Second: Posterior with Proposed anchor boxes as prior and output from boundingbox regressor as liklihood,  Third: output after combining all outputs using bayesian inferencence inplace of NMS](../../.gitbook/assets/image%20%2860%29.png)
 
 ## Experiments and Results
 

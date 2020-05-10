@@ -12,7 +12,7 @@ They learn the task uncertainty \(homoscedastic uncertainty\), they use this unc
 
 ### Methodolgy
 
-![Pipeline of the work](../../.gitbook/assets/image%20%2836%29.png)
+![Pipeline of the work](../../.gitbook/assets/image%20%2837%29.png)
 
 When we learn multiple output of network such as in this case. The outputs have different units and dimensions, this raises a problem to asign different weights to different losses of outputs. 
 

@@ -5,13 +5,13 @@
 * Markov Property:- Future is independent of the past given the present.
 * Finite MDP - Have finite element in S,A,R set
 * 
-![p defines the dynamics of the MDP](../../.gitbook/assets/image%20%28131%29.png)
+![p defines the dynamics of the MDP](../../.gitbook/assets/image%20%28132%29.png)
 
-![State transition probabilities](../../.gitbook/assets/image%20%2866%29.png)
+![State transition probabilities](../../.gitbook/assets/image%20%2867%29.png)
 
-![reward](../../.gitbook/assets/image%20%2884%29.png)
+![reward](../../.gitbook/assets/image%20%2885%29.png)
 
-![bellman recursive equation](../../.gitbook/assets/image%20%28133%29.png)
+![bellman recursive equation](../../.gitbook/assets/image%20%28134%29.png)
 
 
 

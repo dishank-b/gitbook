@@ -39,7 +39,7 @@ But many times we can have some bias for specific hypothesis i.e have some prior
 **Bayesian Estimate** are more narrower than non-bayesian due to use of prior which makes distribution more confined. And generally give more closer and accurate distribution. Using beliefs allows us to get more confident answer.   
 But sometimes using bayesian can be wrong, like what if you have wrong prior i.e you said some values are impossible then bayesian estimate will not consider those values, but may be those value are possible and should not have probability **zero.**   
 
-![](../../.gitbook/assets/image%20%2899%29.png)
+![](../../.gitbook/assets/image%20%28100%29.png)
 
 **Note:** Lets say you are using bayesian inference, but your prior ininformative i.e. it is uniform or doesn't really favour any prior parameter/hypothesis. Then does bayesian inference is any better than non-bayesian estimation? So baiscally, it seems that bayesian inference is only useful when you actually have some prior information, and using ininformative prior is not of any good. 
 
@@ -73,7 +73,7 @@ Why I said, that above is not an pdf but only liklihood is because $$y_i$$is not
 
 Let's look at an interesting take to understand posterior 
 
-![](../../.gitbook/assets/image%20%2849%29.png)
+![](../../.gitbook/assets/image%20%2850%29.png)
 
 So basically, here you have some priors already which you think can explain your data. Now instead of choosign one prior which is case of point-based estimation, you assign a score to each prior which basically denotes how liklely that prior is or what is the probability of that prior is. And this score is nothing but the liklihood calcualted using the prior. Now to make it into probability Distribution, you normalise it. 
 

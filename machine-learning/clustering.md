@@ -38,9 +38,9 @@ Hierarchical clustering starts by treating each observation as a separate cluste
 *  identify the two clusters that are closest together.
 * merge the two most similar clusters
 
-![Steps of Hierarchical Clustering](../.gitbook/assets/image%20%2878%29.png)
+![Steps of Hierarchical Clustering](../.gitbook/assets/image%20%2879%29.png)
 
-![Dendogram, which shows association](../.gitbook/assets/image%20%2898%29.png)
+![Dendogram, which shows association](../.gitbook/assets/image%20%2899%29.png)
 
 ### Linkage Criteria
 
@@ -59,14 +59,14 @@ At the high level, we can specify Mean Shift as follows :
 * Compute the mean of data within the window. 
 * Shift the window to the mean and repeat till convergence.
 
-![Three modes \(clusters\) of the probability distribution](../.gitbook/assets/image%20%2883%29.png)
+![Three modes \(clusters\) of the probability distribution](../.gitbook/assets/image%20%2884%29.png)
 
 **Kernel Density Estimation**
 
 Kernel density estimation is a non parametric way to estimate the density function of a random variable. This is usually called as the Parzen window technique. Given a kernel K, bandwidth parameter h , Kernel density estimator for a given set of d-dimensional points is  
 
 
-![](../.gitbook/assets/image%20%28132%29.png)
+![](../.gitbook/assets/image%20%28133%29.png)
 
 
 

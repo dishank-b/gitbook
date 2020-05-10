@@ -20,7 +20,7 @@ Range - $$largest  - smallest$$ . Shows distance between two extremes. Takes onl
 
 Interquartile Range \(IQR\)- Range spread in middle 50% of data. 
 
-![](../../.gitbook/assets/image%20%2821%29.png)
+![](../../.gitbook/assets/image%20%2822%29.png)
 
 Standard Deviation - Average amount we expect a point to differ\(or deviate\) from the mean. It takes every point in calculate 
 

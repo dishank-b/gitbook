@@ -30,7 +30,7 @@ Benchmarked on PASCAL VOC 2012. **MAP: 53.3%**
 
 
 
-![](../.gitbook/assets/image%20%2851%29.png)
+![](../.gitbook/assets/image%20%2852%29.png)
 
 ### KeyPoints:
 
@@ -72,7 +72,7 @@ They use all the independent models here without any shared computation and trai
 * Feature vector is passed through couple of fully connected layers which then divided into two branches: one outputs softmax probability for K+1 output classes and another layer that outputs four real-valued numbers for each of the K object classes. Each set of 4 values encodes refined bounding-box positions for one of the K classes.
 * Non Max Suppresion in the last
 
-![](../.gitbook/assets/image%20%2816%29.png)
+![](../.gitbook/assets/image%20%2817%29.png)
 
 #### RoI Pooling Layer- It is just a single max pool layer
 
@@ -83,7 +83,7 @@ Hence even if region of proposals are of differnt size, we get contant size feat
 
 It is a type of max pooling to convert features in the projected region of the image of any size, h x w, into a small fixed window, H x W. The input region is divided into H x W grids, approximately every subwindow of size h/H x w/W. Then apply max-pooling in each grid.
 
-![](../.gitbook/assets/image%20%28148%29.png)
+![](../.gitbook/assets/image%20%28149%29.png)
 
 ### Training
 
@@ -138,11 +138,11 @@ This papers main contribution is to a CNN network called RPN \(region proposal n
 
 ### Pipeline
 
-![Faster-RCNN block diagram. The magenta colored blocks are active only during training. The numbers indicate size of the tensors.](../.gitbook/assets/image%20%28114%29.png)
+![Faster-RCNN block diagram. The magenta colored blocks are active only during training. The numbers indicate size of the tensors.](../.gitbook/assets/image%20%28115%29.png)
 
 ![Pipeline](../.gitbook/assets/image%20%2811%29.png)
 
-![pipeline](../.gitbook/assets/image%20%2838%29.png)
+![pipeline](../.gitbook/assets/image%20%2839%29.png)
 
 ### **Architecture**
 
@@ -156,7 +156,7 @@ Network wise we have three:
 
 
 
-![](../.gitbook/assets/image%20%2837%29.png)
+![](../.gitbook/assets/image%20%2838%29.png)
 
 #### Region Proposal Network \(RPN\)
 
@@ -166,7 +166,7 @@ Just assume the output of RPN to be as same of Selective Search\(SS\) in case of
   
 To generate region proposals, we slide a small network over the convolutional feature map output by the last shared convolutional layer - this is the last layer of feature network. This small network takes as input an n × n spatial window of the input convolutional feature map. Each sliding window is mapped to a lower-dimensional feature \(256-d for ZF and 512-d for VGG, with ReLU \[33\] following\). This feature is fed into two sibling fully- connected layers—a box-regression layer \(reg\) and a box-classification layer \(cls\). We use n = 3 in this paper, noting that the effective receptive field on the input image is large. This mini-network is illustrated at a single position in Figure below. Note that be- cause the mini-network operates in a sliding-window fashion, the fully-connected layers are shared across all spatial locations. This architecture is naturally im- plemented with an n×n convolutional layer followed by two sibling 1 × 1 convolutional layers \(for reg and cls, respectively\).
 
-![RPN architecture](../.gitbook/assets/image%20%28117%29.png)
+![RPN architecture](../.gitbook/assets/image%20%28118%29.png)
 
 **Anchors:**
 
@@ -196,11 +196,11 @@ This is detection network is the last part from Fast RCNN paper, part including 
 
 **ROI Pooling:**
 
-![](../.gitbook/assets/image%20%2834%29.png)
+![](../.gitbook/assets/image%20%2835%29.png)
 
 Crop the convolutional feature map using each proposal and then resize each crop to a fixed sized $$14 \times 14 \times \mathit{convdepth}$$ using interpolation \(usually bilinear\). After cropping, max pooling with a 2x2 kernel is used to get a final $$7 \times 7 \times \mathit{convdepth}$$feature map for each proposal.
 
-![](../.gitbook/assets/image%20%28108%29.png)
+![](../.gitbook/assets/image%20%28109%29.png)
 
 \*\*\*\*
 
@@ -274,7 +274,7 @@ In this paper, we adopt a pragmatic 4-step training algorithm to learn shared fe
 
 #### Scale and Ratio of Anchor boxes
 
-![](../.gitbook/assets/image%20%28145%29.png)
+![](../.gitbook/assets/image%20%28146%29.png)
 
 **With 3 scales and 3 ratios, 69.9% mAP is obtained which is only little improvement over that of 3 scales and 1 ratio.** But still 3 scales and 3 ratios are used.
 
@@ -319,7 +319,7 @@ where $$y_{ij}$$ is the label of a cell \(i, j\) in the true mask for the region
 
 ## RCNN Family in 1 figure
 
-![RCNN Family Architecture](../.gitbook/assets/image%20%28100%29.png)
+![RCNN Family Architecture](../.gitbook/assets/image%20%28101%29.png)
 
 ## YOLO: You look only once \([Paper](https://arxiv.org/abs/1506.02640)\)
 
@@ -390,13 +390,13 @@ RetinaNet composed of three sub networks:
   * one subnetwork performs convolutional object classification. 
   * second is used for bounding box regression
 
-![Architecture](../.gitbook/assets/image%20%28120%29.png)
+![Architecture](../.gitbook/assets/image%20%28121%29.png)
 
 #### FPN Backbone
 
 In brief, FPN augments a stan- dard convolutional network with a top-down pathway and lateral connections so the network efficiently constructs a rich, multi-scale feature pyramid from a single resolution input image. Each level of the pyramid can be used for detecting objects at a different scale.
 
-![FPN architecture \(taken from FPN paper\)](../.gitbook/assets/image%20%2847%29.png)
+![FPN architecture \(taken from FPN paper\)](../.gitbook/assets/image%20%2848%29.png)
 
 **In RetinaNet, they build FPN on top of ResNet**  
 RetinaNet uses feature pyramid levels P3 to P7, where P3 to P5 are computed from the output of the corresponding ResNet residual stage \(C3 through C5\) using top-down and lateral connections just as in original FPN, P6 is obtained via a 3×3 stride-2 conv on C5, and P7 is computed by apply- ing ReLU followed by a 3×3 stride-2 conv on P6. This differs slightly from original FPN: \(1\) we don’t use the high-resolution pyramid level P2 for com- putational reasons, \(2\) P6 is computed by strided convolution instead of downsampling, and \(3\) we include P7 to improve large object detection.
@@ -531,7 +531,7 @@ Parameters that impact detector performance:
 [**https://arxiv.org/pdf/1611.10012.pdf?source=post\_page---------------------------**](https://arxiv.org/pdf/1611.10012.pdf?source=post_page---------------------------)  
 **This is paper from google which compared Speed and Accuracy Trade-offs for Faster RCNN, RFCN and SSD. Must Read**
 
-![Image from the paper](../.gitbook/assets/image%20%2853%29.png)
+![Image from the paper](../.gitbook/assets/image%20%2854%29.png)
 
 ### Lessons learned
 

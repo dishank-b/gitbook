@@ -4,7 +4,7 @@ description: About the value and action-value equations
 
 # MDP Equations
 
-![Relation between state, observation and action in temporal domain](../.gitbook/assets/image%20%2843%29.png)
+![Relation between state, observation and action in temporal domain](../.gitbook/assets/image%20%2844%29.png)
 
 Episode: **\(s,a,s\`,r\)**  
 Let’s say when we are in state s, we decide to take action a to arrive in the next state s’ and obtain reward r.

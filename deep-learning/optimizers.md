@@ -41,7 +41,7 @@ Adaptive learning rate for each parameter according to its past gradient history
 
 ### Adadelta
 
-![](../.gitbook/assets/image%20%2832%29.png)
+![](../.gitbook/assets/image%20%2833%29.png)
 
 
 
@@ -53,7 +53,7 @@ Adaptive learning rate for each parameter according to its past gradient history
 * RMSProp tries to resolve Adagrad’s radically diminishing learning rates by **using a moving average of the squared gradient**. It utilizes the magnitude of the recent gradient descents to normalize the gradient.
 * RMSProp divides the learning rate by the average of the exponential decay of squared gradients
 
-![](../.gitbook/assets/image%20%2835%29.png)
+![](../.gitbook/assets/image%20%2836%29.png)
 
 ### Adam
 
@@ -64,9 +64,17 @@ Adaptive learning rate for each parameter according to its past gradient history
 * Adam is computationally efficient and has very little memory requirement
 * **Adam optimizer is one of the most popular gradient descent optimization algorithms**
 
-![](../.gitbook/assets/image%20%2865%29.png)
+![](../.gitbook/assets/image%20%2866%29.png)
 
-![](../.gitbook/assets/image%20%28139%29.png)
+![](../.gitbook/assets/image%20%28140%29.png)
 
-![](../.gitbook/assets/image%20%2860%29.png)
+![](../.gitbook/assets/image%20%2861%29.png)
+
+## Learning Rate Scheduler 
+
+Learning Rate Scheduler works, if your loss is getting reaching plateau let's say after 20 epochs, then make sure to reduce the learning rate at epoch 20 and check the training then. See an example below.
+
+![Loss curve for some training](../.gitbook/assets/image%20%2812%29.png)
+
+In the experiments done, which is shown by above loss curve, `learning rate` was decreased by factor of 0.5 at epoch 20 and 30. See how loss was saturated at epoch 20 but after reducing the learning rate the loss started decreasing and same behavior at epoch 30. 
 

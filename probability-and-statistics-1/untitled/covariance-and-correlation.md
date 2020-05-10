@@ -6,7 +6,7 @@ Covariance is a measure of how much two random variables vary together.
 
 * If X and Y are independent then $$Cov(X, Y ) = 0$$ .  **Warning**: The converse is false: **zero covariance does not always imply independence**. 
 
-![Zero Covariance doesn&apos;t mean Independent variables](../../.gitbook/assets/image%20%2826%29.png)
+![Zero Covariance doesn&apos;t mean Independent variables](../../.gitbook/assets/image%20%2827%29.png)
 
 The key point is that $$Cov(X, Y )$$ measures the linear relationship between X and Y . In the above example $$X$$ and $$X^2$$ have a quadratic relationship that is completely missed by $$Cov(X, Y )$$.
 

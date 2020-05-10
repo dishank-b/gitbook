@@ -22,7 +22,7 @@ For example, consider a [quadrant \(circular sector\)](https://en.wikipedia.org/
 3. Count the number of points inside the quadrant, i.e. having a distance from the origin of less than 1
 4. The ratio of the inside-count and the total-sample-count is an estimate of the ratio of the two areas, π/4. Multiply the result by 4 to estimate π.
 
-![](../.gitbook/assets/image%20%2861%29.png)
+![](../.gitbook/assets/image%20%2862%29.png)
 
 In this procedure the domain of inputs is the square that circumscribes the quadrant. We generate random inputs by scattering grains over the square then perform a computation on each input \(test whether it falls within the quadrant\). Aggregating the results yields our final result, the approximation of π.
 
