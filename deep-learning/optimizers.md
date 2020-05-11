@@ -72,9 +72,11 @@ Adaptive learning rate for each parameter according to its past gradient history
 
 ## Learning Rate Scheduler 
 
-Learning Rate Scheduler works, if your loss is getting reaching plateau let's say after 20 epochs, then make sure to reduce the learning rate at epoch 20 and check the training then. See an example below.
+Learning Rate Scheduler works, if your loss is reaching plateau let's say after 20 epochs, then make sure to reduce the learning rate at epoch 20 and check the training then. See an example below.
 
 ![Loss curve for some training](../.gitbook/assets/image%20%2812%29.png)
 
-In the experiments done, which is shown by above loss curve, `learning rate` was decreased by factor of 0.5 at epoch 20 and 30. See how loss was saturated at epoch 20 but after reducing the learning rate the loss started decreasing and same behavior at epoch 30. 
+In the experiments done, which is shown by above loss curve, `learning rate` was decreased by factor of 0.5 at epoch 20 and 30. See how loss was saturated at epoch 20 but after reducing the learning rate the loss started decreasing and same behavior at epoch 30. See sort of spikes at epoch 20 and 30.
+
+**NOTE:** Training with low learning rate in last times of training can lead to over-fitting as compared to training with high learning rate. 
 
