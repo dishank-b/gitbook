@@ -53,6 +53,7 @@
   * [Reinforcement Learning - Sutton and Barto](reinforcement-learning/untitled/README.md)
     * [Chapter 3: Finite Markov Decision Processes](reinforcement-learning/untitled/chapter-3-finite-markov-decision-processes.md)
     * [Chapter 4: Dynamic Programming](reinforcement-learning/untitled/chapter-4-dynamic-programming.md)
+* [Robotics](robotics.md)
 * [Machine Learning](machine-learning/README.md)
   * [Clustering](machine-learning/clustering.md)
 * [Computer Vision](computer-vision/README.md)
