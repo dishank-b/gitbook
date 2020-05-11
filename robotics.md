@@ -22,7 +22,7 @@ $$
 Time Variant version:
 
 In above equations, $$A,B,C,D$$are constants which shows that system is time invariant wrt the matrices i.e same $$x(t)$$is same for two different $$t_1, t_2$$, then the system is same.   
-Where as the matrices can be time dependent if we have $$A(t), B(t), C(t), D(t)$$. I.e the system dynamics may change with time. 
+Where as the matrices can be time dependent if we have $$A(t), B(t), C(t), D(t)$$. I.e the system dynamics may change with time. This is also called **non-stationery system.** 
 
 ### Explaining the variables: 
 
