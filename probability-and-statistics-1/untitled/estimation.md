@@ -20,7 +20,13 @@ An estimator is basically a **random variable** $$X$$, a random variable have se
 
 An estimate is basically **number** $$x$$**which is realization of estimator** $$X$$as part of some experiment. Hence, $$x$$will definitely lie in Sample Space of $$X$$. 
 
-For example, we say that the sample mean X is an estimator of the population mean m and the computed value x of X is an estimate of m. The estimator is a sampling random variable and the estimate is a number. Similarly, the sample standard deviation S is an estimator of the population standard deviation s and the computed value s of S is an estimate of s.
+For example, we say that the sample mean X is an estimator of the population mean m and the computed value x of X is an estimate of m. The estimator is a sampling random variable and the estimate is a number. Similarly, the sample standard deviation $$S$$ is an estimator of the population standard deviation $$\sigma$$ and the computed value $$s$$ of $$S$$ is an estimate of $$\sigma$$.
+
+Example: I got a sample and I take the variance $$S$$of that sample.  
+The sample that you take is a random sample from your population, so the sample variance $$S$$ is \(at least before you actually take the sample of the population and compute the sample variance\) itself a random variable. If you can figure out the distribution of the sample variance, then you can find its expected value.  
+In general, once we have the sample in place, the estimator that we compute is a fixed value that depends on the actual sample that we got. **Until we've taken the sample, it's a random variable that we can analyze in terms of expected value, variance, etc.**
+
+Note the estimate depends upon the actual value of data you sampled, where as estimator is just a random variable without any value assigned to it. 
 
 #### Slightly different definition for an estimator:
 
