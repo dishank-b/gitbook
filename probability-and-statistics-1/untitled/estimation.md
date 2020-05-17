@@ -16,7 +16,7 @@ So mostly when we will be talking about estimations, we will talk about estimati
 
 ### Estimator  & Estimate
 
-An estimator is basically a **random variable** $$X$$, a random variable have set of possible values which it can realize as part of experiment called as its **Sample Space**. Generally an estimator is an statistic, for ex: sample mean $$\bar x$$ which is an statistic is an estimator for population mean $$\mu$$. _For example, a neural network is an **estimator.**_
+An estimator is basically a **random variable** $$X$$, a random variable have set of possible values which it can realize as part of experiment called as its **Sample Space**. Generally an estimator is an statistic, for ex: sample mean $$\bar X$$ which is an statistic is an estimator for population mean $$\mu$$. _For example, a neural network is an **estimator.**_
 
 An estimate is basically **number** $$x$$**which is realization of estimator** $$X$$as part of some experiment. Hence, $$x$$will definitely lie in Sample Space of $$X$$. 
 
@@ -24,9 +24,7 @@ For example, we say that the sample mean X is an estimator of the population mea
 
 #### Slightly different definition for an estimator:
 
-an _estimator_ is a definite mathematical procedure that comes up with a number \(the _estimate_\) for any possible set of data that a particular problem could produce. That number is intended to represent some definite numerical property \(g\(θ\)\) of the data-generation process; we might call this the "estimand."
-
-The _**estimator itself is not a random variable**_: it's just a mathematical function. However, the estimate it produces is based on data which themselves are modeled as random variables. This makes the _estimate_ \(thought of as depending on the data\) into a random variable and _a particular estimate_ for _a particular set of data_ becomes a realization of that random variable.  
+an _estimator_ is a definite mathematical procedure \(a random variable is also a function\) that comes up with a number \(the _estimate_\) for any possible set of data that a particular problem could produce. That number is intended to represent some definite numerical property \(g\(θ\)\) of the data-generation process; we might call this the "estimand."  
 
 
 ### Bias of Estimator

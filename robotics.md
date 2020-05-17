@@ -90,5 +90,17 @@ Kalman Filter is mostly used in state tracking and state prediction applications
 
 {% embed url="http://web.mit.edu/kirtley/kirtley/binlustuff/literature/control/Kalman%20filter.pdf" %}
 
+In most applications, the internal state is much larger \(more [degrees of freedom](https://en.wikipedia.org/wiki/Degrees_of_freedom_%28physics_and_chemistry%29)\) than the few "observable" parameters which are measured. However, by combining a series of measurements, the Kalman filter can estimate the entire internal state.
+
+{% embed url="https://en.wikipedia.org/wiki/Kalman\_filter" %}
+
+{% embed url="https://www.intechopen.com/books/introduction-and-implementations-of-the-kalman-filter/introduction-to-kalman-filter-and-its-applications" %}
+
+{% embed url="https://stanford.edu/class/ee363/lectures/kf.pdf" %}
+
+{% embed url="http://users.isr.ist.utl.pt/~mir/pub/kalman.pdf" %}
+
+{% embed url="https://arxiv.org/pdf/1910.03558.pdf" %}
+
 
 
