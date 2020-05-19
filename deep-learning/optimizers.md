@@ -57,6 +57,10 @@ Adaptive learning rate for each parameter according to its past gradient history
 
 ### Adam
 
+{% embed url="https://towardsdatascience.com/adam-latest-trends-in-deep-learning-optimization-6be9a291375c" %}
+
+
+
 * Another method that **calculates the individual adaptive learning rate for each parameter from estimates of first and second moments of the gradients.**
 * It also reduces the radically diminishing learning rates of Adagrad
 * Adam can be viewed as a **combination of Adagrad, which works well on sparse gradients and RMSprop which works well in online and nonstationary settings**.
@@ -78,5 +82,5 @@ Learning Rate Scheduler works, if your loss is reaching plateau let's say after 
 
 In the experiments done, which is shown by above loss curve, `learning rate` was decreased by factor of 0.5 at epoch 20 and 30. See how loss was saturated at epoch 20 but after reducing the learning rate the loss started decreasing and same behavior at epoch 30. See sort of spikes at epoch 20 and 30.
 
-**NOTE:** Training with low learning rate in last times of training can lead to over-fitting as compared to training with high learning rate. 
+**NOTE:** Training with low learning rate in last times of training can lead to over-fitting as compared to training with high learning rate. Because small learning rate makes very small changes in weights which might be tuning the weights for training data only. On the other hand larger learning rate wouldn't let the network reach it optimal error. Hence should maintain a balance for training with smaller learning rate in last of the training. In the nutshell, don't train with small learning rate for more than what is require for optimal convergence. 
 
