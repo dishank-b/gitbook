@@ -39,6 +39,7 @@
   * [Hard Negative Mining](deep-learning/hard-negative-mining.md)
   * [Uncertainty](deep-learning/uncertainty-estimation.md)
   * [Mean Average Precision](deep-learning/mean-average-precision.md)
+  * [Hyper-parameter Tuning](deep-learning/hyper-parameter-tuning.md)
 * [Reinforcement Learning](reinforcement-learning/README.md)
   * [General](reinforcement-learning/general.md)
   * [Imitation Learning](reinforcement-learning/imitation-learning.md)
