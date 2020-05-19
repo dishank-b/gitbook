@@ -25,6 +25,7 @@
 * Learning rate highly depends upon the loss curve. High learning rate on steep curve will not less the weights converge or even diverge. 
 * Good strategy is to start with high learning rate, but keep reducing the learning rate by some factor with training. 
 * Use **Learning rate scheduler. Cyclic Cosine scheduler is SOTA**
+* If you are using **Adam or any other adaptive learning rate optimizer** than you may not need to use learning rate decay. 
 
 ## **Fine-Tuning**
 
