@@ -32,6 +32,8 @@ Note the estimate depends upon the actual value of data you sampled, where as es
 
 An _estimator_ is a definite mathematical procedure \(a random variable is also a function\) that comes up with a number \(the _estimate_\) for any possible set of data that a particular problem could produce. That number is intended to represent some definite numerical property \(g\(θ\)\) of the data-generation process; we might call this the "estimand."
 
+**NOTE: Often** $$\hat \theta$$is used to denote both estimator and estimate. The meaning should be clear from the context. Estimator $$\hat \theta$$ is a random variable and have distribution associated with it. Estimate $$\hat \theta$$is realization of estimator for some particular sample, basically a point sampled form estimator's distribution. 
+
 ### Are you a Good Estimator?
 
 Are are estimators for? Estimators are for estimating some population parameters. But now the thing is you can have multiple estimators for same population parameters. For example you can use $$\frac{\sum X_i}{n}$$  
