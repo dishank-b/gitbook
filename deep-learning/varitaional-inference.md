@@ -26,6 +26,18 @@ Now think of factors that can affect $$X$$ i.e number of boxes produced in a day
 
 We want to infer about latent/hidden variable $$Z$$given the variable $$X$$. We want to find how many machine would have been working on some day if I know number of boxes produced that day. 
 
+#### How to the inference then? 
+
+Thank's to Bayes, we have the answer to this. We want to infer about $$Z$$given the evidence i.e data$$X$$.This is done using posterior probability. 
+
+**Definition of posterior distribution: It's the probability distribution of random variable conditioned on some evidence denoted by** $$p(Z|X)$$.
+
+Using Bayes theorem:
+
+$$
+p(Z|X) = \frac{p(X|Z)p(Z)}{P(X)} =  \frac{p(X|Z)p(Z)}{\int_z p(X|Z)p(Z)}
+$$
+
 
 
 
