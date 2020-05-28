@@ -2,7 +2,7 @@
 description: Notes on Statistics
 ---
 
-# Statistics
+# Statistical Inference
 
 ### Law of Large Numbers <a id="standard-deviation-vs-standard-error"></a>
 
