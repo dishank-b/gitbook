@@ -7,6 +7,7 @@
     * [Bayes Theorem](probability-and-statistics-1/probability/bayes-theorem.md)
     * [Probability Distributions & Processes](probability-and-statistics-1/probability/probability-distributions-and-processes.md)
   * [Statistics](probability-and-statistics-1/statistics/README.md)
+    * [Inference](probability-and-statistics-1/statistics/inference.md)
     * [Measures](probability-and-statistics-1/statistics/measures.md)
     * [Z-Scores](probability-and-statistics-1/statistics/z-scores.md)
     * [Covariance and Correlation](probability-and-statistics-1/statistics/covariance-and-correlation.md)
