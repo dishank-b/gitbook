@@ -521,7 +521,9 @@ Parameters that impact detector performance:
       <td style="text-align:center">11</td>
     </tr>
   </tbody>
-</table>Bottomline is:
+</table>
+
+Bottomline is:
 
 * Region based detectors like Faster R-CNN demonstrate a small accuracy advantage if real-time speed is not needed.
 * Single shot detectors are here for real-time processing. But applications need to verify whether it meets their accuracy requirement.

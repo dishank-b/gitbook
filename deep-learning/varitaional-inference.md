@@ -35,12 +35,90 @@ Thank's to Bayes, we have the answer to this. We want to infer about $$Z$$given 
 Using Bayes theorem:
 
 $$
-p(Z|X) = \frac{p(X|Z)p(Z)}{P(X)} =  \frac{p(X|Z)p(Z)}{\int_z p(X|Z)p(Z)}
+P(Z|X) = \frac{P(X|Z)p(Z)}{P(X)} =  \frac{P(X|Z)P(Z)}{\int_z P(X|Z)P(Z)}
 $$
 
+#### Calculating the posterior
 
+We have basically three terms:
 
+$$P(X|Z)$$**: Likelihood**. This is basically model of observing $$X$$if I would have known latent variable $$Z$$. How do we get $$P(X|Z)$$? We assume a model for $$X$$given $$Z$$i.e I would  know what distribution followed by X if I know $$Z$$. For example. I can say that $$X$$follows Gaussian with $$Z$$as it's mean with some constant variance. Or if you don't know exact model between $$X$$and $$Z$$, you can parametrize $$P(X|Z)$$with some parameter $$\theta$$as $$P(X|Z,\theta)$$and you learn that $$\theta$$through different learning techniques.   
+I don't know more about this concretely and have to see how exactly is this done. But, let's just assume we know this and it isn't a problem for now. 
 
+$$P(Z) $$: **Prior**. This simply denotes your prior belief about $$Z$$.  Mostly considered non-informative. Or if you have any prior belief, use it's density function. 
+
+$$P(X) = \int_z P(X|Z)P(Z)$$: **Evidence likelihood**. Now this is probability of observing $$X$$in total. Think here that $$X=x$$have some particular value. We can get this by integrating over all possible $$Z$$and then use likelihood of $$X$$for each $$Z$$ . This is basically marginalization over $$Z$$. Think in that terms and you would understand what it means. 
+
+### Problem of Intractable Posterior. 
+
+Now what here is the problem of **Intractable integral.** So, what happens is that calculating the integral for $$P(X)$$many times it's **intractable**. For example, in our case $$Z=$$number of machines running on a day. Here $$Z$$is single dimensional, hence calculating the integral is possible. But consider if $$Z$$is $$d$$ dimensional vector, in this case integral becomes intractable as we have integrate over $$d$$dimensions as $$\int_1\int_2..\int_dP(X|z_1,z_2,..z_d)P(z_1,z_2,..z_d)$$ . Calculating this is very difficult. For example, let say you have $$n$$facial images of $$K$$different persons. But in the data you only have images and identity is not given. Now here $$X$$is some given image and $$Z$$is identity of person whose the image belong. Now what is meant to calculate the posterior $$P(Z|X)$$? It will simple mean to find the identity of person of a person given the image. In this what would mean to calculate $$P(X) = \int_z P(X|Z)P(Z)$$? This means to integrate over identity $$Z$$of peoples which is $$d$$dimensional vector, in words it's taking some person and finding the probability of getting that facial image from that person and sum it for all the persons. Now this is intractable as large dimension of identity. 
+
+**So, in most cases where** $$Z$$**is large dimensional vector, it becomes intractable to calculate the posterior distribution.**
+
+### **Solution: Variational Inference**
+
+The idea is really simple: **If we can’t get a tractable closed-form solution for** $$P(Z|X)$$**, we’ll approximate it**.
+
+Let the approximation be $$Q(Z;ϕ)$$ and we can now form this as an optimization problem:
+
+$$
+\phi^* = \arg min_ϕ  KL[Q(Z;ϕ) || P(Z|X)]
+$$
+
+By choosing a family of distribution $$Q(Z;ϕ)$$ flexible enough to model $$P(Z|X)$$ and optimizing over $$ϕ$$, we can push the approximation towards the real posterior. 
+
+![](../.gitbook/assets/image%20%28153%29.png)
+
+Now let’s expand the KL-divergence term
+
+$$
+KL[Q(Z;ϕ) || P(Z|X)]
+=E_Q[\log Q(Z;ϕ)]−E_Q[\log P(Z|X)] \\
+=E_Q[\log Q(Z;ϕ)]−E_Q[\log \frac{P(X,Z)}{P(X)}] \\ =E_Q[\log Q(Z;ϕ)]−E_Q[\log P(X,Z)]+ \log P(X)
+$$
+
+Although we can compute the first two terms in the above expansion, but oh lord ! the third term is the _same annoying \(intractable\) integral_ we were avoiding before. What do we do now ? This seems to be a deadlock !
+
+### The Evidence Lower BOund \(ELBO\) <a id="the-evidence-lower-bound-elbo"></a>
+
+Please recall that our original objective was a minimization problem over $$Q(⋅;ϕ)$$. We can pull a little trick here - **we can optimize only the first two terms and ignore the third term**. How ?
+
+Because the third term is independent of $$Q(⋅;ϕ)$$. So, we just need to minimize
+
+$$
+E_ Q[\log Q(Z;ϕ)]−E_Q[\log P(X,Z)]
+$$
+
+Or equivalently, maximize \(just flip the two terms\)
+
+$$
+ELBO(Q)≜E_Q[\log P(X,Z)]−E_Q[\log Q(Z;ϕ)]
+$$
+
+This term, usually defined as ELBO, is quite famous in VI literature and you have just witnessed how it looks like and where it came from. Taking a deeper look into the ELBO\(⋅\)
+
+$$
+ELBO(Q)=E_Q[\log P(X|Z)]+E_Q[\log P(Z)]−E_Q[\log Q(Z;ϕ)]\\
+=E_Q[\log P(X|Z)]−KL[Q(Z;ϕ) || P(Z)]
+$$
+
+Now, please consider looking at the last equation for a while because that is what all our efforts led us to. The last equation is totally tractable and also solves our problem. What it basically says is that maximizing ELBO\(⋅ \(which is a proxy objective for our original optimization problem\) is equivalent to maximizing the conditional data likelihood \(which we can choose in our graphical model design\) and simultaneously pushing our approximate posterior \(i.e., $$Q(;ϕ)$$\) towards a prior over $$Z$$. The prior $$P(Z)$$ is basically how the true latent space is organized. Now the immediate question might arise: “Where do we get $$P(Z)$$ from?”. The answer is, we can just choose any distribution as a hypothesis. It will be our belief of how the $$Z$$ space is organized.![](https://dasayan05.github.io/public/posts_res/12/elbo_px_gap.JPG)Fig.5: Interpretation of ELBO
+
+There is one more interpretation \(see figure 5\) of the KL-divergence expansion that is interesting to us. Rewriting the KL-expansion and substituting ELBO\(⋅\)ELBO\(⋅\) definition, we get
+
+$$
+\log P(X)=ELBO(Q)+KL[Q(Z;ϕ) || P(Z|X)]
+$$
+
+As we know that $$KL(⋅||⋅)≥0$$ for any two distributions, the following inequality holds
+
+$$
+\log P(X)≥ELBO(Q)
+$$
+
+So, the $$ELBO(⋅)$$ that we vowed to maximize is a **lower bound** on the observed data log likelihood. Thats amazing, isn’t it ! Just by maximing the $$ELBO(⋅)$$, we can implicitely get closer to our dream of estimating maximum \(log\)-likelihood - _tighter the bound, better the approximation_.
+
+Okay ! Way too much math for today. This is overall how the Variational Inference looks like. There are numerous 
 
 ### Resources
 
