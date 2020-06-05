@@ -1,4 +1,8 @@
-# General Logistic Function
+# Activation Functions
+
+{% embed url="https://mlfromscratch.com/activation-functions-explained/\#/" %}
+
+### General Logistic Function
 
 {% embed url="https://en.wikipedia.org/wiki/Generalised\_logistic\_function" %}
 

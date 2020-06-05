@@ -8,6 +8,7 @@
 ## Optimizer
 
 * SGD gives better generalization as compared to Adam. 
+* ADAM gives faster convergence. 
 
 ## Batch Size
 

@@ -89,10 +89,6 @@ s = sum(1, 2, 3, 4, 5, neg=True)  # returns -15
 s = sum(1, 2, 3, 4, 5, neg=False) # returns 15
 ```
 
-### @Property decorator
-
-{% embed url="https://www.programiz.com/python-programming/property" %}
-
 {% embed url="https://www.freecodecamp.org/news/python-property-decorator/" %}
 
 ### Yield and Generators
