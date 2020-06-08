@@ -24,7 +24,7 @@ Both of these sources of noise mean that every layer has to learn to be robust t
 
 **Advantages of Batch Normalization:**
 
-* Normalized data makes the network bit robust of distributional change. 
+* Normalized data makes the network bit robust of inter-distributional change. 
 * Increase the learning rate
 * Reduce the need for dropout and other regularization techniques.
 * Achieves higher accuracy.
@@ -36,7 +36,11 @@ Both of these sources of noise mean that every layer has to learn to be robust t
 
 {% embed url="https://towardsdatascience.com/pitfalls-of-batch-norm-in-tensorflow-and-sanity-checks-for-training-networks-e86c207548c8" %}
 
+There is debate about whether to use the Batch Norm layer before or after the activation function. Many convincing arguments are there which suggests that batch norm layer should be used after the activation function whereas in the original paper, batch norm layer is used before activation. 
 
+{% embed url="https://www.reddit.com/r/MachineLearning/comments/67gonq/d\_batch\_normalization\_before\_or\_after\_relu/" %}
+
+**During implementation many times people simply use learnable parameters of batch norm which are** $$\gamma$$**and** $$\beta$$**to be constant set as** $$1$$**and** $$0$$**respectively. Hence in this setting batch-norm only normalize the features and doesn't allow to learn it scale and shift accordingly. This generally doesn't affect very much I guess, as doing shift and scale is simple an affine transformation which we are already doing in conv layers.** 
 
 ## Theory Behind Batch Normalization
 
@@ -46,13 +50,51 @@ Both of these sources of noise mean that every layer has to learn to be robust t
 
 {% embed url="https://tehnokv.com/posts/fusing-batchnorm-and-conv/" %}
 
+{% embed url="https://github.com/AlexeyAB/yolo2\_light/issues/5\#issuecomment-422355409" %}
+
+## Fixed or Frozen Batch-Norm during Fine-Tuning
+
+In fine-tuning if batch size is too small to do batch norm then it can degrade the performance. Then we convert the BN layer to simple affine layer as follows
+
+$$
+\hat x = \frac{x-\mu}{\sqrt {\sigma^2 +\epsilon}} \times \gamma + \beta
+$$
+
+Where $$\mu$$and $$\sigma^2$$are estimated mean and variance during training using moving average. $$\gamma$$and $$\beta$$are learned parameters. And all these parameters can be combines to create a simple affine transform.
+
+$$
+\hat x = \gamma\times \frac{x}{\sqrt {\sigma^2 +\epsilon}}  + \beta -\frac{\mu\gamma}{\sqrt {\sigma^2 +\epsilon}}  \\ 
+\\
+= \gamma'x+\beta'
+$$
+
+So during fine tuning we have parameters $$\gamma'$$and $$\beta'$$whose values are $$ \frac{\gamma}{\sqrt {\sigma^2 +\epsilon}}$$ and $$\beta -\frac{\mu\gamma}{\sqrt {\sigma^2 +\epsilon}}$$ respectively. 
+
+As such, the BN layers become linear activations with constant offsets and scales \($$\beta'$$and $$\gamma'$$\), and BN statistics \($$\mu$$and $$\sigma^2$$ \)are not updated during fine-tuning. So this is basically a fixed layer behaving like an activation function particularly as an affine transform with parameters $$\gamma'$$and $$\beta'$$.
+
+**NOTE: Now you don't have batch normalization here i.e there is no activation normalization with batch statistics.** 
+
+#### Why and When to do this?
+
+In the case when our batch statistics are not good representation of actual statistics, in this case there will be difference in testing vs training normalization as there is difference in statistics which will lead to different training and testing performance. 
+
+So, if your fine-tuning dataset is small and different from the pre-trained dataset then your fine-tuning batch-statics may not be equal to population statistics as moving average of population statistics will be dominated by pre-trained data. Hence, in this case you simply freeze the batch-norm layer and there is no issue of statistics at all. 
+
+**But if you have large fine-tuning dataset and if training goes for long enough then your final population statistics will same as fine-tuning dataset. In that case you may not need to freeze the batch-norm layer. Also if your fine-tune dataset is similar to pre-train dataset.** 
+
+#### **Thing which can be done** 
+
+Now during fine-tuning we can do one thing if we want - make $$\gamma'$$and $$\beta'$$learnable parameters which are initialized with above values instead of keeping them fixed during fine-tuning. 
+
 ## Issues with Batch Normalization
 
 * Different parameters used to compute normalized output during training and inference
   * How are we sure that using estimated mean and variance are better than using batch mean and variance during testing. Testing and Training is only similar if batch estimates are similar to estimated \(population\) mean which we are gonna use at testing. 
-* Using Batch Norm with small minibatches
+* BN’s error increases rapidly when the batch size becomes smaller, caused by inaccurate batch statistics estimation.
+  * it is required for BN to work with a sufficiently large batch size \( 32 per worker\). A small batch leads to inaccurate estimation of the batch statistics, and reducing BN’s batch size increases the model error dramatically
+  * They introduced group norm for this. 
 * Non-i.i.d minibatches can have a detrimental effect on models with batchnorm. For e.g. in a metric learning scenario, for a minibatch of size 32, we may randomly select 16 labels then choose 2 examples for each of these labels, the examples interact at every layer and may cause model to overfit to the specific distribution of minibatches and suffer when used on individual examples.
-* When fine-tuning network on different data.  
+* The pre-computed statistics may also change when the target data distribution changes. These issues lead to inconsistency at training, transferring, and testing time. 
 
 ## Caveats
 
