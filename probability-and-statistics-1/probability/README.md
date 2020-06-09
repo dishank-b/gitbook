@@ -8,6 +8,38 @@
 * Lowercase $$p(X)$$ is the density function of the distribution of $$X$$. It is a scalar function over the measure space of $$X$$.
 * $$p(X=x)$$\(shorthand $$p(x)$$\) denotes the density function evaluated at a particular value x. 
 
+## Probability Distribution
+
+_A **probability distribution** is a list of all of the possible outcomes of a random variable along with their corresponding probability values._
+
+_Like this:_
+
+![](../../.gitbook/assets/image%20%28155%29.png)
+
+## Probability Density function
+
+This is function which represents probability distribution of a random variable. Denoted by  $$p(x)$$.
+
+For discrete random variables.
+
+$$
+P(X=x)= p(x)
+$$
+
+For continuous random variables. 
+
+$$
+P(a<x<b) = \int_a^b p(x)dx
+$$
+
+So basically function $$p$$is a way to associated probability to each outcome of random variable $$x$$. 
+
+Note that functions have parameters in them, for example, in normal distribution we have mean and variance which are its parameters. To show parameters we use the notation $$p(x;\mu, \sigma)$$or $$f(x|\mu, \sigma)$$.
+
+Also, how to distinguish two probability functions? Let's say you have three variables $$X,Y,Z$$, now instead of using three letters for pdf of these like $$f(x), g(y), h(z)$$you denote pdf by $$p$$but you use the random variable letter as a subscript with $$p$$like $$p_X, p_Y, p_Z$$. So when you write $$p_X(a)$$, it means you are talking about random variable $$X$$taking value $$a$$and not $$Y,Z$$. 
+
+
+
 ## Summary
 
 {% embed url="https://static1.squarespace.com/static/54bf3241e4b0f0d81bf7ff36/t/55e9494fe4b011aed10e48e5/1441352015658/probability\_cheatsheet.pdf" %}

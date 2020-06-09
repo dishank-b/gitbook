@@ -1,6 +1,7 @@
 # Table of contents
 
 * [Artificial Intelligence](README.md)
+* [Overview](overview.md)
 * [Probability & Statistics](probability-and-statistics-1/README.md)
   * [Probability](probability-and-statistics-1/probability/README.md)
     * [Probablistic Equations](probability-and-statistics-1/probability/probablistic-equations.md)
@@ -40,7 +41,8 @@
     * [Probabilistic View](deep-learning/bayesian-deep-learning/probabilistic-view.md)
     * [Variational Inference for Bayesian Neural Network](deep-learning/bayesian-deep-learning/variational-inference-for-bayesian-neural-network.md)
   * [VAE: Variational Auto-Encoders](deep-learning/vae-variational-auto-encoders.md)
-  * [Generative vs Discriminative](deep-learning/generative-vs-discriminative.md)
+  * [Generative vs Discriminative](deep-learning/generative-vs-discriminative/README.md)
+    * [Generative Modelling](deep-learning/generative-vs-discriminative/generative-modelling.md)
   * [Making GANs train](deep-learning/untitled.md)
   * [Dimensionality of Layer Vs Number of Layers](deep-learning/dimensionality-of-layer-vs-number-of-layers.md)
   * [Deep learning techniques](deep-learning/new-deep-learning-techniques.md)
