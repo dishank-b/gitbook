@@ -39,6 +39,6 @@ $$
 This is norm used for measure size of a matrix. 
 
 $$
-||A||_F = \sqrt{\sum_{i,j}A_{i,j}^2}
+||A||_F = \sqrt{\sum_{i,j}A_{i,j}^2} = \sqrt{\text{Tr}(AA^T)}
 $$
 

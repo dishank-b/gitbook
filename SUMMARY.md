@@ -29,6 +29,7 @@
   * [Kernel Density Estimation](probability-and-statistics-1/kernel-density-estimation.md)
 * [Linear Algebra](linear-algebra/README.md)
   * [Norms](linear-algebra/norms.md)
+  * [Matrix Decomposition](linear-algebra/matrix-decomposition.md)
 * [Deep Learning](deep-learning/README.md)
   * [PreProcessing](deep-learning/preprocessing.md)
   * [Optimizers](deep-learning/optimizers.md)
