@@ -8,6 +8,16 @@ Linear algebra is a very beautiful part of mathematics. Where we discuss about v
 
 One important think about Linear algebra is to able to draw parallel between geometry and arithmetic/algebra. Ability to understand both component on their own and yet able to draw parallel between the two is true understanding for the topic. 
 
+## Linearity
+
+See the following equation:
+
+$$
+\hat y = w^Tx+b
+$$
+
+See, in the above equation, the mapping from parameters $$w$$to predictions $$y$$ is linear function, but the mapping from features $$x$$to predictions $$y$$is affine function. In other words, $$\hat y$$is linear function/transformation of $$w$$ whereas affine function/transformation with $$x$$.
+
 ## Linear Combination
 
 ## The Moore-Penrose Pseudoinverse
