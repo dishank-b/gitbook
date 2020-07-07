@@ -33,6 +33,7 @@
   * [Matrix Decomposition](linear-algebra/matrix-decomposition.md)
 * [Deep Learning](deep-learning/README.md)
   * [PreProcessing](deep-learning/preprocessing.md)
+  * [Regularization](deep-learning/regularization.md)
   * [Optimizers](deep-learning/optimizers.md)
   * [Activation Functions](deep-learning/general-logistic-function.md)
   * [Backpropagation](deep-learning/backpropagation.md)
