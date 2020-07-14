@@ -99,6 +99,7 @@
   * [A Neural Algorithm of Artistic Style - A.Gatys](papers-1/a-neural-algorithm-of-artistic-style-a.gatys.md)
 * [Deep Learning Book](deep-learning-book/README.md)
   * [Chapter 4: Optimization](deep-learning-book/numerical-computations.md)
+  * [Chapter 5: Machine Learning Basics](deep-learning-book/chapter-5-machine-learning-basics.md)
   * [Chapter 6: Deep FeedForward Networks](deep-learning-book/chapter-6-deep-feedforward-networks.md)
 * [How To Do Research](how-to-do-research.md)
 * [Python](python-tricks-and-tips/README.md)
