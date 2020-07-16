@@ -6,7 +6,15 @@
 
 ![](../.gitbook/assets/image%20%28141%29.png)
 
-#### Aleotoric Uncertainty:
+{% embed url="https://www.stat.berkeley.edu/~aldous/157/Papers/Fox\_Ulkumen.pdf" %}
+
+{% embed url="http://www.stat.columbia.edu/~gelman/stuff\_for\_blog/ohagan.pdf" %}
+
+
+
+#### 
+
+#### 
 
 
 
