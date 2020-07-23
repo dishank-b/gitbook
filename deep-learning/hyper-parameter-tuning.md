@@ -13,9 +13,9 @@
 ## Batch Size
 
 * Large batch methods tends to converge in sharp minimas, and having sharp minima leads to bad generalization. 4-32 are good small batch sizes to try. 
-* We can also try starting with small batch sizes and then gradually increase the batch size with training. Though, this is limited as in actual implementation we set the batch\_sizw in starting, and changing during the training will be incovenience.
-
-{% embed url="https://www.graphcore.ai/posts/revisiting-small-batch-training-for-deep-neural-networks" %}
+* We can also try starting with small batch sizes and then gradually increase the batch size with training. Though this is limited as in actual implementation we set the batch\_sizw in starting, and changing during the training will be incovenience.
+* **Small batch sizes may also kind a provide more exploration in loss landscape as they tend to give not so smooth gradients.** 
+  * **I found this in my object detection training, that training with 4 batch size gives better accuracy than batch size 12.**
 
 {% embed url="https://arxiv.org/abs/1609.04836" %}
 
