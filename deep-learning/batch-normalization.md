@@ -46,6 +46,12 @@ There is debate about whether to use the Batch Norm layer before or after the ac
 
 {% embed url="https://arxiv.org/abs/1805.11604" %}
 
+{% embed url="https://myrtle.ai/learn/how-to-train-your-resnet-7-batch-norm/" %}
+
+{% embed url="https://twitter.com/dcpage3/status/1171867587417952260" %}
+
+
+
 ## Fusing Batch-Norm parameters with Conv parameters at Run-time
 
 {% embed url="https://tehnokv.com/posts/fusing-batchnorm-and-conv/" %}
