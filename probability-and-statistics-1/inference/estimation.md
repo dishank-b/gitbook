@@ -46,6 +46,12 @@ To answer this, you have to analyse some properties of the estimators and based 
 
 ### Distribution of Estimator
 
+{% embed url="http://www.bristol.ac.uk/medical-school/media/rms/red/sampling\_variation\_and\_sampling\_distributions.html" %}
+
+{% embed url="https://youtu.be/IoTgFiso8sA" %}
+
+
+
 How does estimators works? You take an sample from the population, you calculate an estimate from the sample defined by your estimator. Now you have an estimate of some population parameter. Now if you draw other sample from the population, you can again estimate the parameter. 
 
 * Visualize calculating an estimator over and over with different samples from the same population, i.e. take a sample, calculate an estimate using that rule, then repeat.
