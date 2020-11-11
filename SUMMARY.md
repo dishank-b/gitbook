@@ -37,6 +37,7 @@
   * [PreProcessing](deep-learning/preprocessing.md)
   * [Regularization](deep-learning/regularization.md)
   * [Optimizers](deep-learning/optimizers.md)
+  * [Loss function](deep-learning/loss-function.md)
   * [Activation Functions](deep-learning/general-logistic-function.md)
   * [Backpropagation](deep-learning/backpropagation.md)
   * [Softmax Classifier and Cross Entropy](deep-learning/softmax-derivation-and-loss-calculation.md)
