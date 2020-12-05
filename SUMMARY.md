@@ -35,6 +35,7 @@
   * [Laplace Approximation](optimization/laplace-approximation.md)
 * [Deep Learning](deep-learning/README.md)
   * [PreProcessing](deep-learning/preprocessing.md)
+  * [Convolution Arithmetic](deep-learning/convolution-arithmetic.md)
   * [Regularization](deep-learning/regularization.md)
   * [Optimizers](deep-learning/optimizers.md)
   * [Loss function](deep-learning/loss-function.md)
