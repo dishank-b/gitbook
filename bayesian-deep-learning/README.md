@@ -6,29 +6,29 @@ description: Using Bayesian inference in deep learning
 
 ### Bayesian Neural Network
 
-The idea behind Bayesian Neural Network is to model the network's wights $$W$$as a distribution $$p(W|T)$$conditioned on the training data $$T$$, instead of a deterministic vairable.   
+The idea behind Bayesian Neural Network is to model the network's wights $$W$$as a distribution $$p(W|D)$$conditioned on the training data $$D$$, instead of a deterministic point estimates.   
 By placing a prior over the weights e.g. $$W \sim N(0,I)$$, the network training can be interpreted as determining a posterior over the weights given the training data: $$p(W|T)$$.   
 However, evaluating this posterior is not tractable without approximation techniques. 
 
 ### Bayesian Inference
 
-![](../../.gitbook/assets/image%20%28131%29.png)
+![](../.gitbook/assets/image%20%28131%29.png)
 
 ### Priors in weights in NNs
 
 We can apply this process to neural networks and come up with the probability distribution over the network weights, $$w$$ , given the training data, $$p ( w|D )$$ .
 
-![](../../.gitbook/assets/image%20%28137%29.png)
+![](../.gitbook/assets/image%20%28137%29.png)
 
-![](../../.gitbook/assets/image%20%2829%29.png)
+![](../.gitbook/assets/image%20%2829%29.png)
 
-![](../../.gitbook/assets/image%20%2821%29.png)
+![](../.gitbook/assets/image%20%2821%29.png)
 
-![](../../.gitbook/assets/image%20%2824%29.png)
+![](../.gitbook/assets/image%20%2824%29.png)
 
-![](../../.gitbook/assets/image%20%2883%29.png)
+![](../.gitbook/assets/image%20%2883%29.png)
 
-{% file src="../../.gitbook/assets/bayesiandeeplearning.pdf" caption="Bayesian Learning of weights in NN" %}
+{% file src="../.gitbook/assets/bayesiandeeplearning.pdf" caption="Bayesian Learning of weights in NN" %}
 
 #### Take away
 
