@@ -80,6 +80,7 @@
   * [Kalman Filter](robotics/robotics.md)
 * [Game Theory and ML](game-theory-and-ml/README.md)
   * [1st Lecture - 19/01](game-theory-and-ml/1st-lecture-19-01.md)
+  * [Lecture 2 - 22/01](game-theory-and-ml/lecture-2-22-01.md)
 * [Continual Learning](continual-learning/README.md)
   * [Lecture - 21/01](continual-learning/lecture-21-01.md)
 * [Computer Vision](computer-vision/README.md)
