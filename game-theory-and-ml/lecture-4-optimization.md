@@ -1,9 +1,5 @@
 # Lecture 4: Optimization
 
-{% embed url="https://docs.google.com/presentation/d/1bMVs3IXJv5LdCW-lkZEbPk1eIAmklbYk4WsucWbf3dQ/edit\#slide=id.gafa680995c\_0\_353" %}
-
-
-
 ## Convexity 
 
 $$
