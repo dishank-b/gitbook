@@ -6,5 +6,3 @@ description: >-
 
 # Artificial Intelligence
 
-Read this book here: https://theshank.gitbook.io/ai/
-

@@ -84,6 +84,8 @@
   * [Lecture 4: Optimization](game-theory-and-ml/lecture-4-optimization.md)
 * [Continual Learning](continual-learning/README.md)
   * [Lecture - 21/01](continual-learning/lecture-21-01.md)
+  * [iCaRL: Incremental Classifier and Representation Learning](continual-learning/icarl-incremental-classifier-and-representation-learning.md)
+  * [Variational Continual Learning](continual-learning/variational-continual-learning.md)
 * [Computer Vision](computer-vision/README.md)
   * [Hough Transform](computer-vision/hough-transform.md)
   * [Projective Geometry](computer-vision/perspective-geometry/README.md)
