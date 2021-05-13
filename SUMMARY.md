@@ -28,6 +28,7 @@
   * [Markov](probability-and-statistics-1/markov.md)
   * [Monte Carlo](probability-and-statistics-1/monte-carlo.md)
   * [Kernel Density Estimation](probability-and-statistics-1/kernel-density-estimation.md)
+  * [Gaussian Soap Bubble](probability-and-statistics-1/gaussian-soap-bubble.md)
 * [Linear Algebra](linear-algebra/README.md)
   * [Norms](linear-algebra/norms.md)
   * [Matrix Decomposition](linear-algebra/matrix-decomposition.md)
