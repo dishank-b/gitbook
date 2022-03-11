@@ -31,8 +31,11 @@
   * [Gaussian Processes](probability-and-statistics-1/gaussian-processes.md)
   * [Gaussian Soap Bubble](probability-and-statistics-1/gaussian-soap-bubble.md)
 * [Linear Algebra](linear-algebra/README.md)
+  * [Linear Transformation](linear-algebra/linear-transformation.md)
   * [Norms](linear-algebra/norms.md)
   * [Matrix Decomposition](linear-algebra/matrix-decomposition.md)
+  * [Matrix Factorizations](linear-algebra/matrix-factorizations/README.md)
+    * [QR Decomposition](linear-algebra/matrix-factorizations/qr-decomposition.md)
 * [Optimization](optimization/README.md)
   * [Laplace Approximation](optimization/laplace-approximation.md)
 * [Statistical Learning Theory](statistical-learning-theory.md)
@@ -136,4 +139,3 @@
 * [Resources](resources.md)
 * [ROS for python3](ros-for-python3.md)
 * [Kitti](kitti.md)
-

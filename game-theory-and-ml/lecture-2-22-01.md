@@ -1,21 +1,21 @@
 # Lecture 2 - 22/01
 
-{% embed url="https://docs.google.com/presentation/d/17xPJWGJeAWkIWI8x7L8zl7mIek681lGpn5MCnydFB2A/edit\#slide=id.gab813e4041\_0\_0" %}
+{% embed url="https://docs.google.com/presentation/d/17xPJWGJeAWkIWI8x7L8zl7mIek681lGpn5MCnydFB2A/edit#slide=id.gab813e4041_0_0" %}
 
-\*\*\*\*
+****
 
 ## Prisoner's Dilemma
 
-If agents do not cooperate, the best \(global\) outcome possible is missed.
+If agents do not cooperate, the best (global) outcome possible is missed.
 
 ## COP 21 Game
 
 * N governments
 * 2 actions per states
-  * Do not pollute \(Cost = 3\)
-  * Pollute \(cost=1 and +1 for everyone\)
+  * Do not pollute (Cost = 3)
+  * Pollute (cost=1 and +1 for everyone)
 
-What is the equilibrium?  
+What is the equilibrium? &#x20;
 
 ## Multi-Player Game
 
@@ -52,7 +52,7 @@ $$\Delta_n := {p \in R^n: p_1+...p_n=1, p_i >= 0}$$
 
 Payoff: $$l(p,q):= E_{i\sim p, j \sim q} [l_{ij}] = p^TLq$$
 
-**Game:** $$\min_{p\in \Delta_n} \max_{q \in \Delta_m} p^TLq$$\*\*\*\*
+**Game:** $$\min_{p\in \Delta_n} \max_{q \in \Delta_m} p^TLq$$****
 
 ## **Nash Equilibrium of a Game**
 
@@ -62,11 +62,9 @@ $$
 s^* \in \text{NASH}  \implies l_k(s^*_k, s^*_{-k}) \leq l_k(s_k, s^*_{-k}) \forall s
 $$
 
-#### **Theorem** 
+#### **Theorem**&#x20;
 
-Any game with a finite set of players and a finite set of strategies has a Nash equilibrium of mixed strategies. 
+Any game with a finite set of players and a finite set of strategies has a Nash equilibrium of mixed strategies.&#x20;
 
 \`
-
-
 

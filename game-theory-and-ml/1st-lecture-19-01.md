@@ -4,7 +4,7 @@
 
 ## Game Theory
 
-The study of mathematical models of starategic interaction among \(rational\) decision-makers.  
+The study of mathematical models of starategic interaction among (rational) decision-makers. &#x20;
 
 ### Using ML
 
@@ -12,11 +12,9 @@ Learn these strategic behaviours
 
 ## Resources
 
-{% embed url="https://nips.cc/virtual/2020/public/tutorial\_f67d389ebfb89c9a47d196e0ef2b9aae.html" %}
+{% embed url="https://nips.cc/virtual/2020/public/tutorial_f67d389ebfb89c9a47d196e0ef2b9aae.html" %}
 
 ## Street Fighting Maths
-
-
 
 
 
