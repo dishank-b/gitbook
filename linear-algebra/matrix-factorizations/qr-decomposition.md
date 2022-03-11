@@ -28,3 +28,12 @@ $$Y$$ columns are linear combinations of columns of $$X$$in proportion decided b
 
 ![](../../.gitbook/assets/PXL\_20220310\_215544665.jpg) ![](../../.gitbook/assets/PXL\_20220310\_215554120.jpg)
 
+The process described in the pictures above is called **Gram-Schimdt Orthogonalizatoin procedure.**&#x20;
+
+So basically **QR** decomposition captures the gram-schimdt orthogonailzation. it decomposed the matrix $$A$$as to how to get multiply an orthogonal matrix $$Q$$by an upper triangular matrix $$R$$.&#x20;
+
+### Solving Linear Square Solution&#x20;
+
+{% embed url="https://youtu.be/7KP6TO5JXYY" %}
+
+{% embed url="https://youtu.be/hBOruhKIItE" %}
