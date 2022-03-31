@@ -1,5 +1,7 @@
 # Geometrical Representation of Matrix
 
+**Matrices are linear transformations on a vector space.**
+
 Matrix is basically set of column vectors. And those column vectors basically denotes the bases of coordinate system.&#x20;
 
 Let $$\bf u, \bf v$$be the two basis vectors of a coordinate system, then for any point $$P$$, the coordinates will be written as number of step in the direction of $$\bf u$$and $$\bf v$$it will take from origin to point $$P$$. So,
@@ -31,4 +33,10 @@ $$
 
 **Hence**, **when it comes to geometry, matrices are merely a notational device of writing down the base vectors of a coordinate system.**
 
-****
+**Homogeneous coordinates** have an additional coordinate marking the coordinate vector as a point (non-zero) or a directional vector (zero). These extended vectors allow translations to be written as matrices as well.
+
+### **Resources**
+
+{% embed url="https://www.coranac.com/documents/geomatrix#:~:text=When%20it%20comes%20to%20geometry,scalars%20for%20the%20base%20vectors." %}
+
+{% embed url="http://gregorygundersen.com/blog/2018/10/24/matrices" %}
