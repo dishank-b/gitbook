@@ -1,4 +1,8 @@
-# Geometrical Representation of Matrix
+# Geometrical Representation
+
+### **Matrix**
+
+****
 
 **Matrices are linear transformations on a vector space.**
 
@@ -40,3 +44,9 @@ $$
 {% embed url="https://www.coranac.com/documents/geomatrix#:~:text=When%20it%20comes%20to%20geometry,scalars%20for%20the%20base%20vectors." %}
 
 {% embed url="http://gregorygundersen.com/blog/2018/10/24/matrices" %}
+
+### **Determinant**
+
+Determinant of a matrix basically represents the local, linearized rate of volume change of a transformation.
+
+It's equal to the multiplication of all eigenvalues of the matrix.&#x20;
