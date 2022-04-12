@@ -25,6 +25,7 @@
       * [Dirichlet Distribution/Process](probability-and-statistics-1/inference/bayesian-inference/dirichilet-distribution.md)
       * [Posterior Predictive Distribution](probability-and-statistics-1/inference/bayesian-inference/posterior-predictive-distribution.md)
     * [Sampling-Based Inference](probability-and-statistics-1/inference/sampling-based-inference.md)
+  * [Bayesian Inference](probability-and-statistics-1/bayesian-inference.md)
   * [Regression](probability-and-statistics-1/regression.md)
   * [Markov](probability-and-statistics-1/markov.md)
   * [Monte Carlo](probability-and-statistics-1/monte-carlo.md)
