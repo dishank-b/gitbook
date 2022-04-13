@@ -14,7 +14,7 @@ $$
 J(w) = E_\pi[(v_\pi(s)-\hat{v}(s,w))^2]
 $$
 
-Here, v\_\pi is the original taget and $$\hat{v}$$ is the value approximation function with parameters w. Now we will update the $$w$$ using gradient descent in order to minimize the the cost $$J(w)$$ . Hence
+Here, $$v_\pi$$ is the original taget and $$\hat{v}$$ is the value approximation function with parameters w. Now we will update the $$w$$ using gradient descent in order to minimize the the cost $$J(w)$$ . Hence
 
 $$
 \triangle w = \alpha (v_\pi(s)-\hat{v}(s,w))\triangledown_w\hat{v}
