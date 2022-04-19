@@ -7,7 +7,7 @@ Imitation learning is also known as behaviour cloning. It is simple the supervis
 *   We have a demonstration data distribution called $$D = P(\tau)$$, now lets day we trained an algorithm on $$D$$ , now say we run the algo then the algo will make an error which will lead to obsevations which are not in the training data, and in that case the error will keep on increasae.  **Error Explode**\
 
 
-    ![Once state deviates from training, the error exploes and state keep deviating](<../.gitbook/assets/image (6).png>)\
+    <img src="../.gitbook/assets/image (6).png" alt="Once state deviates from training, the error exploes and state keep deviating" data-size="original">\
     \
     Let us say that out learnt policy is $$\pi_{\theta}(a_t|o_t)$$ , now what above means is $$p_{data}(o_t) \neq p_\pi(o_t)$$ . \
     \

@@ -54,7 +54,7 @@ Homography is the condition when image of same plane is taken with two different
 ![](<../../.gitbook/assets/image (125).png>)
 
 * **This is important as it can be used to find relation between 3D world and 2D image.**
-* ![](https://lh5.googleusercontent.com/mRwOBoL8tsjyvA6T48uX2tAFXOdfYL-uE1qu-BDyKBfzQRHZNzj5Ctp7HROX58ZXpIDGzjas7Yb2lwwZdugotlfyk\_ziqZMjZXMJbUfG5KPrH2jEfx7L62KOfd9Mgxivyp4Dxa3l)
+* <img src="https://lh5.googleusercontent.com/mRwOBoL8tsjyvA6T48uX2tAFXOdfYL-uE1qu-BDyKBfzQRHZNzj5Ctp7HROX58ZXpIDGzjas7Yb2lwwZdugotlfyk_ziqZMjZXMJbUfG5KPrH2jEfx7L62KOfd9Mgxivyp4Dxa3l" alt="" data-size="original">
 * **Here x,y,z are coordinate in 3D world and u,v are coordinate of those points in image.**\
   ****![](https://lh3.googleusercontent.com/-52L-VrPHn6Aj3QOy32dXQdFwUF7n9H9KfsWunOPoBXeQ2KcD5YUgPhRRCQjdTgI7ZtoZg--JXbjUq-8o2DrqQOJeVb2ytxLfgIdnXAy-nP77zRP21XrsTP96Bd4nULBF8fFATqT)
 * ![](https://lh4.googleusercontent.com/7fP0DB2CrHsAmYQC0Jr-y55qdKFbpHv1p7IBPSQ6BesMdG1JaQSeANatAJGh9OFwrwtNBVqEnF-wksbcOxx28NKfMmnuWY1M1GBHXWVEaaISj3Bt274f8oRJF8gh\_7k\_poT9WEIQ)****\
