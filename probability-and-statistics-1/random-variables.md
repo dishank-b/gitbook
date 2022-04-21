@@ -17,3 +17,7 @@ $$
 $$
 
 If the random variable is continuous then the summation above becomes integration.&#x20;
+
+### Expected Value
+
+Expected value or mean is same thing for a probability distribution and are used interchangeably.&#x20;

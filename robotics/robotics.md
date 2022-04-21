@@ -88,6 +88,12 @@ $$
 
 Kalman Filter is mostly used in state tracking and state prediction applications. This filter is mean square error minimizer and along with this is also maximum likelihood estimator.&#x20;
 
+### Notes
+
+{% file src="../.gitbook/assets/kalmanfilter.pdf" %}
+
+
+
 ### Derivation of Kalman Filter
 
 {% embed url="http://web.mit.edu/kirtley/kirtley/binlustuff/literature/control/Kalman%20filter.pdf" %}

@@ -140,8 +140,30 @@ MSE(\hat \theta) = Var(\hat \theta) + (\bar \theta-\theta)^2 \\
 = Var(\hat \theta) + Bias^2
 $$
 
+**Now if we already have any estimator which have zero bias, then minimizing the mean square error is equivalent to minimizing the variance.**&#x20;
+
 ### Estimation Error
 
 Imagine that we have a point estimate $$\hat \theta$$ for population parameter $$\theta$$. Even with a good point estimate, there is very likely to be some error ( $$\hat \theta$$ = θ not likely) . We can express this error of estimation, denoted ε, as ε = | $$\hat \theta$$ − θ| . This is the number of units that our estimate, $$\hat \theta$$, is off from θ (doesn’t take into account the direction of the error).
 
 Note that since the estimator $$\hat \theta$$ is a RV, the error $$\epsilon$$ is also random. We can use the sampling distribution of $$\hat \theta$$to help place some bounds on how big the error is likely to be. Note how much our estimation is related to mean square error.&#x20;
+
+### Estimation Criteria
+
+The concept of optimality expressed by the words best estimate corresponds to the minimization of the state estimation error in some respect.
+
+Different optimization criteria may be chosen, leading to different estimates of the system’s state vector. The estimate can be.
+
+* **the mean**, i.e., the center of the probability mass, corresponding to the minimum mean-square error criteria,
+* **the mode** that corresponds to the value of x that has the highest probability, corresponding to the Maximum a Posterior (MAP) criteria.
+* **the median**, where the estimate is the value of x such that half the probabil- ity weight lies to the left and half to the right of it.
+
+### Random
+
+![](<../../.gitbook/assets/image (165).png>)
+
+### Resources
+
+{% embed url="https://www.probabilitycourse.com/chapter9/9_1_5_mean_squared_error_MSE.php#:~:text=One%20way%20of%20finding%20a,squared%20error%20(MMSE)%20estimate." %}
+
+{% embed url="https://www.probabilitycourse.com/chapter9/9_1_6_linear_MMSE_estimat_of_random_vars.php" %}
