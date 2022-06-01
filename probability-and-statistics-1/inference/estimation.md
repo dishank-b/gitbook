@@ -160,7 +160,7 @@ Different optimization criteria may be chosen, leading to different estimates of
 
 ### Random
 
-![](<../../.gitbook/assets/image (165).png>)
+![](<../../.gitbook/assets/image (165) (1).png>)
 
 ### Resources
 

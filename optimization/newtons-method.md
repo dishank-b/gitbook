@@ -8,5 +8,22 @@ Used to find the roots of an function $$f(x)=0$$. It uses taylor series expansio
 
 Let's say you have a function $$f(x)$$whose minimum you want to find, this means $$f'(x)=0$$. Hence you can just use newton's method to find root of $$f'(x)=0$$. This will find the minimum of $$f(x)$$if $$f''(x)>0$$.&#x20;
 
-So&#x20;
+So
 
+$$
+f(x+t) = f(x)+t f'(x) + \frac{1}{2}t^2f''(x)
+$$
+
+​Now we want&#x20;
+
+$$
+\frac{df(x+t)}{dt} = 0 \\
+f'(x) + t f''(x) = 0 \\ 
+t = \frac{-f'(x)}{f''(x)}
+$$
+
+Therefor $$x' = x+t = x ​- \frac{f'(x)}{f''(x)}$$.&#x20;
+
+* If the function $$f$$is actually quadratic then the above method will give you the minimum in exactly in one iteration.&#x20;
+
+​

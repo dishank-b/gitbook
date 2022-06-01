@@ -4,7 +4,7 @@
 
 When the matrix entries are the same across the diagonal.&#x20;
 
-![](<../.gitbook/assets/image (165) (1).png>)
+![](<../.gitbook/assets/image (165) (1) (1).png>)
 
 $$
 A = A^T
