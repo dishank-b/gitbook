@@ -49,6 +49,7 @@
   * [Newton's Method](optimization/newtons-method.md)
   * [Gauss-Newton](optimization/gauss-newton.md)
   * [Levenberg–Marquardt](optimization/levenberg-marquardt.md)
+  * [Powell's dog leg](optimization/powells-dog-leg.md)
   * [Laplace Approximation](optimization/laplace-approximation.md)
 * [Statistical Learning Theory](statistical-learning-theory.md)
   * [Expectation Maximization](statistical-learning-theory/expectation-maximization.md)
