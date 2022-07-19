@@ -25,6 +25,9 @@ $$
 Therefor $$x' = x+t = x ​- \frac{f'(x)}{f''(x)}$$.&#x20;
 
 * If the function $$f$$is actually quadratic then the above method will give you the minimum in exactly in one iteration.&#x20;
+* It has quadratic convergence.&#x20;
+* Calculating the inverse of hessian is a very computationally expensive operation, which causes newton's method to be slow.&#x20;
+* It can be very sensitive to the initialization of the algorithm.&#x20;
 
 ### Connection with Gradient Descent
 
