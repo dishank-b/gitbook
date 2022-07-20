@@ -1,6 +1,8 @@
 # Gauss-Newton
 
-It is an extension of Newton's method used **non-linear least square problems** where you **don't need to calculate the Hessian**. &#x20;
+It is the algorithm to solve non-linear least squares problems. It's a modification of newton's method for finding a minimum of a function.&#x20;
+
+Only used for the sum of squared function values, though it doesn't require the second derivative.
 
 &#x20;The formulation is something like $$m$$functions $$r = (r_1, ......, r_m)$$ which are called residuals, with $$n$$ variables/parameters to be optimized $$\beta = (\beta_1, ......., \beta_n)$$.&#x20;
 
