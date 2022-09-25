@@ -11,3 +11,5 @@ I.e you will use some policy to interact with the environment and explore. But y
 ## On Policy
 
 In this class of methods, the policy being learned is the one which interacts with the environment to generate the data.&#x20;
+
+Hence, in this kind of method, the policy being learned has to encode for the exploration in the environment as well.&#x20;
