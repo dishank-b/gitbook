@@ -10,6 +10,12 @@ Monte Carlo simulation furnishes the decision-maker with a range of possible out
 
 Monte Carlo Simulation solves deterministic problems using a probabilistic analog.
 
+
+
+### Definition
+
+Monte Carlo is the art of approximating an expectation by the sample mean of a function of simulated random variables.
+
 ### Explanation
 
 Monte Carlo methods vary, but tend to follow a particular pattern:

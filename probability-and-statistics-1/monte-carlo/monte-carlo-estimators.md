@@ -4,6 +4,7 @@
 
 * [https://www.pbr-book.org/3ed-2018/Monte\_Carlo\_Integration/The\_Monte\_Carlo\_Estimator](https://www.pbr-book.org/3ed-2018/Monte\_Carlo\_Integration/The\_Monte\_Carlo\_Estimator)
 * [http://faculty.washington.edu/yenchic/17Sp\_403/Lec2\_MonteCarlo.pdf](http://faculty.washington.edu/yenchic/17Sp\_403/Lec2\_MonteCarlo.pdf)
+* [https://ib.berkeley.edu/labs/slatkin/eriq/classes/guest\_lect/mc\_lecture\_notes.pdf](https://ib.berkeley.edu/labs/slatkin/eriq/classes/guest\_lect/mc\_lecture\_notes.pdf)
 
 ### Summary
 
@@ -32,3 +33,7 @@ $$
 ​So basically this will give unbiased estimator to estimate the integral. The choice of $$p(x)$$​ dictates the convergence of monte carlo estimate to true value of integral.&#x20;
 
 The factor of $$\frac{1}{p(x)}$$​relates to the concept of **Importance Sampling** because when we sample $$x$$ according to $$p(x)$$we need to counter that effect, hence downweighting by that factor.&#x20;
+
+### Problems with Monte Carlo
+
+Since there is sampling from a probability distribution, monte carlo method hardly sample in the very low probability regions, so it doesn't evaluate on those samples.&#x20;
