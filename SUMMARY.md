@@ -54,6 +54,7 @@
   * [Levenberg–Marquardt](optimization/levenberg-marquardt.md)
   * [Powell's dog leg](optimization/powells-dog-leg.md)
   * [Laplace Approximation](optimization/laplace-approximation.md)
+  * [Cross Entropy Method](optimization/cross-entropy-method.md)
 * [Statistical Learning Theory](statistical-learning-theory.md)
   * [Expectation Maximization](statistical-learning-theory/expectation-maximization.md)
 * [Deep Learning](deep-learning/README.md)
