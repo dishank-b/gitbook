@@ -4,7 +4,6 @@
 
 * [https://www.pbr-book.org/3ed-2018/Monte\_Carlo\_Integration/The\_Monte\_Carlo\_Estimator](https://www.pbr-book.org/3ed-2018/Monte\_Carlo\_Integration/The\_Monte\_Carlo\_Estimator)
 * [http://faculty.washington.edu/yenchic/17Sp\_403/Lec2\_MonteCarlo.pdf](http://faculty.washington.edu/yenchic/17Sp\_403/Lec2\_MonteCarlo.pdf)
-* [https://ib.berkeley.edu/labs/slatkin/eriq/classes/guest\_lect/mc\_lecture\_notes.pdf](https://ib.berkeley.edu/labs/slatkin/eriq/classes/guest\_lect/mc\_lecture\_notes.pdf)
 
 ### Summary
 
@@ -25,15 +24,3 @@ $$
 $$
 
 ​So we converted the problem of integration to finding the expected value. Now to estimate $$E_{x\sim U[0,1]}[f(x)]$$we can use average. So we can calculate $$E[f(x)] = \frac{1}{N} \sum_{i=1}^N f(x_i)$$where $$x_i \sim U[0,1]$$.  Now since the the interval of integration was \[0,1] and we used Uniform distribution to sample the points, we could directly take the average of function evaluated at sample points. But if the can choose which distribution $$p(x)$$​ to use to sample $$x$$​ to evaluate $$f$$​at. So for any arbitrary $$p(x)$$​we can write the above integral as.
-
-$$
-\int f(x) dx = \int \frac{f(x)}{p(x)} p(x) dx = E_{x\sim p(x)}[\frac{f(x)}{p(x)}]
-$$
-
-​So basically this will give unbiased estimator to estimate the integral. The choice of $$p(x)$$​ dictates the convergence of monte carlo estimate to true value of integral.&#x20;
-
-The factor of $$\frac{1}{p(x)}$$​relates to the concept of **Importance Sampling** because when we sample $$x$$ according to $$p(x)$$we need to counter that effect, hence downweighting by that factor.&#x20;
-
-### Problems with Monte Carlo
-
-Since there is sampling from a probability distribution, monte carlo method hardly sample in the very low probability regions, so it doesn't evaluate on those samples.&#x20;
