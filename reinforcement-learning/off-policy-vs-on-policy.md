@@ -1,5 +1,9 @@
 # Off Policy vs On Policy
 
+
+
+{% embed url="https://youtu.be/hlhzvQnXdAA" %}
+
 ## Off Policy
 
 In this class of algorithms the policy being used to interact with the environment and collect data is not the one we are interested in learning to optimize the expected return.&#x20;
