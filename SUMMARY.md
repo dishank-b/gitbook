@@ -93,6 +93,7 @@
   * [Imitation Learning](reinforcement-learning/imitation-learning.md)
   * [MDP Equations](reinforcement-learning/rl-equations.md)
   * [Solving MDP with known Model](reinforcement-learning/solving-mdp-with-known-model.md)
+  * [Value Iteration](reinforcement-learning/value-iteration.md)
   * [Model Free Prediction and Control](reinforcement-learning/model-free-prediction.md)
   * [Off Policy vs On Policy](reinforcement-learning/off-policy-vs-on-policy.md)
   * [Deep Reinforcement Learning](reinforcement-learning/deep-reinforcement-learning/README.md)
