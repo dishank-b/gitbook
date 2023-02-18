@@ -38,6 +38,7 @@
   * [Gaussian Processes](probability-and-statistics-1/gaussian-processes.md)
   * [Gaussian Soap Bubble](probability-and-statistics-1/gaussian-soap-bubble.md)
 * [Linear Algebra](linear-algebra/README.md)
+  * [Youtube Course](linear-algebra/youtube-course.md)
   * [Geometrical Representation](linear-algebra/geometrical-representation.md)
   * [Types of Matrix](linear-algebra/types-of-matrix.md)
   * [Linear Transformation](linear-algebra/linear-transformation.md)
