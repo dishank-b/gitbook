@@ -124,10 +124,3 @@ Read these files for better and general understanding.&#x20;
 
 {% embed url="https://arxiv.org/abs/1811.11618" %}
 
-### Kalman Filter as an optimization problem.&#x20;
-
-{% embed url="https://wang-yimu.com/kalman-filter-a-least-squares-problem-work-in-process/" %}
-
-### Smooting Version of Kalman Filter
-
-{% embed url="https://natanaso.github.io/ece276a2017/ref/ECE276A_15_Smoothing.pdf" %}
