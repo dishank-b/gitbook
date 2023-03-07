@@ -38,3 +38,15 @@ So how gradient descent works, is by replacing a function at a point by it's lin
 ### ​Resources
 
 {% embed url="https://youtu.be/W7S94pq5Xuo" %}
+
+### Thoughts
+
+<figure><img src="../.gitbook/assets/PXL_20230307_231046141.jpg" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../.gitbook/assets/PXL_20230307_231122007.jpg" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../.gitbook/assets/PXL_20230307_231133009.jpg" alt=""><figcaption></figcaption></figure>
+
+![](../.gitbook/assets/PXL\_20230307\_231141822.jpg)
+
+![](../.gitbook/assets/PXL\_20230307\_231151542.jpg)
