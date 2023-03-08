@@ -27,6 +27,8 @@ i.e null space of given k vectors is basically the span of vectors made up by co
 
 **Essentially null space of a given k vectors is space of vectors which will always give zero when those k vectors are linearly expressed with coefficients of the vector. i.e let** $$A$$ **be a matrix formed by stack** $$k$$**vectors as column of the Matrix** $$A$$**. Then null space is the space such that any vector** $$x$$ **belonging to null space gives:** $$Ax=0$$**. ie Null space is space of all vectors** $$x$$ **such that** $$Ax=0$$ **where** $$A$$**is matrix formed by k vectors.  Note that if the K vectors are linearly independent, then there won't be any non-trivial** $$x$$ **possible in that case, hence Null space will be just zero vector.**&#x20;
 
+**You can also see Null space as defining the relatoinship among the columns of the matrix. Null space defines are complete relations among the columns. i.e defines the linear dependence of columns.**&#x20;
+
 \
 
 
@@ -64,4 +66,56 @@ can easily see that: $$\text{dim}(R)+\text{dim}(N) =$$num of columns. Where R is
 
 The point of gaussian elimination is to find the relations among the given vectors easier to parse or more evident. It helps to know the span of vectors, or see if the vectors are linearly independed/dependent. Or to check if some vector is indeed in the span of given vectors, etc.&#x20;
 
-&#x20;
+## Matrix Multiplication
+
+### Column Perspective (What we kind of been looking at until now)
+
+Let's consider matrix multiplication of the form  $$Ax$$. Where $$A$$is some dimension matrix and $$x$$is vector, now you can the multiplication basically gives as a vector which is in column space of $$A$$, specifically linear combination of columns of $$A$$ where the coeffcients of combination is given by $$x.$$ $$Ax$$ can be seens as $$x$$ doing something to the $$A$$matrix to get some output vector, $$x$$deciedes the proportion of columns of A in which they are combined to get the new vector.&#x20;
+
+Now let's talk about the matrix of the form $$AX$$, where both $$A, X$$ are matrices, now you can see the matrix multiplication as many $$Ax_i$$ where each $$x_i$$ is column of matrix $$X$$. Hence all the columns of resultant matrix are essentially some combination of columns of matrix $$A$$, where the proportion/coefficient of combination is decided by the columns of matrix $$X$$.
+
+### Row perspective
+
+Resultant matrix can be seen as linear combination of rows of right hand side matrix where coefficients are given by row by left hand side matrix. &#x20;
+
+## Matrix Inverse
+
+* only two matric whose multiplication is commutative are $$A$$ and $$A^{-1}$$. & vice versa i.e if multiplication of matrices is commutative, then they have to be each other inverse.
+* A matrix is only invertible if it's columns are linearly independent i.e rows are linearly independent. \
+  [https://youtu.be/fNpPrRNq8DU?list=PLlXfTHzgMRUKXD88IdzS14F4NxAZudSmv](https://youtu.be/fNpPrRNq8DU?list=PLlXfTHzgMRUKXD88IdzS14F4NxAZudSmv)
+
+You can find matrix inverse by using gaussian elimination. &#x20;
+
+## Transpose and Symmetric Matrices
+
+Columns becomes rows when tranposed. When transposing, it might become useful to use the row perspectinve.&#x20;
+
+* &#x20;Can be used to describe the symmetric metrices i.e $$A = A^T$$.
+* $$AA^T$$is always a symmetric matrix. Can be easily seen that $$A^T$$, just have interchnages rows and columns and hence the multipliationn for the resultant becomes symmetric.&#x20;
+
+## x^TAy
+
+Properties of $$x^TAy$$.
+
+{% embed url="https://youtu.be/YBABbb9TPEE?list=PLlXfTHzgMRUKXD88IdzS14F4NxAZudSmv" %}
+
+## A=LU Decomposition
+
+{% embed url="https://youtu.be/HS7RadfcoFk?list=PLlXfTHzgMRUKXD88IdzS14F4NxAZudSmv" %}
+
+You see as solving $$A=LU$$, as trying to find $$L^{-1}$$such that applying it on left hand side of $$A$$ i.e doing row operations to $$A$$ will get your matrix $$U$$. &#x20;
+
+SImilar you can see it as, as trying to find $$U^{-1}$$such that applying it on right hand side of $$A$$ i.e doing columns operations to $$A$$ will get your matrix $$L$$.
+
+## Determinant
+
+The determinant is essentially a way to find out if the columns of the matrix, ie the spanning vectors of the column space are linearly dependent or not. If the determinant of the matrix is zero, it essentially means that the columns are linearly dependent.&#x20;
+
+* Matrix with determinant zero is called singular matrix.
+* Determinant of upper or lower triangular matrix is given by multiplication of diagonal entries of the matrix.&#x20;
+* [https://youtu.be/OIEEt8SuQYk?list=PLlXfTHzgMRULWJYthculb2QWEiZOkwTSU](https://youtu.be/OIEEt8SuQYk?list=PLlXfTHzgMRULWJYthculb2QWEiZOkwTSU)
+
+There is a geometrical analogous of determinant as well. The determinant in 2D gives area of paralellogram given by the columns of matrix and in 3D gives volume. &#x20;
+
+&#x20;&#x20;
+
