@@ -54,7 +54,7 @@
   * [Newton's Method](optimization/newtons-method.md)
   * [Gauss-Newton](optimization/gauss-newton.md)
   * [Levenberg–Marquardt](optimization/levenberg-marquardt.md)
-  * [Implicit Function Theorem for optimization](optimization/implicit-function-theorem-for-optimization.md)
+  * [Implicit Function Theorem for optimization](calculus/implicit-function-theorem-for-optimization.md)
   * [Lagrange Multiplier](optimization/lagrange-multiplier.md)
   * [Powell's dog leg](optimization/powells-dog-leg.md)
   * [Laplace Approximation](optimization/laplace-approximation.md)

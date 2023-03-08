@@ -21,7 +21,7 @@ Now this $$\frac{dy}{dx}$$ defines a locally applicable $$y=h(x)$$, as you can j
 
 {% embed url="https://math.stackexchange.com/questions/1178594/optimization-with-implicit-differentiation" %}
 
-
+{% embed url="https://torchopt.readthedocs.io/en/latest/implicit_diff/implicit_diff.html" %}
 
 
 
