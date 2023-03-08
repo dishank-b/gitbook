@@ -50,7 +50,7 @@
     * [Eigen Value Decomposition](linear-algebra/matrix-decomposition/eigen-value-decomposition.md)
     * [SVD - Singular Value Decomposition](linear-algebra/matrix-decomposition/svd-singular-value-decomposition.md)
 * [Calculus](calculus/README.md)
-  * [Implicit Function/Differentiation Theorem](calculus/implicit-function-differentiation-theorem.md)
+  * [Implicit Function Theorem for optimization](calculus/implicit-function-theorem-for-optimization.md)
 * [Optimization](optimization/README.md)
   * [Gradient Descent](optimization/gradient-descent.md)
   * [Newton's Method](optimization/newtons-method.md)
