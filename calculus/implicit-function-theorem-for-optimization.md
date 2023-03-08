@@ -19,6 +19,8 @@ Now this $$\frac{dy}{dx}$$ defines a locally applicable $$y=h(x)$$, as you can j
 
 **This is called Implicit Function Theorem.**&#x20;
 
+{% embed url="https://math.stackexchange.com/questions/1178594/optimization-with-implicit-differentiation" %}
+
 
 
 
