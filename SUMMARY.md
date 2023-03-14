@@ -98,6 +98,7 @@
   * [Value Iteration](reinforcement-learning/value-iteration.md)
   * [Model Free Prediction and Control](reinforcement-learning/model-free-prediction.md)
   * [Off Policy vs On Policy](reinforcement-learning/off-policy-vs-on-policy.md)
+  * [Planning from RL perspective](reinforcement-learning/planning-from-rl-perspective.md)
   * [Deep Reinforcement Learning](reinforcement-learning/deep-reinforcement-learning/README.md)
     * [Value Function Approximation](reinforcement-learning/deep-reinforcement-learning/value-function-approximation.md)
     * [Policy Gradient](reinforcement-learning/deep-reinforcement-learning/policy-gradient/README.md)
