@@ -42,7 +42,7 @@
 * [Linear Algebra](linear-algebra/README.md)
   * [Youtube Course](linear-algebra/youtube-course.md)
   * [Geometrical Representation](linear-algebra/geometrical-representation.md)
-  * [Types of Matrix](linear-algebra/types-of-matrix.md)
+  * [Positive (Semi)Definite Matrices](linear-algebra/positive-semi-definite-matrices.md)
   * [Linear Transformation](linear-algebra/linear-transformation.md)
   * [Norms](linear-algebra/norms.md)
   * [Linear Least Square](linear-algebra/linear-least-square.md)
