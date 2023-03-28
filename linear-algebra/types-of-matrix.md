@@ -1,6 +1,6 @@
 # Types of Matrix
 
-#### Symmetric Matrix
+Symmetric Matrix
 
 When the matrix entries are the same across the diagonal.&#x20;
 
@@ -14,9 +14,9 @@ $$
 
 It's defined for symmetric matrix $$M$$.
 
-An $$n\times n$$ symmetric real matrix $$M$$ is said to be positive-definite  if $$x^TMX > 0$$for all non-zero $$\mathbf {x}$$in $$\mathbb {R} ^{n}$$.  Formally
+An $$n\times n$$ symmetric real matrix $$M$$ is said to be positive-definite  if $$x^TMx > 0$$for all non-zero $$\mathbf {x}$$in $$\mathbb {R} ^{n}$$.  Formally
 
-Positive Semi-Definite
+**Positive Semi-Definite**
 
 An $$n\times n$$ symmetric real matrix $$M$$ is said to be positive-definite  if $$x^TMX \geq 0$$ for all non-zero $$\mathbf {x}$$in $$\mathbb {R} ^{n}$$. &#x20;
 
@@ -30,8 +30,6 @@ It's similar to saying for example in one dimensional that $$kx^2$$should be pos
 The determinant of a positive definite matrix is always positive, so a positive definite matrix is always [nonsingular](https://mathworld.wolfram.com/NonsingularMatrix.html).
 
 {% embed url="https://towardsdatascience.com/what-is-a-positive-definite-matrix-181e24085abd" %}
-
-{% embed url="https://medium.com/sho-jp/linear-algebra-101-part-8-positive-definite-matrix-4b0b5acb7e9a" %}
 
 {% embed url="https://medium.com/sho-jp/linear-algebra-101-part-8-positive-definite-matrix-4b0b5acb7e9a" %}
 
