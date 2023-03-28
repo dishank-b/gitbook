@@ -1,4 +1,4 @@
-# Types of Matrix
+# Positive (Semi)Definite Matrices
 
 Symmetric Matrix
 
