@@ -1,5 +1,7 @@
 # Conjugate Gradient
 
+**NOTE: This method only works, when matrix A is positive definite.**&#x20;
+
 Used to solve the linear system of equations denoted by&#x20;
 
 $$
@@ -85,7 +87,7 @@ Conjugate gradient descent is different in the way that in conjugate gradient de
 
 &#x20;
 
-****
+
 
 
 
