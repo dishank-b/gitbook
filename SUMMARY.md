@@ -55,6 +55,7 @@
     * [Eigen Value Decomposition](linear-algebra/matrix-decomposition/eigen-value-decomposition.md)
     * [SVD - Singular Value Decomposition](linear-algebra/matrix-decomposition/svd-singular-value-decomposition.md)
 * [Optimization](optimization/README.md)
+  * [Regularization](optimization/regularization.md)
   * [Gradient Descent](optimization/gradient-descent.md)
   * [Newton's Method](optimization/newtons-method.md)
   * [Gauss-Newton](optimization/gauss-newton.md)
