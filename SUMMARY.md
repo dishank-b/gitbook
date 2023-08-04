@@ -99,6 +99,7 @@
 * [Implicit Function Theorem](implicit-function-theorem.md)
 * [Reinforcement Learning](reinforcement-learning/README.md)
   * [General](reinforcement-learning/general.md)
+  * [Multi-armed Bandit](reinforcement-learning/multi-armed-bandit.md)
   * [Imitation Learning](reinforcement-learning/imitation-learning.md)
   * [MDP Equations](reinforcement-learning/rl-equations.md)
   * [Solving MDP with known Model](reinforcement-learning/solving-mdp-with-known-model.md)
