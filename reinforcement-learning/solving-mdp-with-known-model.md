@@ -55,7 +55,7 @@ Given a policy $$\pi$$ :
   * This improves the value from any state s over one step,\
     &#x20;$$q_\pi(s, \pi'(s)) = \max_{a\in A} q_\pi(s,a) \geq q_\pi(s, \pi(s)) = v_\pi(s)$$&#x20;
 
-**This will always lead to the optimal policy**  $$\pi^*$$****
+**This will always lead to the optimal policy**  $$\pi^*$$
 
 ### **Value Iteration**
 

@@ -7,7 +7,7 @@ description: About the value and action-value equations
 ![Relation between state, observation and action in temporal domain](<../.gitbook/assets/image (44).png>)
 
 Episode: **(s,a,s\`,r)**\
-****Let’s say when we are in state s, we decide to take action a to arrive in the next state s’ and obtain reward r.
+Let’s say when we are in state s, we decide to take action a to arrive in the next state s’ and obtain reward r.
 
 ### Model: Transition and Reward
 

@@ -6,3 +6,9 @@ Basically, you start with a system which have multiple options, each option when
 
 This also related with exploration-exploitation dilemma, since at each time you have two options - put your resources in the maximum return option untill now, or you use your resources to find out if possible any other machine might be giving even higher return?&#x20;
 
+### Solution
+
+One way to solve this problem is using Thompson sampling. Check the article on it.&#x20;
+
+[thompson-sampling.md](../probability-and-statistics-1/sampling/thompson-sampling.md "mention")
+

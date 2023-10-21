@@ -26,7 +26,7 @@ Imitation learning is also known as behaviour cloning. It is simple the supervis
     ![](<../.gitbook/assets/image (42).png>)\
     https://images.nvidia.com/content/tegra/automotive/images/2016/solutions/pdf/end-to-end-dl-using-px.pdf
 * **DAgger: Dataset Aggregation**\
-  ****If run it for long enough and some assumptions are true, then this is guaranteed to work. \
+  If run it for long enough and some assumptions are true, then this is guaranteed to work. \
   IT solves the problem of distributional drift. &#x20;
 
 ![](<../.gitbook/assets/image (150).png>)
@@ -36,14 +36,14 @@ Imitation learning is also known as behaviour cloning. It is simple the supervis
 ### Problem with data collection in Imitation Learning
 
 * **Non-Markovian Behaviour:**\
-  ****While collecting data, driver take action not only based on current state but the previous states. \
+  While collecting data, driver take action not only based on current state but the previous states. \
   Hence, for two same state, there may be different actions due to different history. \
   **Solution:** Instead of taking action based on current state, take previous states also into consideration. Hence take previous states also in the input. \
   You can **RNN** for including the temporal dimension.&#x20;
 *   **MultiModal Behaviour:**\
-    ****Different actions for same state in training data. \
+    Different actions for same state in training data. \
     **Solution:** \
-    ****For discrete actions, it is not really a problem. Because at the softmax ouput, we can get probability mass as two equally probable actions.\
+    For discrete actions, it is not really a problem. Because at the softmax ouput, we can get probability mass as two equally probable actions.\
     For continuous actions, we generally ouput as gaussian distribution as we use MSE loss most of the times, \
     So, it gets difficult to output two equally probable actions. For this we can use&#x20;
 
@@ -53,6 +53,6 @@ Imitation learning is also known as behaviour cloning. It is simple the supervis
     ![Mixture of Gaussian](<../.gitbook/assets/image (96).png>)
 
     * **Latent Vairable Model:**\
-      ****Inject some noise (random number) along with the input state
+      Inject some noise (random number) along with the input state
     * **Autoregressive Discretization:**\
-      ****Discretize the continous n dimensional varibale into n variables.&#x20;
+      Discretize the continous n dimensional varibale into n variables.&#x20;

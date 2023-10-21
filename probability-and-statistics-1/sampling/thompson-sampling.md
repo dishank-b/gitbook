@@ -8,6 +8,8 @@
 
 {% embed url="https://medium.com/@ark.iitkgp/thompson-sampling-python-implementation-cb35a749b7aa" %}
 
+{% embed url="https://gdmarmerola.github.io/ts-for-contextual-bandits/" %}
+
 <figure><img src="../../.gitbook/assets/image (18) (1).png" alt=""><figcaption></figcaption></figure>
 
 {% embed url="https://www.cs.ubc.ca/labs/lci/mlrg/slides/2019_summer_6_thompson_sampling.pdf" %}
