@@ -29,6 +29,8 @@
       * [Posterior Predictive Distribution](probability-and-statistics-1/inference/bayesian-inference/posterior-predictive-distribution.md)
     * [Sampling-Based Inference](probability-and-statistics-1/inference/sampling-based-inference.md)
   * [Sampling](probability-and-statistics-1/sampling/README.md)
+    * [Rejection Sampling](probability-and-statistics-1/sampling/rejection-sampling.md)
+    * [Reservoir Sampling](probability-and-statistics-1/sampling/reservoir-sampling.md)
     * [Thompson Sampling](probability-and-statistics-1/sampling/thompson-sampling.md)
   * [Bayesian Inference](probability-and-statistics-1/bayesian-inference.md)
   * [Regression](probability-and-statistics-1/regression.md)
