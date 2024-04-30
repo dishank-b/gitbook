@@ -1,6 +1,8 @@
 # Imitation Learning
 
-Imitation learning is also known as behaviour cloning. It is simple the supervised learning of state and action pair. State is the input and action is the output.&#x20;
+## Behaviour Cloning
+
+It is simple the supervised learning of state and action pair. State is the input and action is the output.&#x20;
 
 ### Problems with imitation learning
 
@@ -56,3 +58,9 @@ Imitation learning is also known as behaviour cloning. It is simple the supervis
       Inject some noise (random number) along with the input state
     * **Autoregressive Discretization:**\
       Discretize the continous n dimensional varibale into n variables.&#x20;
+
+
+
+## Inverse RL
+
+Find the reward function given the expert trajectories.&#x20;
