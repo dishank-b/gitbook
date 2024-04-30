@@ -64,3 +64,5 @@ It is simple the supervised learning of state and action pair. State is the inpu
 ## Inverse RL
 
 Find the reward function given the expert trajectories.&#x20;
+
+{% embed url="https://jonathan-hui.medium.com/rl-inverse-reinforcement-learning-56c739acfb5a" %}
