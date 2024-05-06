@@ -15,5 +15,5 @@ $$
 Mutual information - attempt to measure the correlation between to RV
 
 $$
-f(x) = x * e^{2 pi i \xi x}
+I(X;Y) = H(X)+H(Y) - H(X,Y)
 $$
