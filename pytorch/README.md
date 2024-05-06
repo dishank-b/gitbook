@@ -67,7 +67,7 @@ grad: {i.grad}\ngrad_fn: {i.grad_fn}\nis_leaf: {i.is_leaf}\n")
 
 **Data**: It’s the data a variable is holding. _**x**_ holds a 1x1 tensor with the value equal to 1.0 while _**y**_ holds 2.0. **z** holds the product of two i.e. 2.0
 
-**requires\_grad**: This member, if true starts tracking all the operation history and forms a backward graph for gradient calculation. For an arbitrary tensor _**a** _ It can be manipulated in-place as follows: `a.requires_grad_(True).`
+**requires\_grad**: This member, if true starts tracking all the operation history and forms a backward graph for gradient calculation. For an arbitrary tensor _**a**_ It can be manipulated in-place as follows: `a.requires_grad_(True).`
 
 **grad:** grad holds the value of gradient. If `requires_grad` is False it will hold a None value. Even if `requires_grad` is True, it will hold a None value unless `.backward()` function is called from some other node. For example, if you call `out.backward()` for some variable _**out**_ that involved _**x**_ in its calculations then `x.grad` will hold **∂out/∂x**.
 
