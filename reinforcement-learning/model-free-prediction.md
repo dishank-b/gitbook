@@ -6,6 +6,8 @@ description: Doing things without knowing the model.
 
 ## Prediction
 
+Prediction in this context simply means, predicting the state or state-action value function. It's same as **Policy Evaluation.** Where policy evaluation simply seems "evaluating" the policy ie. find the value function under the policy.&#x20;
+
 ### Monte-Carlo Policy Evaluation
 
 In this method, to find the values of states, We perform episodes and the returns from all episodes are averaged for each state to gets its value. Basically here we calculate $$G_t = R_{t+1} + \gamma R_{t+2} + ...$$ by getting R from episodes ( $$S_1,A_1,R_2,S_2,A_2,R_3,...$$ ). Hence V(S) = average of all $$G_t$$ generated from episodes.&#x20;
@@ -139,6 +141,8 @@ Like MC, this also need complete episodes as this also require MC update to calc
 #### backward-view and Eligibillty Traces
 
 ## Control
+
+Control in this context means how to control ie. what actions to take in the environment.&#x20;
 
 ### Off-Policy Vs On-Policy
 
