@@ -209,7 +209,7 @@ $$
 
 ### Off-Policy Learning
 
-Evaluate target policy $$\pi(a|s)$$ to compute $$v_\pi(s)$$ or $$q_\pi(s,a)$$ while following behaviour policy $$\mu(a|s)$$
+Evaluate target policy (generally optimal policy) $$\pi(a|s)$$ to compute $$v_\pi(s)$$ or $$q_\pi(s,a)$$, while following behaviour policy $$\mu(a|s)$$to take actions in the environment when interacting.&#x20;
 
 $$
 \{S_1, A_1, R_2,...,S_T\} \sim \mu
@@ -217,7 +217,7 @@ $$
 
 This allows:
 
-* Learn fro observing humans or other agents
+* Learn from observing humans or other agents
 * Learn about optimal policy while following exploratory policy
 * learn about multiple policies while following one policy
 
@@ -274,7 +274,7 @@ Only exploration means that, at some point, the agent has correct estimates for 
 
 ### **wrt to Q-Learning:**
 
-&#x20;In Walkins and Dayan (1992), it is proven that the Q-values converge to the optimal Q∗ if two conditions are met. One of them states that every state-action pair has to be visited infinitely often. Consequently, the agent’s policy needs to respect this condition. For this, we could simply use a policy where the actions are always chosen randomly with a uniform distribution over the action space. However, the global performance of the agent during the learning phase will be poor; we want it to maximize its return. These two opposite behaviors are called exploration and exploitation. Hence, to learn the good policy using Q-learning we have to maintain the balance between exploitation and exploration.&#x20;
+&#x20;In Walkins and Dayan (1992), it is proven that the Q-values converge to the optimal Q∗ if two conditions are met. <mark style="color:yellow;">One of them states that every state-action pair has to be visited infinitely often</mark>. Consequently, the agent’s policy needs to respect this condition. For this, we could simply use a policy where the actions are always chosen randomly with a uniform distribution over the action space. However, the global performance of the agent during the learning phase will be poor; we want it to maximize its return. <mark style="color:red;">These two opposite behaviors are called exploration and exploitation. Hence, to learn the good policy using Q-learning we have to maintain the balance between exploitation and exploration.</mark>&#x20;
 
 ### **Fix for This: ϵ-greedy**
 
@@ -287,7 +287,7 @@ $$
 
 ### Deep Q-Networks
 
-DQNs are deep learning models that combine deep convolutional neural networks with the Q-learning algorithm.An important contribution made by DQNs is the use of experience replay and a target network to stabilize the training of the Q action- value function approximation with deep neural networks.                Q-network thus refers to a neural network function approximator of the Q-function:
+DQNs are deep learning models that combine deep convolutional neural networks with the Q-learning algorithm.An important contribution made by DQNs is the use of experience replay and a target network to stabilize the training of the Q action- value function approximation with deep neural networks. Q-network thus refers to a neural network function approximator of the Q-function:
 
 $$
 Q(s,a;\theta) \approx Q^*(s,a)
