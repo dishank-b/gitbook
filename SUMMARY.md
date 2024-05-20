@@ -58,6 +58,7 @@
     * [Cholesky Decomposition](linear-algebra/matrix-decomposition/cholesky-decomposition.md)
     * [Eigen Value Decomposition](linear-algebra/matrix-decomposition/eigen-value-decomposition.md)
     * [SVD - Singular Value Decomposition](linear-algebra/matrix-decomposition/svd-singular-value-decomposition.md)
+  * [Matrix Inversion](linear-algebra/matrix-inversion.md)
 * [Optimization](optimization/README.md)
   * [Regularization](optimization/regularization.md)
   * [Gradient Descent](optimization/gradient-descent.md)
