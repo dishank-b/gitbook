@@ -22,7 +22,7 @@ Version2 - [https://arxiv.org/abs/1903.03838v2](https://arxiv.org/abs/1903.03838
 #### Types:
 
 * **Epistemic:** Epistemic uncertainty captures our ignorance about the models most suitable to explain our data. It is the uncertainty in the model’s parameters, usually as a result of the confusion about which model generated the training data, and can be explained away given enough representative training data points. **Basically it means, when we train out network it is possible that with somehwat different parameters we can get same output or error. Hence thier is set of models which can explain the data equally well. Hence the uncertainty that which model is the best of our task is Epistemic Uncertainty**
-* **Aleatoric:** Uncertainty about the observation _y_ caused by a noisy data set _{x,y}._ It __ results from the stochastic nature of the observed data, and persist in network output despite expanded training on additional data. **Basically it is the inherent noise which is always there when performing an experiment and collecting data.**&#x20;
+* **Aleatoric:** Uncertainty about the observation _y_ caused by a noisy data set _{x,y}._ It results from the stochastic nature of the observed data, and persist in network output despite expanded training on additional data. **Basically it is the inherent noise which is always there when performing an experiment and collecting data.**&#x20;
 
 #### Methods to measure uncertainty in neural networks:
 
@@ -30,9 +30,9 @@ Version2 - [https://arxiv.org/abs/1903.03838v2](https://arxiv.org/abs/1903.03838
   Parameters are stochastically sampled through Monte-Carlo (MC) Dropout. The output detections of multiple stochastic runs are then clustered, and the sufficient statistics of the state distributions for every object instance are directly estimated from the cluster members.\
   The main advantage of this formulation lies in treating the underlying structure of the deep object detector as a black box, allowing it to be applied to various architectures with little effort
 * **Covariance Estimation:**\
-  ****Another way to estimate the uncertainty in object detection results is to directly provide estimates for the covariance matrix of the bounding box state B. These sampling free methods are usually faster than black box methods, since a single run of the deep object detector can estimate uncertainty.
+  Another way to estimate the uncertainty in object detection results is to directly provide estimates for the covariance matrix of the bounding box state B. These sampling free methods are usually faster than black box methods, since a single run of the deep object detector can estimate uncertainty.
 * **(Only for Object Detection)Redundancy in the output of the deep object detector before NMS:**\
-  ****This method is only particulary for object detection using DL. They exploit redundancy in the output of the deep object detector before NMS to form spatially affiliated clusters of detection outputs, from which sufficient statistics for both object state distributions can be estimated.
+  This method is only particulary for object detection using DL. They exploit redundancy in the output of the deep object detector before NMS to form spatially affiliated clusters of detection outputs, from which sufficient statistics for both object state distributions can be estimated.
 
 ## Formulation of BayesOD
 
@@ -110,7 +110,7 @@ $$
 \sigma(x_i) = \sigma_e(x_i) + \sigma_a(x_i)
 $$
 
-**Note: No aleatoric uncertainty were estimated for classification task. For reason give a read to:** [**https://arxiv.org/abs/1809.05590**](https://arxiv.org/abs/1809.05590)****
+**Note: No aleatoric uncertainty were estimated for classification task. For reason give a read to:** [**https://arxiv.org/abs/1809.05590**](https://arxiv.org/abs/1809.05590)
 
 ### **Incorporating State Prior Distribution**
 

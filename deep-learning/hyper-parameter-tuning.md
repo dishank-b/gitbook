@@ -32,7 +32,7 @@
 
 * **When doing fine-tuning, start with lower learning rate, as your model has been trained once already and now you need to do small changes, hence use smaller learning rate.**&#x20;
 * **We** know that in deep networks, deeper layers have more rich feature representations as compared to initial layers. So, when fine-tuning we may be wanting to make change the deeper layers more than initial layers. **For this, you can freeze the initial layers as they have basic representation and you may not want to change that. Or you can have learning rate of initial layers lower as compared to learning rate of later layers.**  \
-  ****So this will not change the weights of initial layers much as compared to deeper layers which affects most of your task and output.&#x20;
+  So this will not change the weights of initial layers much as compared to deeper layers which affects most of your task and output.&#x20;
 
 Can use resources mentioned in this blog.&#x20;
 

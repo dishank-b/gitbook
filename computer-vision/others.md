@@ -25,7 +25,7 @@
 * **Eigen Vectors of a Matrix are always Orthogonal to each other.**
 * **Subtract the MEAN from data for it to work better.**
 
-### &#x20;****&#x20;
+### &#x20;
 
 ### **Binary Morphology :-**&#x20;
 
@@ -34,14 +34,14 @@
 * **Opening followed by closing us used to remove noise and connect the strcuture.**
 
 **Homography**\
-****
+
 
 **The homography is a limited image transformation model, which in the case of general camera motion is only valid when the observed scene is planar, or the camera is orthographic. If the scene is non-planar, and the camera is perspective, then the homography is valid if the camera motion is limited to rotation only. The homography is not valid when the camera undergoes translational motion while observing a non-planar scene. Under these circumstances, homography will be valid only for some areas of the images, the areas for which the homography is not valid will appear to “move” in the motion compensated imagery, and will be falsely detected as moving objects.**\
-****\
-****
+\
+
 
 **Guided Image Filtering**\
-****
+
 
 **The guided filter can perform as an edge-preserving smoothing operator like the popular bilateral filter, but has better behavior near the edges. Derived from a local linear model, the guided filter generates the filtering output by considering the content of a guidance image, which can be the input image itself or another different image.**
 
@@ -50,4 +50,3 @@
 **age matting/feathering, haze removal, and joint upsampling. Simple explicit linear translation-invariant (LTI) filters like Gaussian filter, Laplacian filter, and Sobel filter are widely used in image blurring/sharpening, edge detec-**
 
 **tion, and feature extraction \[3]. The kernels of LTI filters are spatially invariant and independent of any image content. But in many cases, we may want to incorporate additional information from a given guidance image during the filtering process. For example, in colorization \[7] the output chrominance channels should have consistent edges with the given luminance channel; in image matting \[2] the output alpha matte should capture the thin structures like hair in the image.**\
-****

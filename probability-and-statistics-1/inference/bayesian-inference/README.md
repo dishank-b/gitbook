@@ -26,8 +26,8 @@ where $$h$$ denotes a _**hypothesis**_ and $$D$$ denotes _**observed data.**_ He
 
 **Explanation:** Here $$P(h)$$ is our **prior or prior belief** about some statistic, then we have $$P(D|h)$$which is called **likelihood** and represents observing some actual data given the hypothesis, also called sampling distribution for this reason. After this we get our $$P(h|D)$$ called **posterior** and this represents our updated believe about the statistic after observing the data $$\boldsymbol{D}$$ **.** \
 **Note:** Here $$\boldsymbol{P(D)}$$ denoted the distribution of data. Now as $$\boldsymbol{P(D)}$$ doesn't depend upon $$\boldsymbol{h}$$ , it does not provide any information to update the hypothesis. \
-__\
-__[https://youtu.be/5NMxiOGL39M](https://youtu.be/5NMxiOGL39M) - Make sure to understand the graph shown between 16:50-19:13\
+\
+[https://youtu.be/5NMxiOGL39M](https://youtu.be/5NMxiOGL39M) - Make sure to understand the graph shown between 16:50-19:13\
 In this videos after 19:20 he tells about how to use **prior** $$\boldsymbol{P(h)}$$ which will finally affect the calculation of $$\boldsymbol{P(h|D)}$$ .
 
 ## Bayesian vs Non-Bayesian Estimates&#x20;

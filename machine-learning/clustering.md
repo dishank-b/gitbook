@@ -13,7 +13,7 @@ The algorithm inputs are the number of clusters _Κ_ and the data set. The algor
 *   &#x20;Data assigment step:\
     Each centroid defines one of the clusters. In this step, each data point is assigned to its nearest centroid, based on the squared Euclidean distance. More formally, if $$c_i$$ is the collection of centroids in set _C_, then each data point _x_ is assigned to a cluster based on
 
-    &#x20;                                                                       ![\$$\underset{c\_i \in C}{\arg\min} \\; dist(c\_i,x)^2\$$](https://render.githubusercontent.com/render/math?math=%5Cunderset%7Bc\_i%20%5Cin%20C%7D%7B%5Carg%5Cmin%7D%20%5C%3B%20dist%28c\_i%2Cx%29%5E2\&mode=display)
+    &#x20;                                                                       <img src="https://render.githubusercontent.com/render/math?math=%5Cunderset%7Bc_i%20%5Cin%20C%7D%7B%5Carg%5Cmin%7D%20%5C%3B%20dist%28c_i%2Cx%29%5E2&#x26;mode=display" alt="$$\underset{c_i \in C}{\arg\min} \; dist(c_i,x)^2$$" data-size="original">
 
     where _dist_( _·_ ) is the standard ( $$L_2$$ ) Euclidean distance. Let the set of data point assignments for each $$i_{th}$$ cluster centroid be $$S_i$$ .
 *   Centroid update step:\
@@ -38,7 +38,11 @@ Hierarchical clustering starts by treating each observation as a separate cluste
 * &#x20;identify the two clusters that are closest together.
 * merge the two most similar clusters
 
-![Steps of Hierarchical Clustering](<../.gitbook/assets/image (79).png>)
+<div align="center">
+
+<img src="../.gitbook/assets/image (79).png" alt="Steps of Hierarchical Clustering">
+
+</div>
 
 ![Dendogram, which shows association](<../.gitbook/assets/image (99).png>)
 

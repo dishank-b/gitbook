@@ -66,5 +66,5 @@ For example, while working on robotic locomotion, I avoided incorporating domain
 * You can also read PhD thesis. They are also exhaustive source of information about one particular subtopic. &#x20;
 * Besides reading seminal papers and reimplementing them, you should also keep track of the less exceptional papers being published in your field. Reading and skimming the incoming papers with a critical eye helps you notice the trends in your field (perhaps you notice that a lot of papers are using some new technique and getting good results—maybe you should investigate it). It also helps you build up your taste by observing the dependency graph of ideas—which ideas become widely used and open the door to other ideas.
 
-****
+
 

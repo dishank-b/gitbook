@@ -16,8 +16,8 @@ The only functionality I’m struggling with, is the `.shuffle(buffer_size)`func
 
 **Tensorflow in Practise**
 
-&#x20;**-**[**https://github.com/vahidk/EffectiveTensorflow**](https://github.com/vahidk/EffectiveTensorflow)****\
-****
+&#x20;**-**[**https://github.com/vahidk/EffectiveTensorflow**](https://github.com/vahidk/EffectiveTensorflow)\
+
 
 * **Debugging Steps:**
   * **Step 1: Check the architecture**
@@ -26,13 +26,13 @@ The only functionality I’m struggling with, is the `.shuffle(buffer_size)`func
   * **Step 4: Check the Structure of Input data**
   * **Step 5: Check the Distribution of data**
 * **Static and Dynamic Shapes:**\
-  ****\
+  \
   **.get\_shape() - gives the static shape of the tensor. = Static**\
   **tf.shape(x) - returns the op to get the shape of x at the runtime.  = Dynamic**\
-  ****\
+  \
   **Note: The static shape is very useful to debug your code with print so you can check your tensors have the right shapes.**
 * **Getting Validation and training loss using same loss op.**\
-  ****\
+  \
   **Loss\_op = tf.losse(something)**
   * **Now if you want val loss and train loss on same plot.**\
     **-Then make two writers**\
@@ -46,11 +46,11 @@ The only functionality I’m struggling with, is the `.shuffle(buffer_size)`func
     &#x20; **features1 = tf.layers.conv2d(image1, filters=32, kernel\_size=3)**\
     &#x20; **features2 = tf.layers.conv2d(image2, filters=32, kernel\_size=3)**
 * **Python ops:**\
-  ****\
+  \
   **def py\_input\_fn():**\
   &#x20;   **actual\_data = np.random.normal(size=\[100])**\
   &#x20;   **return actual\_data**\
-  ****\
+  \
   **data = tf.py\_func(py\_input\_fn, \[], (tf.float32))**
 *
   * **Python ops allow you to convert a regular Python function to a TensorFlow operation.**
@@ -86,6 +86,6 @@ The only functionality I’m struggling with, is the `.shuffle(buffer_size)`func
   * **See the bookmarks in DL folder.**&#x20;
   * **Use update\_graphkey as before train\_op. Or use update\_collection=None as parameters in contrib batch\_norm.**
   * **Also make right use of reuse parameter in the function.**\
-    ****\
-    ****
+    \
+
 * **Small batch size is better than large batch size for less generalization gap.**

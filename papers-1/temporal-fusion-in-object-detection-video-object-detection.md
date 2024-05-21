@@ -38,7 +38,7 @@ Basically, they add LSTM to feature map part, hence feature map at $$t$$ can use
 
 ## Feature Aggregation over Frames
 
-### ****[**Sequence Level Semantics Aggregation for Video Object Detection**](https://arxiv.org/pdf/1907.06390v2.pdf)
+### [**Sequence Level Semantics Aggregation for Video Object Detection**](https://arxiv.org/pdf/1907.06390v2.pdf)
 
 * They device somethign called Sequence Level Semantics Aggregation (SELSA) module.&#x20;
 * instead of considering few nieghbouring frames for combinging features, they use complete complete video in global sense.&#x20;
@@ -48,7 +48,7 @@ Basically, they add LSTM to feature map part, hence feature map at $$t$$ can use
 
 ![](<../.gitbook/assets/image (127).png>)
 
-****
+
 
 ### [Towards High Performance Video Object Detection for Mobiles](https://arxiv.org/pdf/1804.05830v1.pdf)
 
@@ -67,7 +67,7 @@ Basically, they add LSTM to feature map part, hence feature map at $$t$$ can use
 
 ## Motion Propogation/ Tracking based
 
-### ****[**T-CNN: Tubelets with Convolutional Neural Networks for Object Detection from Videos**](https://arxiv.org/pdf/1604.02532.pdf)****
+### [**T-CNN: Tubelets with Convolutional Neural Networks for Object Detection from Videos**](https://arxiv.org/pdf/1604.02532.pdf)
 
 * Box sequence of same object across different frames is called in **tubelet**.&#x20;
 * A tubelet can be treated as a unit to apply the long-term constraint. Low detection confidence on some positive bounding boxes may result from moving blur, bad poses, or lack of enough training samples under particular poses. Therefore, if most bounding boxes of a tubelet have high confidence detection scores, the low confidence scores at certain frames should be increased to enforce its long-term consistency.&#x20;

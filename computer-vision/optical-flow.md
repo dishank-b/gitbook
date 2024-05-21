@@ -15,23 +15,23 @@
 
 *
   * **Then take taylor series approximation of right-hand side, remove common terms and divide by dt to get the following equation:**\
-    &#x20;**** ![Screenshot from 2017-04-01 12:43:07.png](https://lh6.googleusercontent.com/ti6YyihXetknknZvO828Z6B20jjPMKoLzy9BSC01E6Yi3mQ5Xg1NLjQ4KnCG0o2FuySUKrCzNPlUpiNdYU5D6daIrouAl\_qKAUwgmsUANc19w-GxHXLq9Rhk4gS1T\_q9Zw4rlUN-)
+    &#x20;![Screenshot from 2017-04-01 12:43:07.png](https://lh6.googleusercontent.com/ti6YyihXetknknZvO828Z6B20jjPMKoLzy9BSC01E6Yi3mQ5Xg1NLjQ4KnCG0o2FuySUKrCzNPlUpiNdYU5D6daIrouAl\_qKAUwgmsUANc19w-GxHXLq9Rhk4gS1T\_q9Zw4rlUN-)
   * **Above equation is called Optical Flow equation. In it, we can find fx and fy, they are image gradients. Similarly ft is the gradient along time. But (u,v) is unknown. We cannot solve this one equation with two unknown variables. So several methods are provided to solve this problem and one of them is Lucas-Kanade.**\
-    ****\
-    ****
+    \
+
   * **Lucas-Kanade method**\
     **We have seen an assumption before, that all the neighbouring pixels will have similar motion. Lucas-Kanade method takes a 3x3 patch around the point. So all the 9 points have the same motion. We can find (fx,fy,ft) for these 9 points. So now our problem becomes solving 9 equations with two unknown variables which is over-determined. A better solution is obtained with least square fit method. Below is the final solution which is two equation-two unknown problem and solve to get the solution.\[**\
-    ****![Screenshot from 2017-04-01 12:44:07.png](https://lh6.googleusercontent.com/Dqj1HY2TvRKttpL1VowYW8trao6R1mMy1AJlSfjq5zDFLTmUjgOxe\_qvncaRf3bBMFVmWeus43xaJWefnh16FWgS9xuWpnflt97ECXJoMsnw6G9gwM7xSiidet0w1-qXfB7uCRtC)****\
+    ![Screenshot from 2017-04-01 12:44:07.png](https://lh6.googleusercontent.com/Dqj1HY2TvRKttpL1VowYW8trao6R1mMy1AJlSfjq5zDFLTmUjgOxe\_qvncaRf3bBMFVmWeus43xaJWefnh16FWgS9xuWpnflt97ECXJoMsnw6G9gwM7xSiidet0w1-qXfB7uCRtC)\
     **( Check similarity of inverse matrix with Harris corner detector. It denotes that corners are better points to be tracked.)**\
-    ****\
-    ****
+    \
+
   * **So from user point of view, idea is simple, we give some points to track, we receive the optical flow vectors of those points. But again there are some problems. Until now, we were dealing with small motions. So it fails when there is large motion.**\
     **For Larger motion :-**&#x20;
     * **Iterative Refinement :-**\
       **This is used when linear approximation of taylor is not valid and higher order terms should also be used.**\
-      ****![](https://lh5.googleusercontent.com/6glEGrbSyYO7VNqYtreKliZKtHYvUWNWw9NNeuhL4NjPcnn6DqOgQNwO-4zBFFy4AzHiqe0Ds9q3qPeaRmV8iB1dV3nYpsOatNlSCqx0tRYXm0aT45wg0cwnwP9bli8jgXm8oDF4)****\
-      ****\
-      ****
+      ![](https://lh5.googleusercontent.com/6glEGrbSyYO7VNqYtreKliZKtHYvUWNWw9NNeuhL4NjPcnn6DqOgQNwO-4zBFFy4AzHiqe0Ds9q3qPeaRmV8iB1dV3nYpsOatNlSCqx0tRYXm0aT45wg0cwnwP9bli8jgXm8oDF4)\
+      \
+
     * **Coarse-to-refinement**\
       **This is used when pixel motion is not small.**
       * **We use hierarchical LK here:-**

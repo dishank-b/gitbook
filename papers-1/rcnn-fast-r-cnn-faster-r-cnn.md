@@ -95,7 +95,7 @@ In Fast R- CNN training, stochastic gradient descent (SGD) mini- batches are sam
 
 #### **Loss**
 
-The first **** output layer outputs a discrete probability distri- bution (per RoI), $$p = (p_0, . . . , p_K)$$ , over K + 1 categories.\
+The first output layer outputs a discrete probability distri- bution (per RoI), $$p = (p_0, . . . , p_K)$$ , over K + 1 categories.\
 The second sibling layer outputs bounding-box regression offsets, $$t^k = ( t^k_x , t^k_y , t^k_w, t^k_h )$$ , for each of the K object classes, indexed by k.\
 
 
@@ -146,7 +146,7 @@ This papers main contribution is to a CNN network called RPN (region proposal ne
 
 ### **Architecture**
 
-Faster R-CNN, is composed of two modules. The first module is a deep fully convolutional network that proposes regions, and the second module is the Fast R-CNN detector that uses the proposed regions. **** The entire system is a single, unified network for object detection. The RPN tell Fast RCNN where to look.&#x20;
+Faster R-CNN, is composed of two modules. The first module is a deep fully convolutional network that proposes regions, and the second module is the Fast R-CNN detector that uses the proposed regions. The entire system is a single, unified network for object detection. The RPN tell Fast RCNN where to look.&#x20;
 
 Network wise we have three:
 
@@ -202,7 +202,7 @@ Crop the convolutional feature map using each proposal and then resize each crop
 
 ![](<../.gitbook/assets/image (109).png>)
 
-****
+
 
 ### Training
 
@@ -210,7 +210,7 @@ Crop the convolutional feature map using each proposal and then resize each crop
 
 * **Classification:** \
   We assign a binary class label (if object is in the region or not) to each bouding box (anchor box). We assign:\
-  _Positive:_ **** label to two kinds of anchors: (i) the anchor/anchors with the highest Intersection-over- Union (IoU) overlap with a ground-truth box, or (ii) an anchor that has an IoU overlap higher than 0.7 with any ground-truth box. Usually the second condition is sufficient to determine the positive samples; but we still adopt the first condition for the reason that in some rare cases the second condition may find no positive sample. \
+  _Positive:_ label to two kinds of anchors: (i) the anchor/anchors with the highest Intersection-over- Union (IoU) overlap with a ground-truth box, or (ii) an anchor that has an IoU overlap higher than 0.7 with any ground-truth box. Usually the second condition is sufficient to determine the positive samples; but we still adopt the first condition for the reason that in some rare cases the second condition may find no positive sample. \
   _Negative_**:** to a non-positive anchor if its IoU ratio is lower than 0.3 for all ground-truth boxes. \
   Anchors that are neither positive nor negative do not contribute to the training objective.
 *   **Bounding Box regression:** \
@@ -218,10 +218,10 @@ Crop the convolutional feature map using each proposal and then resize each crop
     This can be thought of as bounding-box regression from an anchor box to a nearby ground-truth box. In regession we map an input to an output. Here our input is coordinates of anchor box and output is coordinated of target.  \
     \
     **Bounding Box Regression Parameterization:**\
-    ****The distance vector from the center of the ground truth box to the anchor box is taken and normalized to the size of the anchor box. That is the target delta vector for the center. The size target is the log of the ratio of size of each dimension of the ground truth over anchor box.\
+    The distance vector from the center of the ground truth box to the anchor box is taken and normalized to the size of the anchor box. That is the target delta vector for the center. The size target is the log of the ratio of size of each dimension of the ground truth over anchor box.\
 
 
-    Variables $$x$$ , $$x_a$$ **** , and $$x^*$$ are for the predicted box, anchor box, and ground- truth box respectively. Basically $$x_a$$ is input, $$x$$ is output, $$x^*$$ is target output.\
+    Variables $$x$$ , $$x_a$$ , and $$x^*$$ are for the predicted box, anchor box, and ground- truth box respectively. Basically $$x_a$$ is input, $$x$$ is output, $$x^*$$ is target output.\
     **It’s important to understand that even though anchors are defined based on the convolutional feature map, the final anchors reference the original image.**&#x20;
 
 
@@ -405,13 +405,13 @@ In brief, FPN augments a stan- dard convolutional network with a top-down pathwa
 ![FPN architecture (taken from FPN paper)](<../.gitbook/assets/image (48).png>)
 
 **In RetinaNet, they build FPN on top of ResNet**\
-****RetinaNet uses feature pyramid levels P3 to P7, where P3 to P5 are computed from the output of the corresponding ResNet residual stage (C3 through C5) using top-down and lateral connections just as in original FPN, P6 is obtained via a 3×3 stride-2 conv on C5, and P7 is computed by apply- ing ReLU followed by a 3×3 stride-2 conv on P6. This differs slightly from original FPN: (1) we don’t use the high-resolution pyramid level P2 for com- putational reasons, (2) P6 is computed by strided convolution instead of downsampling, and (3) we include P7 to improve large object detection.
+RetinaNet uses feature pyramid levels P3 to P7, where P3 to P5 are computed from the output of the corresponding ResNet residual stage (C3 through C5) using top-down and lateral connections just as in original FPN, P6 is obtained via a 3×3 stride-2 conv on C5, and P7 is computed by apply- ing ReLU followed by a 3×3 stride-2 conv on P6. This differs slightly from original FPN: (1) we don’t use the high-resolution pyramid level P2 for com- putational reasons, (2) P6 is computed by strided convolution instead of downsampling, and (3) we include P7 to improve large object detection.
 
 #### Anchors
 
 We use translation-invariant anchor boxes simi- lar to those in the RPN variant in \[20]. The anchors have areas of 322 to 5122 on pyramid levels P3 to P7, respec- tively. As in \[20], at each pyramid level we use anchors at three aspect ratios {1:2, 1:1, 2:1}. For denser scale cover- age than in \[20], at each level we add anchors of sizes {20, 21/3, 22/3} of the original set of 3 aspect ratio anchors. This improve AP in our setting. In total there are A = 9 anchors per level and across levels they cover the scale range 32 - 813 pixels with respect to the network’s input image. Each anchor is assigned a length K one-hot vector of classification targets, where K is the number of object classes, and a 4-vector of box regression targets. We use the assignment rule from RPN \[28] but modified for multi- class detection and with adjusted thresholds. Specifically, anchors are assigned to ground-truth object boxes using an intersection-over-union (IoU) threshold of 0.5; and to back- ground if their IoU is in \[0, 0.4). As each anchor is assigned to at most one object box, we set the corresponding entry in its length K label vector to 1 and all other entries to 0. If an anchor is unassigned, which may happen with overlap in \[0.4, 0.5), it is ignored during training.\
 **\[20] = FPN paper, \[28] = Faster RCNN paper**\
-****\
+\
 **A surprisingly good AP (30.3) is achieved using just one square anchor. However, the AP can be improved by nearly 4 points (to 34.0) when using 3 scales and 3 aspect ratios per location.**&#x20;
 
 #### **Classification SubNetwork**
@@ -465,7 +465,7 @@ Bottomline is:
 
 ### Google Comparision
 
-[**https://arxiv.org/pdf/1611.10012.pdf?source=post\_page---------------------------**](https://arxiv.org/pdf/1611.10012.pdf?source=post\_page---------------------------)****\
+[**https://arxiv.org/pdf/1611.10012.pdf?source=post\_page---------------------------**](https://arxiv.org/pdf/1611.10012.pdf?source=post\_page---------------------------)\
 **This is paper from google which compared Speed and Accuracy Trade-offs for Faster RCNN, RFCN and SSD. Must Read**
 
 ![Image from the paper](<../.gitbook/assets/image (54).png>)

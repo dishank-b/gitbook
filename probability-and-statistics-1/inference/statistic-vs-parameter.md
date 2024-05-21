@@ -24,6 +24,6 @@ Note that here Prθ,φ need not refer to an explicitly given parameterized famil
 
 In a specific situation, when x is the outcome of the sample X, the interval (u(x), v(x)) is also referred to as a confidence interval for θ. Note that it is no longer possible to say that the (observed) interval (u(x), v(x)) has probability γ to contain the parameter θ. This observed interval is just one realization of all possible intervals for which the probability statement holds.
 
-**See this link** [**https://en.wikipedia.org/wiki/Confidence\_interval**](https://en.wikipedia.org/wiki/Confidence\_interval)****
+**See this link** [**https://en.wikipedia.org/wiki/Confidence\_interval**](https://en.wikipedia.org/wiki/Confidence\_interval)
 
 **to understand misunderstanding of confidence intervals, see the misunderstanding and example section of the page.**

@@ -23,7 +23,7 @@ Cor(X, Y ) = ρ = \frac{Cov(X,Y)}{σ_x σ_y}
 $$
 
 * ρ is dimensionless (it’s a ratio!).
-* −1 ≤ ρ ≤ 1. **** Furthermore, \
+* −1 ≤ ρ ≤ 1. Furthermore, \
   ρ = +1 if and only if Y = aX + b with a > 0, \
   ρ = −1 if and only if Y = aX + b with a < 0.
 

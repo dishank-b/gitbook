@@ -50,7 +50,7 @@
   * [Transformations](linear-algebra/transformations.md)
   * [Geometrical Representation](linear-algebra/geometrical-representation.md)
   * [Positive (Semi)Definite Matrices](linear-algebra/types-of-matrix.md)
-  * [Linear Transformation](linear-algebra/linear-transformation.md)
+  * [Matrix Interpretation](linear-algebra/matrix-interpretation.md)
   * [Norms](linear-algebra/norms.md)
   * [Linear Least Square](linear-algebra/linear-least-square.md)
   * [Matrix Decomposition](linear-algebra/matrix-decomposition/README.md)

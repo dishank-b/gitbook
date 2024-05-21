@@ -56,9 +56,9 @@ Homography is the condition when image of same plane is taken with two different
 * **This is important as it can be used to find relation between 3D world and 2D image.**
 * <img src="https://lh5.googleusercontent.com/mRwOBoL8tsjyvA6T48uX2tAFXOdfYL-uE1qu-BDyKBfzQRHZNzj5Ctp7HROX58ZXpIDGzjas7Yb2lwwZdugotlfyk_ziqZMjZXMJbUfG5KPrH2jEfx7L62KOfd9Mgxivyp4Dxa3l" alt="" data-size="original">
 * **Here x,y,z are coordinate in 3D world and u,v are coordinate of those points in image.**\
-  ****![](https://lh3.googleusercontent.com/-52L-VrPHn6Aj3QOy32dXQdFwUF7n9H9KfsWunOPoBXeQ2KcD5YUgPhRRCQjdTgI7ZtoZg--JXbjUq-8o2DrqQOJeVb2ytxLfgIdnXAy-nP77zRP21XrsTP96Bd4nULBF8fFATqT)
-* ![](https://lh4.googleusercontent.com/7fP0DB2CrHsAmYQC0Jr-y55qdKFbpHv1p7IBPSQ6BesMdG1JaQSeANatAJGh9OFwrwtNBVqEnF-wksbcOxx28NKfMmnuWY1M1GBHXWVEaaISj3Bt274f8oRJF8gh\_7k\_poT9WEIQ)****\
-  ****\
+  ![](https://lh3.googleusercontent.com/-52L-VrPHn6Aj3QOy32dXQdFwUF7n9H9KfsWunOPoBXeQ2KcD5YUgPhRRCQjdTgI7ZtoZg--JXbjUq-8o2DrqQOJeVb2ytxLfgIdnXAy-nP77zRP21XrsTP96Bd4nULBF8fFATqT)
+* ![](https://lh4.googleusercontent.com/7fP0DB2CrHsAmYQC0Jr-y55qdKFbpHv1p7IBPSQ6BesMdG1JaQSeANatAJGh9OFwrwtNBVqEnF-wksbcOxx28NKfMmnuWY1M1GBHXWVEaaISj3Bt274f8oRJF8gh\_7k\_poT9WEIQ)\
+  \
   **Therefor all pairs of parallel lines in 3D world meet at a point in image.**
 * **Depth From Stereo**\
   **For these we need following information:-**
@@ -69,7 +69,7 @@ Homography is the condition when image of same plane is taken with two different
 * **Lectures 200-205 are important.**
 * **Lecture 219-227 are for extrinsic geometry of camera(Camera-world transform.)**
 * **Intrinsic Matrix:-**\
-  ****![](https://lh4.googleusercontent.com/DH6EiNf5zrlSGVMy0canoA0RF2DWMfymrvNbsHSunNLCG3-Z-vH-tmJ6AOZIyyC9\_BapC7t11EI\_OO4laG66\_7eFiZxGcBVRFAg58b-qxkq31QGxntgui86R3iGa8LPbQwtLUO7q)  **(u,v) are pixel coordinate in image.**
+  ![](https://lh4.googleusercontent.com/DH6EiNf5zrlSGVMy0canoA0RF2DWMfymrvNbsHSunNLCG3-Z-vH-tmJ6AOZIyyC9\_BapC7t11EI\_OO4laG66\_7eFiZxGcBVRFAg58b-qxkq31QGxntgui86R3iGa8LPbQwtLUO7q)  **(u,v) are pixel coordinate in image.**
 * **Essential Matrix is a geometric constraint between world coordinate of point in image taken by different camera position.**\
   **X\`EX = 0.  X\` and X are vector of point in two camera coordinate system.**\
   **The E matrix is composed of Rotation and Translation Matrix between two camera coordinate system.**
@@ -77,6 +77,5 @@ Homography is the condition when image of same plane is taken with two different
 **Fundamental Matrix defines the relation of a point in two image coordinates.**\
 **P\`FP=0, Where P and P\` are coordinates of a point in two images.Fundamental Matrix is composed of Extrinsic & Intrinsic Parameters. F matrix is always singular.**\
 **Hence F matrix is sufficient to find corresponding point in two images taken from different camera position and from different camera intrinsics.**\
-****\
+\
 **Also Homographies are also used as relation between two planes of images. Therefore, fundamental matrix and homography matrix has some relation between them.**\
-****

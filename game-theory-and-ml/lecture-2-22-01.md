@@ -2,7 +2,7 @@
 
 {% embed url="https://docs.google.com/presentation/d/17xPJWGJeAWkIWI8x7L8zl7mIek681lGpn5MCnydFB2A/edit#slide=id.gab813e4041_0_0" %}
 
-****
+
 
 ## Prisoner's Dilemma
 
@@ -52,7 +52,7 @@ $$\Delta_n := {p \in R^n: p_1+...p_n=1, p_i >= 0}$$
 
 Payoff: $$l(p,q):= E_{i\sim p, j \sim q} [l_{ij}] = p^TLq$$
 
-**Game:** $$\min_{p\in \Delta_n} \max_{q \in \Delta_m} p^TLq$$****
+**Game:** $$\min_{p\in \Delta_n} \max_{q \in \Delta_m} p^TLq$$
 
 ## **Nash Equilibrium of a Game**
 

@@ -32,7 +32,7 @@ State variables must be linearly independent ie. no variable should be linear co
 
 **NOTE:** We can also include the acceleration of the car as the state variable, but rather it's considered the input to the system, as it can be directly controlled externally and not really dependent on anything in the system.&#x20;
 
-****$$u(t )$$is an input variable to the system. For example, acceleration (pedal/throttle) is a input. &#x20;
+$$u(t )$$is an input variable to the system. For example, acceleration (pedal/throttle) is a input. &#x20;
 
 $$y(t)$$is the output of the system or some variable of the system which can be measured. Now it's really system dependent that what is your output or what are you measuring. For example in system, position of car is our output and we can measure it, or may be it's velocity is output and we have odometer to measure it. Or may be we can measure both position and velocity, and which case basically we can observer whole state variable or system state. \
 Generally, $$y(t)$$can be end result of our process/system which we actually care about. Or it can be something that can be easily measured through some sensor.&#x20;

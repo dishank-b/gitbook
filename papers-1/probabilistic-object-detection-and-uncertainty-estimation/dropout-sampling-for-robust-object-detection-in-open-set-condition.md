@@ -27,7 +27,7 @@ Placing a prior over the weights e.g. $$W \sim N(0,I)$$, the network training ca
 &#x20;\- Posterior: Final trained wieght distribution  $$p(W|T)$$ is the posterior
 
 **Approximation to Intractable Inference:**\
-****Let $$I$$be the input to the network, then bayesian inference of the ouput is:
+Let $$I$$be the input to the network, then bayesian inference of the ouput is:
 
 $$
 p(y|I,T) = \int p(y|I,w)p(w|T)dw \approx \frac{1}{n}\sum_{i=1}^n s_i
