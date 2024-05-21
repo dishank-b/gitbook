@@ -51,6 +51,7 @@
   * [Geometrical Representation](linear-algebra/geometrical-representation.md)
   * [Positive (Semi)Definite Matrices](linear-algebra/types-of-matrix.md)
   * [Matrix Interpretation](linear-algebra/matrix-interpretation.md)
+  * [Dot Product as Linear Transformation and Duality of Vector-Linear Transformation](linear-algebra/dot-product-as-linear-transformation-and-duality-of-vector-linear-transformation.md)
   * [Norms](linear-algebra/norms.md)
   * [Linear Least Square](linear-algebra/linear-least-square.md)
   * [Matrix Decomposition](linear-algebra/matrix-decomposition/README.md)

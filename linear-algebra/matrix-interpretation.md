@@ -1,6 +1,8 @@
 # Matrix Interpretation
 
-## Matrix is Linear Transformation
+## Matrix as Linear Transformation
+
+{% embed url="https://youtu.be/kYB8IZa5AuE" %}
 
 * Any matrix-vector product is essentially a linear transformation.&#x20;
 * Any linear transformation can be seen as a change of basis as well.&#x20;
