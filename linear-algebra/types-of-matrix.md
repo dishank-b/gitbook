@@ -1,6 +1,6 @@
 # Positive (Semi)Definite Matrices
 
-Symmetric Matrix
+## Symmetric Matrix
 
 When the matrix entries are the same across the diagonal.&#x20;
 
@@ -10,7 +10,7 @@ $$
 A = A^T
 $$
 
-#### Positive Definite or Positive Semi-definite
+## Positive Definite or Positive Semi-definite
 
 It's defined for symmetric matrix $$M$$.
 
@@ -32,6 +32,20 @@ The determinant of a positive definite matrix is always positive, so a positive 
 {% embed url="https://towardsdatascience.com/what-is-a-positive-definite-matrix-181e24085abd" %}
 
 {% embed url="https://medium.com/sho-jp/linear-algebra-101-part-8-positive-definite-matrix-4b0b5acb7e9a" %}
+
+{% embed url="https://gregorygundersen.com/blog/2022/02/27/positive-definite/" %}
+Very comprehensive study of PSD Matrices. Relating it to dot product, quadratic programming, and visualization.&#x20;
+{% endembed %}
+
+#### Why does PSD matrices have to be symmetric?
+
+{% embed url="https://math.stackexchange.com/questions/1964039/why-do-positive-definite-matrices-have-to-be-symmetric" %}
+
+#### PSD from the lens of dot-product
+
+Let's see
+
+We can consider $$x^TAx$$ as dot product $$(x^T)Ax$$. Now PSD means $$(x^T)(Ax) \geq 0$$ which means $$x^T$$ and $$Ax$$ are parallel. Hence, it means that $$A$$ is a transformation that keeps $$Ax$$ parallel to $$x$$.&#x20;
 
 #### Full Rank Matrix
 
