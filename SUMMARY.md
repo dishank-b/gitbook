@@ -16,6 +16,7 @@
     * [Measures](probability-and-statistics-1/statistics/measures.md)
     * [Z-Scores](probability-and-statistics-1/statistics/z-scores.md)
     * [Covariance and Correlation](probability-and-statistics-1/statistics/covariance-and-correlation.md)
+    * [Correlation vs Dependance](probability-and-statistics-1/statistics/correlation-vs-dependance.md)
   * [Mahalanobis vs Chi-Squared](probability-and-statistics-1/mahalanobis-vs-chi-squared.md)
   * [Uncertainty](probability-and-statistics-1/uncertainty.md)
   * [Statistical Inference](probability-and-statistics-1/inference/README.md)
