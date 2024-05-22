@@ -13,3 +13,8 @@ $$
 #### Example of Dependent but uncorrelated variables
 
 {% embed url="https://stats.stackexchange.com/questions/179511/why-zero-correlation-does-not-necessarily-imply-independence" %}
+
+* If independent, then definitely uncorrelated
+* If Dependent, then might correlated or uncorrelated
+* If uncorrelated, may or may not be independent.&#x20;
+* If correlated, then definitely dependent.&#x20;
