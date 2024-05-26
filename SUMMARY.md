@@ -62,6 +62,7 @@
     * [SVD - Singular Value Decomposition](linear-algebra/matrix-decomposition/svd-singular-value-decomposition.md)
   * [Matrix Inversion](linear-algebra/matrix-inversion.md)
   * [Matrix Calculus](linear-algebra/matrix-calculus.md)
+  * [Matrix Cookbook](linear-algebra/matrix-cookbook.md)
 * [Optimization](optimization/README.md)
   * [Regularization](optimization/regularization.md)
   * [Gradient Descent](optimization/gradient-descent.md)

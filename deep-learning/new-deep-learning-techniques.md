@@ -40,7 +40,7 @@ Now there is paper which states that weight decay work best with adam optimizer.
 
 ### DenseNet:
 
-![DenseNet architecture](../.gitbook/assets/image.png)
+![DenseNet architecture](<../.gitbook/assets/image (8).png>)
 
 \
 Here, For each layer, the feature-maps of all preceding layers are used as inputs, and its own feature-maps are used as inputs into all subsequent layers.\

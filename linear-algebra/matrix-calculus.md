@@ -9,29 +9,27 @@ description: Gradients, Jacobians, etc in Matrix algebra
 $$f: \mathcal{R}^d \rightarrow \mathcal{R}$$ where $$f$$ is some function.
 
 $$
-\hat y = f(\omega)
+\hat y = f(\mathbf w)
 $$
 
-Here $$\omega \in \mathcal{R}^d$$, now for some reason we have want the derivative of $$f$$ wrt to each elements of $$\omega$$, that will be called gradient. Represented as follows:
+Here $$\mathbf w \in \mathcal{R}^d$$, now for some reason we have want the derivative of $$f$$ wrt to each elements of $$\mathbf w$$, that will be called gradient. Represented as follows:
 
 $$
-\nabla_\omega f(w) = [\frac{\partial f}{\partial \omega_1}, \dots, \frac{\partial f}{\partial \omega_d}]^T
+\nabla_\mathbf w f(\mathbf w) = [\frac{\partial f}{\partial w_1}, \dots, \frac{\partial f}{\partial w_d}]
 $$
 
-The $$\text{grad}$$ $$\nabla_\omega f(w)$$is supposed to be also a vector of same dimension as $$\omega$$.
+The $$\text{grad}$$ $$\nabla_\mathbf w f(\mathbf w)$$is supposed to be also a horizontal vector of same dimension as $$\mathbf w$$.
 
-* **Note that the** $$f(\omega)$$ is scalar values function but $$\nabla_\omega f(w)$$ is actually a vector values function.&#x20;
+* **Note that the** $$f(\mathbf w)$$ is scalar values function but $$\nabla_\mathbf w f(\mathbf w)$$ is actually a vector values function.&#x20;
 * The gradients are perpendicular to the contour lines of the curve $$f$$.
-*   The gradient of $$f$$points in the direction of the steepest ascent. Why? Think using directional derivatives.&#x20;
+* The gradient of $$f$$points in the direction of the steepest ascent. Why? Think using directional derivatives.&#x20;
 
+### Gradient in Matrix, Vector forms
 
-
-#### Gradient in Matrix, Vector forms
-
-Let's say that $$f(\omega) = \omega^Tx$$, which is simply a linear function. Here x is some input vector of dimension same as . Then we have&#x20;
+Let's say that $$f( \mathbf w) = \mathbf w\cdot \mathbf x = \mathbf w^T\mathbf x = \mathbf x^T \mathbf w$$ which is simply a linear function. Here x is some input vector of dimension same as . Then we have&#x20;
 
 $$
-\nabla_\omega f(w) = \nabla_\omega (\omega^Tx) = x
+\nabla_{\mathbf w} f(\mathbf w) = \nabla_\mathbf w (\mathbf w^T \mathbf x) = \mathbf x^T
 $$
 
 ## Jacobian
@@ -54,7 +52,27 @@ J = \begin{bmatrix}
 \end{bmatrix}
 $$
 
+<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption><p>Dimension of reulting Jacobian shape based on function and input shape</p></figcaption></figure>
 
+## Chain Rule
+
+### Vector
+
+Let $$\mathbf{f, g}$$ be two vector valued function and $$x$$ be a scalar. Then
+
+$$
+\nabla_x \mathbf f = \frac{\partial  \mathbf {f(g(}x))}{\partial x} = \frac{\partial \mathbf f}{\partial \mathbf g}\frac{\partial \mathbf g}{\partial x}
+$$
+
+Now if there are multiple paramteres i.e. it's a vector $$\mathbf x$$. Then it's&#x20;
+
+$$
+\nabla_{\mathbf x} \mathbf f = \frac{\partial  \mathbf {f(g(x))}}{\partial \mathbf x} = \frac{\partial \mathbf f}{\partial \mathbf g}\frac{\partial \mathbf g}{\partial \mathbf x}
+$$
+
+<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption><p>Full Jacobian Calculation</p></figcaption></figure>
+
+<figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption><p>Chain Rule for different dimension of variables.</p></figcaption></figure>
 
 ## Resources
 
