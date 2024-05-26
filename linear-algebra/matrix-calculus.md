@@ -78,6 +78,8 @@ $$
 
 {% embed url="https://explained.ai/matrix-calculus/" %}
 
+{% embed url="https://souryadey.github.io/teaching/material/Matrix_Calculus.pdf" %}
+
 {% embed url="http://dsp.ucsd.edu/~kreutz/PEI-05%20Support%20Files/ECE275A_Viewgraphs_5.pdf" %}
 
 {% embed url="https://atmos.washington.edu/~dennis/MatrixCalculus.pdf" %}
