@@ -36,9 +36,29 @@ $$
 
 ## Jacobian
 
+Now let $$f: \mathcal{R}^n \rightarrow \mathcal{R}^m$$. In this case we would have a jacobian $$J$$
+
+$$
+J = \begin{bmatrix}
+\frac{\partial \mathbf f}{\partial x_1} & \dots & \frac{\partial \mathbf f}{\partial x_n}\\
+\end{bmatrix} \\
+= \begin{bmatrix}
+\nabla^T f_1\\
+\dots\\
+\nabla^T f_m\\
+\end{bmatrix} \\
+= \begin{bmatrix}
+\frac{\partial f_1}{\partial x_1} & \dots & \frac{\partial  f_1}{\partial x_n}\\
+\vdots & \dots & \vdots\\
+\frac{\partial f_m}{\partial x_1} & \dots & \frac{\partial  f_m}{\partial x_n}\\
+\end{bmatrix}
+$$
+
 
 
 ## Resources
+
+{% embed url="https://explained.ai/matrix-calculus/" %}
 
 {% embed url="http://dsp.ucsd.edu/~kreutz/PEI-05%20Support%20Files/ECE275A_Viewgraphs_5.pdf" %}
 
