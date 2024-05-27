@@ -63,6 +63,7 @@
   * [Matrix Inversion](linear-algebra/matrix-inversion.md)
   * [Matrix Calculus](linear-algebra/matrix-calculus.md)
   * [Matrix Cookbook](linear-algebra/matrix-cookbook.md)
+  * [Distributed Matrix Algebra](linear-algebra/distributed-matrix-algebra.md)
 * [Optimization](optimization/README.md)
   * [Regularization](optimization/regularization.md)
   * [Gradient Descent](optimization/gradient-descent.md)

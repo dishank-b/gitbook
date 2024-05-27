@@ -15,7 +15,7 @@ $$
 Here $$\mathbf w \in \mathcal{R}^d$$, now for some reason we have want the derivative of $$f$$ wrt to each elements of $$\mathbf w$$, that will be called gradient. Represented as follows:
 
 $$
-\nabla_\mathbf w f(\mathbf w) = [\frac{\partial f}{\partial w_1}, \dots, \frac{\partial f}{\partial w_d}]
+\nabla_\mathbf w f(\mathbf w) = [\frac{\partial f}{\partial w_1}, \dots, \frac{\partial f}{\partial w_d}]^T
 $$
 
 The $$\text{grad}$$ $$\nabla_\mathbf w f(\mathbf w)$$is supposed to be also a horizontal vector of same dimension as $$\mathbf w$$.
@@ -29,7 +29,7 @@ The $$\text{grad}$$ $$\nabla_\mathbf w f(\mathbf w)$$is supposed to be also a ho
 Let's say that $$f( \mathbf w) = \mathbf w\cdot \mathbf x = \mathbf w^T\mathbf x = \mathbf x^T \mathbf w$$ which is simply a linear function. Here x is some input vector of dimension same as . Then we have&#x20;
 
 $$
-\nabla_{\mathbf w} f(\mathbf w) = \nabla_\mathbf w (\mathbf w^T \mathbf x) = \mathbf x^T
+\nabla_{\mathbf w} f(\mathbf w) = \nabla_\mathbf w (\mathbf w^T \mathbf x) = \mathbf x
 $$
 
 ## Jacobian
@@ -80,6 +80,6 @@ $$
 
 {% embed url="https://souryadey.github.io/teaching/material/Matrix_Calculus.pdf" %}
 
-{% embed url="http://dsp.ucsd.edu/~kreutz/PEI-05%20Support%20Files/ECE275A_Viewgraphs_5.pdf" %}
-
 {% embed url="https://atmos.washington.edu/~dennis/MatrixCalculus.pdf" %}
+
+{% embed url="http://dsp.ucsd.edu/~kreutz/PEI-05%20Support%20Files/ECE275A_Viewgraphs_5.pdf" %}
