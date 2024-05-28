@@ -128,7 +128,7 @@
     * [Chapter 3: Finite Markov Decision Processes](reinforcement-learning/untitled/chapter-3-finite-markov-decision-processes.md)
     * [Chapter 4: Dynamic Programming](reinforcement-learning/untitled/chapter-4-dynamic-programming.md)
   * [MBRL](reinforcement-learning/mbrl.md)
-* [Transformers](transformers/README.md)
+* [Transformers](transformers.md)
   * [Tokenziation](transformers/tokenziation.md)
   * [Embedding](transformers/embedding.md)
 * [Robotics](robotics/README.md)
