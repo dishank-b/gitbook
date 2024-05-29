@@ -23,3 +23,13 @@ The positional encoding are added to the word embeddings to get the final input 
 So in case of embedding, they are learned vector representation similar to how we learn word embeddings. Just that in word embedding we use token id to index the table to get corresponding vector, where as in Position embedding we use the position in the sequence to index the table to get corresponding vector.&#x20;
 
 {% embed url="https://stats.stackexchange.com/a/573525" %}
+
+## Why not Concatenating Positional Encoding instead of Summing
+
+{% embed url="https://github.com/tensorflow/tensor2tensor/issues/1591" %}
+
+{% embed url="https://www.reddit.com/r/MachineLearning/comments/cttefo/comment/exs7d08/" %}
+
+## Why using sine and cosine
+
+{% embed url="https://blog.timodenk.com/linear-relationships-in-the-transformers-positional-encoding/" %}
