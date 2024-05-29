@@ -233,7 +233,7 @@ $$
 
 ![Off-Policy Monte Carlo](<../.gitbook/assets/image (151).png>)
 
-![](<../.gitbook/assets/image (3).png>)
+![](<../.gitbook/assets/image (3) (1).png>)
 
 ### Q-Learning: Off-Policy TD Control
 
@@ -311,6 +311,6 @@ The advantage of this approach is that, by sampling these batches of experiences
 
 The deep Q-learning algorithm uses experience replay. An agent’s experience at a time step t is denoted by et and is a tuple (st, at, rt, st+1) consisting of the current state st, the chosen action at, the reward rt and the next state st+1. The experiences for all the time steps are stored in a replay memory, over many episodes. We then apply minibatches updates to samples of experiences.
 
-![Deep Q-Learning Procedure](<../.gitbook/assets/image (2) (1) (1).png>)
+![Deep Q-Learning Procedure](<../.gitbook/assets/image (2) (1) (1) (1).png>)
 
 Since the network serves as an approximator for the Q-function, each output neuron of this network corresponds to one valid action, and every action is mapped to an output neuron. Thus, after a feedforward pass of that network, the outputs are the estimated Q-values of the state-action pair defined by the input and the output’s corresponding action.

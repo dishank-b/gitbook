@@ -52,7 +52,7 @@ J = \begin{bmatrix}
 \end{bmatrix}
 $$
 
-<figure><img src="../.gitbook/assets/image (1) (1).png" alt=""><figcaption><p>Dimension of reulting Jacobian shape based on function and input shape</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption><p>Dimension of reulting Jacobian shape based on function and input shape</p></figcaption></figure>
 
 {% hint style="info" %}
 Note: Jacobian and Gradient are transpose of each other. So, if you try to calculate derivative of single value function with respect to a vector using Jacobian, it would be a row vector. So to get a gradient you have transpose it.&#x20;
@@ -74,9 +74,9 @@ $$
 \nabla_{\mathbf x} \mathbf f = \frac{\partial  \mathbf {f(g(x))}}{\partial \mathbf x} = \frac{\partial \mathbf f}{\partial \mathbf g}\frac{\partial \mathbf g}{\partial \mathbf x}
 $$
 
-<figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption><p>Full Jacobian Calculation</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (1).png" alt=""><figcaption><p>Full Jacobian Calculation</p></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (2) (1).png" alt=""><figcaption><p>Chain Rule for different dimension of variables.</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (1) (1).png" alt=""><figcaption><p>Chain Rule for different dimension of variables.</p></figcaption></figure>
 
 ## Resources
 
