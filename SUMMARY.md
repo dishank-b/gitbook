@@ -133,6 +133,7 @@
   * [Embedding](transformers/embedding/README.md)
     * [Word Embedding](transformers/embedding/word-embedding.md)
     * [Positional Encoding](transformers/embedding/positional-encoding.md)
+  * [Encoder](transformers/encoder.md)
   * [Multi-head Attention Block](transformers/multi-head-attention-block.md)
   * [Metrics](transformers/metrics.md)
 * [Robotics](robotics/README.md)
