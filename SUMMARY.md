@@ -134,6 +134,7 @@
     * [Word Embedding](transformers/embedding/word-embedding.md)
     * [Positional Encoding](transformers/embedding/positional-encoding.md)
   * [Encoder](transformers/encoder.md)
+  * [Decoder](transformers/decoder.md)
   * [Multi-head Attention Block](transformers/multi-head-attention-block.md)
   * [Metrics](transformers/metrics.md)
 * [Robotics](robotics/README.md)
