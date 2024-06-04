@@ -13,12 +13,21 @@ $$
 <pre><code><strong>// Let's consider that's it's single data point i.e N = 1
 </strong><strong>logit = XW+b // c dimensional output where c is # of classes
 </strong>ypred = e^logit_c/(\sum_c e^logit_c) // softmax to normalize logits
-Loss = \sum_c y_c log(ypred_c) // y_c is ground truth label
+Loss = \sum_c y_c log(ypred_c) // y_c is ground truth label. 
 </code></pre>
 
-Now using the chain rule we can find the gradient $$\nabla_w \mathcal{L}$$ of $$\mathcal{L}$$ with respect to the weights $$w$$.&#x20;
+$$
+z = Xw+b\\
+\hat y = \text{softmax}(z)
+$$
+
+Now, here we will find the derivative of cross entropy loss with respect to $$z$$
 
 $$
-\frac{\partial \mathcal{L}}{\partial w} = \frac{\partial \mathcal{L}}{\partial y}\cdot\frac{\partial \mathcal{y}}{\partial \text{logit}}\cdot\frac{\partial \mathcal{\text{logit}}}{\partial w}
+\frac{\partial \mathcal L}{\partial z} = \hat y  - y
 $$
+
+{% embed url="https://towardsdatascience.com/derivative-of-the-softmax-function-and-the-categorical-cross-entropy-loss-ffceefc081d1" %}
+
+
 
