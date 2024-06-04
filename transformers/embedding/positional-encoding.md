@@ -33,3 +33,6 @@ So in case of embedding, they are learned vector representation similar to how w
 ## Why using sine and cosine
 
 {% embed url="https://blog.timodenk.com/linear-relationships-in-the-transformers-positional-encoding/" %}
+
+## Rotary Position Embedding
+

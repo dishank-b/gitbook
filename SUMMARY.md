@@ -137,6 +137,7 @@
   * [Decoder](transformers/decoder.md)
   * [Multi-head Attention Block](transformers/multi-head-attention-block.md)
   * [Metrics](transformers/metrics.md)
+* [RLHF](rlhf.md)
 * [Robotics](robotics/README.md)
   * [Kalman Filter](robotics/robotics.md)
   * [Unscented Kalman Filter](robotics/unscented-kalman-filter.md)
