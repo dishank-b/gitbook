@@ -11,6 +11,8 @@ Two types of auto-differentiation:
 
 {% embed url="https://theoryandpractice.org/stats-ds-book/autodiff-tutorial.html#recap" %}
 
+{% embed url="https://auto-ed.readthedocs.io/en/latest/mod3.html" %}
+
 {% embed url="https://www.cs.ubc.ca/~fwood/CS340/lectures/AD1.pdf" %}
 
 ## vJp and backward pass
