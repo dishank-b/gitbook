@@ -13,6 +13,10 @@ Two types of auto-differentiation:
 
 {% embed url="https://auto-ed.readthedocs.io/en/latest/mod3.html" %}
 
+### Concise Comparison of Forward vs Backward Model
+
+{% embed url="https://liqimai.github.io/blog/Forward-Automatic-Differentiation/" %}
+
 {% embed url="https://www.cs.ubc.ca/~fwood/CS340/lectures/AD1.pdf" %}
 
 ## vJp and backward pass
