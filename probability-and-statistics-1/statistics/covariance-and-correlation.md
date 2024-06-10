@@ -33,6 +33,10 @@ Knowing squared correlation( $$ρ^2$$ ) helps to determine the variance in one v
 Covariance & Coorelation
 {% endfile %}
 
+## **Correlation as Dot Product between vectors**
+
+{% file src="../../.gitbook/assets/1316032833.pdf" %}
+
 ## **Coorelation Doesn't Mean Causality**
 
 Correlation doesn't equal causation i.e if x and y are highly correlated doesn't means that either of x or y is cause of other.&#x20;
