@@ -1,5 +1,7 @@
 # Conjugate Gradient
 
+The conjugate gradient method is often implemented as an [iterative algorithm](https://en.wikipedia.org/wiki/Iterative\_method), applicable to [sparse](https://en.wikipedia.org/wiki/Sparse\_matrix) systems that are too large to be handled by a direct implementation or other direct methods such as the [Cholesky decomposition](https://en.wikipedia.org/wiki/Cholesky\_decomposition).
+
 **NOTE: This method only works, when matrix A is positive definite.**&#x20;
 
 Used to solve the linear system of equations denoted by&#x20;
