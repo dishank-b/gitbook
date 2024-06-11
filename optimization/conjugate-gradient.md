@@ -48,7 +48,15 @@ repeat this for $$k=i \quad \forall i$$, to get all $$\alpha_i$$.&#x20;
 Hence the algorithm consists to steps:
 
 * Having the basis comprising of conjugate vectors wrt matrix $$A$$.&#x20;
-*   Finding  $$\alpha_i \quad \forall i$$.
+* Finding  $$\alpha_i \quad \forall i$$.
+
+
+
+{% hint style="info" %}
+Why do n mutually conjugate vectors form a basis for R^n?&#x20;
+
+Ans: [https://home.cc.umanitoba.ca/\~lovetrij/cECE7670/2005/Slides/slides4.pdf](https://home.cc.umanitoba.ca/\~lovetrij/cECE7670/2005/Slides/slides4.pdf)
+{% endhint %}
 
 
 
