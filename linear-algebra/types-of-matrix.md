@@ -62,7 +62,15 @@ $$
 
 Where $$L$$ is a lower triangular matrix. And this is called Cholesky decomposition.&#x20;
 
+## PSD Matrices defining Ellipsoid
 
+Let's say we have $$Q(x) = x^TAx$$, be a positive definite form. Then the set
+
+$$
+\{x \in \mathbf R^n: Q(x)=c\}
+$$
+
+where $$c$$ is some constant. This set of points forms an ellipsoid.&#x20;
 
 ### Resrouces
 
@@ -83,3 +91,9 @@ Very comprehensive study of PSD Matrices. Relating it to dot product, quadratic 
 In [linear algebra](https://en.wikipedia.org/wiki/Linear\_algebra), the **rank** of a [matrix](https://en.wikipedia.org/wiki/Matrix\_\(mathematics\)) A is the [dimension](https://en.wikipedia.org/wiki/Dimension\_\(vector\_space\)) of the [vector space](https://en.wikipedia.org/wiki/Vector\_space) generated (or [spanned](https://en.wikipedia.org/wiki/Linear\_span)) by its columns.This corresponds to the maximal number of [linearly independent](https://en.wikipedia.org/wiki/Linearly\_independent) columns of A. This, in turn, is identical to the dimension of the vector space spanned by its rows. Rank is thus a measure of the "[nondegenerateness](https://en.wikipedia.org/wiki/Degenerate\_form)" of the [system of linear equations](https://en.wikipedia.org/wiki/System\_of\_linear\_equations) and [linear transformation](https://en.wikipedia.org/wiki/Linear\_transformation) encoded by A.
 
 A matrix is said to have **full rank** if its rank equals the largest possible for a matrix of the same dimensions, which is the lesser of the number of rows and columns.&#x20;
+
+
+
+## Resources
+
+* Talks about multiple properties of PSD and also gives insight about Hessians of functions as they are PSD
