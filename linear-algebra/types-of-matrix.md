@@ -97,3 +97,5 @@ A matrix is said to have **full rank** if its rank equals the largest possible f
 ## Resources
 
 * Talks about multiple properties of PSD and also gives insight about Hessians of functions as they are PSD
+
+{% embed url="https://www.math.purdue.edu/~eremenko/dvi/lect4.9.pdf" %}

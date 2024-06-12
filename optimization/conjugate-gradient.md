@@ -87,14 +87,6 @@ Conjugate gradient descent is different in the way that in conjugate gradient de
 * The matrix $$A$$need to be PSD.&#x20;
 * For a system of n variables. The CGD should converge in n iterations.&#x20;
 
-##
-
-{% embed url="https://www.math.purdue.edu/~eremenko/dvi/lect4.9.pdf" %}
-
-
-
-
-
 &#x20;
 
 
