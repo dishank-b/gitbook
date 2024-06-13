@@ -68,6 +68,7 @@
     * [Partial Derivative](optimization/derivatives/partial-derivative.md)
     * [Directional Derivative](optimization/derivatives/directional-derivative.md)
     * [Gradient](optimization/derivatives/gradient.md)
+    * [Jacobian](optimization/derivatives/jacobian.md)
   * [Regularization](optimization/regularization.md)
   * [Gradient Descent](optimization/gradient-descent.md)
   * [Newton's Method](optimization/newtons-method.md)
