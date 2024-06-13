@@ -2,6 +2,8 @@
 
 The conjugate gradient method is often implemented as an [iterative algorithm](https://en.wikipedia.org/wiki/Iterative\_method), applicable to [sparse](https://en.wikipedia.org/wiki/Sparse\_matrix) systems that are too large to be handled by a direct implementation or other direct methods such as the [Cholesky decomposition](https://en.wikipedia.org/wiki/Cholesky\_decomposition).
 
+Iterative methods like CG are suited for use with sparse matrices. If $$A$$ is dense, your best course of action is probably to factor and solve the equation by backsubstitution. The time spent factoring a dense  is roughly equivalent to the time spent solving the system iteratively; and once  is factored, the system can be backsolved quickly for multiple values of  $$b$$. Compare this dense matrix with a sparse matrix of larger size that fills the same amount of memory. The triangular factors of a sparse $$A$$ usually have many more nonzero elements than$$A$$ itself. Factoring may be impossible due to limited memory, and will be time-consuming as well; even the backsolving step may be slower than iterative solution. On the other hand, most iterative methods are memory-efficient and run quickly with sparse matrices.
+
 **NOTE: This method only works, when matrix A is positive definite.**&#x20;
 
 Used to solve the linear system of equations denoted by&#x20;
@@ -87,9 +89,9 @@ Conjugate gradient descent is different in the way that in conjugate gradient de
 * The matrix $$A$$need to be PSD.&#x20;
 * For a system of n variables. The CGD should converge in n iterations.&#x20;
 
-&#x20;
+## &#x20;Resources
 
-
+{% embed url="https://www.cs.cmu.edu/~quake-papers/painless-conjugate-gradient.pdf" %}
 
 
 
