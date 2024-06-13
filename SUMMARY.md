@@ -64,6 +64,7 @@
   * [Matrix Cookbook](linear-algebra/matrix-cookbook.md)
   * [Distributed Matrix Algebra](linear-algebra/distributed-matrix-algebra.md)
 * [Optimization](optimization/README.md)
+  * [Gradient](optimization/gradient.md)
   * [Regularization](optimization/regularization.md)
   * [Gradient Descent](optimization/gradient-descent.md)
   * [Newton's Method](optimization/newtons-method.md)
