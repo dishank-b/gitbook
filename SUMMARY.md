@@ -65,6 +65,8 @@
   * [Distributed Matrix Algebra](linear-algebra/distributed-matrix-algebra.md)
 * [Optimization](optimization/README.md)
   * [Derivatives](optimization/derivatives/README.md)
+    * [Partial Derivative](optimization/derivatives/partial-derivative.md)
+    * [Directional Derivative](optimization/derivatives/directional-derivative.md)
     * [Gradient](optimization/derivatives/gradient.md)
   * [Regularization](optimization/regularization.md)
   * [Gradient Descent](optimization/gradient-descent.md)
