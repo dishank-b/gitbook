@@ -10,4 +10,30 @@ Imagine 3D graph, with $$z=f(x,y)$$, now here imagine vertical planes that cuts 
 
 <figure><img src="../../.gitbook/assets/image (170).png" alt="" width="375"><figcaption></figcaption></figure>
 
+### Directional Derivative as a limit
+
+Directional Derivative is basically the rate of change in some particular direction. Basically, when you partial derivative, you measure the delta in output for delta in the input.&#x20;
+
+Now, in case when the input is multidimensional, i.e it's a vector. You can measure the delta in output when the delta in the input in some particular direction and not just in $$x$$or $$y$$ direction.&#x20;
+
+Hence mathematically, the direction derivative is:
+
+$$
+\frac{\partial f}{\partial \vec v} = \nabla_{\vec v}f(\vec a) = \lim_{h\to 0} \frac{f(\vec a+h\vec v)-f(\vec a)}{h}
+$$
+
+So basically this gives you the derivative along the direction $$\vec v$$. But not here that $$\vec v$$ just supposed to represent the direction and hence it's magnitude it's sort of irrelevant, but the derivative will change let's say if you have $$2\vec v$$.
+
+### Directional Derivative as a Slope
+
+{% embed url="https://youtu.be/4tdyIGIEtNU" %}
+
+
+
+
+
+### Resources
+
 {% embed url="https://youtu.be/4RBkIJPG6Yo" %}
+
+{% embed url="https://youtu.be/GJODOGq7cAY" %}

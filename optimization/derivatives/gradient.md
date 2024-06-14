@@ -18,16 +18,32 @@ $$
 
 Imagine a 3D graph, which is like hills and valleys. $$x$$and $$y$$ are two dimension and $$f(x,y)$$ determines the hieght of graph at $$x,y$$. Now imagine a ball at any point on the surface of the graph. Now the if let the ball roll, the $$- \nabla f$$basically gives you the direction of where the ball would roll towards.&#x20;
 
-{% embed url="https://youtu.be/QQPz3eXXgQI" %}
+**Think of the gradient as a vector field, ie, the gradient at every point basically tells where does that point is moving to have the fastest rate of change in function.  **<mark style="color:red;">**But why?**</mark>
+
+### Gradient as the direction of Steepest Ascent
+
+{% embed url="https://youtu.be/TEB2z7ZlRAw" %}
 
 ### Relationship between Gradient and Derivative
 
 Gradient is the change in the input. <mark style="color:orange;">(Make this more clear),</mark> [<mark style="color:orange;">https://en.wikipedia.org/wiki/Gradient#Relationship\_with\_derivative</mark>](https://en.wikipedia.org/wiki/Gradient#Relationship\_with\_derivative)
 
-### &#x20;Graident and Trangent Plane
+### Graident and Trangent Plane
 
 <figure><img src="../../.gitbook/assets/image (169).png" alt=""><figcaption></figcaption></figure>
 
-Tangent plant is the plane passing through the point and both partial derivatives of the function $$f(x,y)$$
+Tangent plane is the plane passing through the point and both tangent line at the point. Get get eqn of these tangent lines using the partial derivative.
 
 Basically both the tangent lines lies in the tangent plane. And two lines passing through a plane are enough to get a unique plane equation.&#x20;
+
+
+
+### Resources
+
+{% embed url="https://youtu.be/_-02ze7tf08" %}
+
+{% embed url="https://youtu.be/QQPz3eXXgQI" %}
+
+###
+
+### &#x20;
