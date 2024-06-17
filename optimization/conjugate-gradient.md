@@ -89,6 +89,34 @@ Conjugate gradient descent is different in the way that in conjugate gradient de
 * The matrix $$A$$need to be PSD.&#x20;
 * For a system of n variables. The CGD should converge in n iterations.&#x20;
 
+## Vs Gradient Descent
+
+So, in GD we take multiple steps to reach the optimal value. Many of those steps might be in the same direction. Because at each point, we are just going in the direction perpendicular to level sets. What this means, is that we are searching in the span defined by gradients at each point. Something like below
+
+<figure><img src="../.gitbook/assets/image (171).png" alt="" width="375"><figcaption><p>Now this, a lot of steps are in the same direction, but all the gradients are perpendicular to each other.</p></figcaption></figure>
+
+In GD, search is spanned by the gradient vectors and these gradient vectors are orthogonal to each other.
+
+#### Conjugate Gradients,
+
+In CG, we search in the space defined by direction vectors such that we don't take steps in the same direction, i.e in each iteration, we are exploring in new direction. So for example, finding a point in $$n$$dim space would take only n steps.&#x20;
+
+So you iteratively find different directions, such that they are conjugate orthogonal (<mark style="color:red;">why they need to be conjugate orthogonal?</mark>) to each other and search in those directions.&#x20;
+
+If you think about it, since it's n-dimensional space, you can express each vector as a combination of  $$n$$ independent vectors that spans that $$n$$ dim space, so, let's say you start from $$x_0$$, now you should be able to find $$n$$ components ($$\alpha$$), in which proportion you combine the $$n$$ vectors to get the solution.&#x20;
+
+So basically you find the $$n$$ eigen vectors in the space of optimization, in each step you find one direction and take exactly that much step in that direction that's needed to reach the solution in that direction.  i.e **At each step you are finding the one correct component of the total vector.**&#x20;
+
+<mark style="color:red;">**Key question: How do we find those directions?**</mark>
+
+What this basically means is that each step direction will be orthogonal to each other, but not in euclidean space but in the optimization space.&#x20;
+
+<figure><img src="../.gitbook/assets/image (172).png" alt="" width="563"><figcaption></figcaption></figure>
+
+<figure><img src="../.gitbook/assets/image (173).png" alt="" width="220"><figcaption><p>A comparison of the convergence of <a href="https://en.wikipedia.org/wiki/Gradient_descent">gradient descent</a> with optimal step size (in green) and conjugate vector (in red) for minimizing a quadratic function associated with a given linear system. Conjugate gradient, assuming exact arithmetic, converges in at most <em>n</em> steps, where <em>n</em> is the size of the matrix of the system (here <em>n</em> = 2).</p></figcaption></figure>
+
+
+
 ## &#x20;Resources
 
 {% embed url="https://www.cs.cmu.edu/~quake-papers/painless-conjugate-gradient.pdf" %}
