@@ -155,6 +155,8 @@ Conjugate gradient descent is different in the way that in conjugate gradient de
 
 {% embed url="https://gregorygundersen.com/blog/2022/03/20/conjugate-gradient-descent/" %}
 
+{% embed url="https://iclr-blogposts.github.io/2024/blog/bench-hvp/" %}
+
 {% embed url="https://www.cs.cmu.edu/~quake-papers/painless-conjugate-gradient.pdf" %}
 
 

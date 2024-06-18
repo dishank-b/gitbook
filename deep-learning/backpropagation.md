@@ -23,3 +23,6 @@ Two types of auto-differentiation:
 
 {% embed url="https://www.cs.toronto.edu/~rgrosse/courses/csc321_2018/slides/lec10.pdf" %}
 
+## Hessians in AD
+
+{% embed url="https://iclr-blogposts.github.io/2024/blog/bench-hvp/" %}
