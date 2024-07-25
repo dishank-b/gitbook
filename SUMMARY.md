@@ -141,6 +141,7 @@
   * [Encoder](transformers/encoder.md)
   * [Decoder](transformers/decoder.md)
   * [Multi-head Attention Block](transformers/multi-head-attention-block.md)
+  * [Flash Attention](transformers/flash-attention.md)
   * [Metrics](transformers/metrics.md)
 * [State Space Models](state-space-models.md)
 * [RLHF](rlhf.md)
