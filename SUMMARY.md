@@ -142,6 +142,7 @@
   * [Decoder](transformers/decoder.md)
   * [Multi-head Attention Block](transformers/multi-head-attention-block.md)
   * [Metrics](transformers/metrics.md)
+* [State Space Models](state-space-models.md)
 * [RLHF](rlhf.md)
 * [Robotics](robotics/README.md)
   * [Kalman Filter](robotics/robotics.md)
