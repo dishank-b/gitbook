@@ -28,6 +28,8 @@ Imagine a 3D graph, which is like hills and valleys. $$x$$and $$y$$ are two dime
 
 Gradient is the change in the input. <mark style="color:orange;">(Make this more clear),</mark> [<mark style="color:orange;">https://en.wikipedia.org/wiki/Gradient#Relationship\_with\_derivative</mark>](https://en.wikipedia.org/wiki/Gradient#Relationship\_with\_derivative)
 
+{% embed url="https://math.libretexts.org/Bookshelves/Calculus/Calculus_(OpenStax)/14%3A_Differentiation_of_Functions_of_Several_Variables/14.06%3A_Directional_Derivatives_and_the_Gradient" %}
+
 ### Graident and Trangent Plane
 
 <figure><img src="../../.gitbook/assets/image (169).png" alt=""><figcaption></figcaption></figure>
