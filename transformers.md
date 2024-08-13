@@ -11,3 +11,5 @@ Why Transformers over LSTM
 {% embed url="https://www.datacamp.com/tutorial/how-transformers-work" %}
 
 {% embed url="https://blog.eleuther.ai/transformer-math/" %}
+
+{% embed url="https://kipp.ly/transformer-inference-arithmetic/" %}
