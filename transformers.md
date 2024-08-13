@@ -9,3 +9,5 @@ Why Transformers over LSTM
 <figure><img src=".gitbook/assets/image (166).png" alt=""><figcaption></figcaption></figure>
 
 {% embed url="https://www.datacamp.com/tutorial/how-transformers-work" %}
+
+{% embed url="https://blog.eleuther.ai/transformer-math/" %}
