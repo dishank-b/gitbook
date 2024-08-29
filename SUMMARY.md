@@ -143,6 +143,7 @@
   * [Multi-head Attention Block](transformers/multi-head-attention-block.md)
   * [Flash Attention](transformers/flash-attention.md)
   * [Metrics](transformers/metrics.md)
+* [Diffusion Models](diffusion-models.md)
 * [Distributed Training](distributed-training.md)
 * [State Space Models](state-space-models.md)
 * [RLHF](rlhf.md)
