@@ -1,5 +1,9 @@
 # Entropy
 
+**This measures the expected amount of information (bits) needed to describe the state of the variable, considering the distribution of probabilities across all potential states.**
+
+**For example: In a two coins toss, if we need to tell the state of two coins, we need two bits to tell the state. Similar for a die roll, we will need** $$\log_2 6$$ **bits to tell the state of dice (i.e the number from 1-6).**&#x20;
+
 In information theory, the major goal is for one person (a _transmitter_) to convey some message (over a _channel_) to another person (the _receiver_). To do so, the transmitter sends a series (possibly just one) partial messages that give clues towards the original message. The **information content** of one of these partial messages is a measure of how much uncertainty this resolves for the receiver. For instance,
 
 * A partial message that cuts the number of possibilities in half transmits one **bit** of information about the message. For instance, if the transmitter were trying to transmit the result of a randomly chosen digit to the receiver, the partial message "the number is odd" would transmit one bit of information.
