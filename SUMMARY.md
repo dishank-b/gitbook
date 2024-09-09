@@ -63,6 +63,7 @@
   * [Matrix Calculus](linear-algebra/matrix-calculus.md)
   * [Matrix Cookbook](linear-algebra/matrix-cookbook.md)
   * [Distributed Matrix Algebra](linear-algebra/distributed-matrix-algebra.md)
+  * [High Dimensional Spaces](linear-algebra/high-dimensional-spaces.md)
 * [Optimization](optimization/README.md)
   * [Derivatives](optimization/derivatives/README.md)
     * [Partial Derivative](optimization/derivatives/partial-derivative.md)
