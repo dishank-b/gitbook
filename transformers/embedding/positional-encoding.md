@@ -34,5 +34,7 @@ So in case of embedding, they are learned vector representation similar to how w
 
 {% embed url="https://blog.timodenk.com/linear-relationships-in-the-transformers-positional-encoding/" %}
 
+## PE as bottleneck in increased context length during testing
+
 ## Rotary Position Embedding
 
