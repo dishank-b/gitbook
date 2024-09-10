@@ -36,5 +36,7 @@ So in case of embedding, they are learned vector representation similar to how w
 
 ## PE as bottleneck in increased context length during testing
 
+Let's say you train your LLM with max sequence length of 100. Now if you want to test with sequence length of 200, you can do so but the model might not do well. Because now the positional embedding will be added for extra added tokens which your LLM hasn't seen during training. Hence these extra positional input embedding might cause generalization error when testing on longer sequences.
+
 ## Rotary Position Embedding
 
