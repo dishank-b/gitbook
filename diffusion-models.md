@@ -23,3 +23,5 @@ Very good way to understand image generation from auto-regression to diffusion p
 {% embed url="https://youtu.be/zc5NTeJbk-k?list=PLXmbE5IFg3EEoSAzuqbu7o8Kh8FFhTFPc" %}
 
 {% embed url="https://youtu.be/i2qSxMVeVLI" %}
+
+{% embed url="https://lilianweng.github.io/posts/2021-07-11-diffusion-models/#reverse-diffusion-process" %}
