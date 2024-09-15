@@ -21,3 +21,5 @@ In this, a neural network is trained to reverse the noise-adding process. In thi
 Very good way to understand image generation from auto-regression to diffusion point of view.&#x20;
 
 {% embed url="https://youtu.be/zc5NTeJbk-k?list=PLXmbE5IFg3EEoSAzuqbu7o8Kh8FFhTFPc" %}
+
+{% embed url="https://youtu.be/i2qSxMVeVLI" %}
