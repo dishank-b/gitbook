@@ -4,7 +4,7 @@
 
 It is simple the supervised learning of state and action pair. State is the input and action is the output.&#x20;
 
-### Problems with imitation learning
+### Problems with Behaviour cloning
 
 *   We have a demonstration data distribution called $$D = P(\tau)$$, now lets day we trained an algorithm on $$D$$ , now say we run the algo then the algo will make an error which will lead to obsevations which are not in the training data, and in that case the error will keep on increasae.  **Error Explode**\
 
@@ -66,3 +66,7 @@ It is simple the supervised learning of state and action pair. State is the inpu
 Find the reward function given the expert trajectories.&#x20;
 
 {% embed url="https://jonathan-hui.medium.com/rl-inverse-reinforcement-learning-56c739acfb5a" %}
+
+## Diffusion Policy
+
+{% embed url="https://underactuated.mit.edu/imitation.html#Janner22" %}
