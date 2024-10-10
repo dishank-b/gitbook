@@ -146,8 +146,7 @@ Control in this context means how to control ie. what actions to take in the env
 
 ### Off-Policy Vs On-Policy
 
-In Off-Policy method the agent learns the value function for the optimal policy but acts according to another policy. \
-On-policy methods mean the agent learns the value function of the policy dictating its behavior
+<mark style="color:red;">In Off-Policy method the agent learns the value function for the optimal policy but acts according to another policy.</mark> \ <mark style="color:red;">On-policy methods mean the agent learns the value function of the policy dictating its behavior</mark>
 
 ### On-Policy MC Control
 
