@@ -1,6 +1,11 @@
 # Table of contents
 
 * [Artificial Intelligence](README.md)
+* [Intuitive Maths behind AI](intuitive-maths-behind-ai/README.md)
+  * [Probability](intuitive-maths-behind-ai/probability.md)
+  * [Information Theory](intuitive-maths-behind-ai/information-theory.md)
+  * [Linear Algebra](intuitive-maths-behind-ai/linear-algebra.md)
+  * [Calculus](intuitive-maths-behind-ai/calculus.md)
 * [Overview](overview.md)
 * [Research Ideas and Philosophy](research-ideas-and-philosophy.md)
 * [Basic Principles](basic-principles.md)
