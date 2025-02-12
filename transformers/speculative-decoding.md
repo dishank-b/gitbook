@@ -34,5 +34,9 @@ Perform some operation in speculation of it happing in the future. ex, you are u
 
 {% embed url="https://arxiv.org/pdf/2211.17192" %}
 
+## Multi-token prediction for Sepculative Decoding
+
+{% embed url="https://epoch.ai/gradient-updates/how-has-deepseek-improved-the-transformer-architecture" %}
+
 
 
