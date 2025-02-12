@@ -27,17 +27,17 @@ Ex:\
 
 ### Momentum
 
-![Screenshot from 2017-05-08 19:29:28.png](https://lh3.googleusercontent.com/rMkf\_NXeamSdnTQ1QDMFQ62CgHBq27OtbftWfc4wdpnXrCvDWjGosgeJMrvy9nYo97zfbKvoJnxL3YfwZu4fz17uRsUABB-6SgPOSPyg5PXveuMTkPAWlREfL770bLIOe3OafGwN)
+![Screenshot from 2017-05-08 19:29:28.png](https://lh3.googleusercontent.com/rMkf_NXeamSdnTQ1QDMFQ62CgHBq27OtbftWfc4wdpnXrCvDWjGosgeJMrvy9nYo97zfbKvoJnxL3YfwZu4fz17uRsUABB-6SgPOSPyg5PXveuMTkPAWlREfL770bLIOe3OafGwN)
 
 ### Nesterov accelerated gradient
 
-![Screenshot from 2017-05-08 20:43:37.png](https://lh6.googleusercontent.com/BjPLQctJwuZeDadzLykAB9lJn0EYVmdkPTXzoOAfVow6LAj4Gb7klB\_mTzkJNZvo6p69Jf-R2UPTZfxtJNhNz7U5wk7p42FCR7lqJUPagy1aZTvrzfB6dvdnLGO\_Qfb2u-8kChkB)
+![Screenshot from 2017-05-08 20:43:37.png](https://lh6.googleusercontent.com/BjPLQctJwuZeDadzLykAB9lJn0EYVmdkPTXzoOAfVow6LAj4Gb7klB_mTzkJNZvo6p69Jf-R2UPTZfxtJNhNz7U5wk7p42FCR7lqJUPagy1aZTvrzfB6dvdnLGO_Qfb2u-8kChkB)
 
 ### AdaGrad
 
 Adaptive learning rate for each parameter according to its past gradient history. Parameters with less past gradients have high learning rate.&#x20;
 
-![Screenshot from 2017-05-09 17:07:33.png](https://lh5.googleusercontent.com/7aj3XQ7SxottCicrIg0gCf9Unhcolys5UEKGKbEsnUV4EFcc8masxrtm4bcUXwvazgID70ggQeftrA-l7KD2bd\_SMzz5WmwwLy0gm3orynOeOITQ\_abJaKKybrq4W4IKrTIiX46T)
+![Screenshot from 2017-05-09 17:07:33.png](https://lh5.googleusercontent.com/7aj3XQ7SxottCicrIg0gCf9Unhcolys5UEKGKbEsnUV4EFcc8masxrtm4bcUXwvazgID70ggQeftrA-l7KD2bd_SMzz5WmwwLy0gm3orynOeOITQ_abJaKKybrq4W4IKrTIiX46T)
 
 ### Adadelta
 
@@ -46,7 +46,7 @@ Adaptive learning rate for each parameter according to its past gradient history
 
 
 * &#x20;is an extension of Adagrad and it also tries to reduce Adagrad’s aggressive, monotonically reducing the learning rate
-* It does this by **restricting the window of the past accumulated gradient to some fixed size of w. Running average at time **_**t**_** then depends on the previous average and the current gradient**
+* It does this by **restricting the window of the past accumulated gradient to some fixed size of w. Running average at time&#x20;**_**t**_**&#x20;then depends on the previous average and the current gradient**
 
 ### RMSProp
 

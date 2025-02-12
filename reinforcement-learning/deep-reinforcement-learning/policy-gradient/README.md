@@ -63,13 +63,13 @@ Here you can see that the **log term** in policy gradient is similar to the **ma
 
 **So we can compute the policy gradient similary to the way we calculate the maximum liklihood gradient.**&#x20;
 
-One thing to note here, here is that in policy gradient the log term is weighted by reward. Hence, it helps to weight the log term according to the goodness or badess of the trajectory which is defined by reward. Hence we can increase the liklihood of trajectory weighted by its reward. Reward help us to increase probabilities of certain policies whereas simply using maximum likelihood will increase probabilty of all policies**. Hence the updated policy makes the trajectory with more reward more probable than the trajectory with less reward.**&#x20;
+One thing to note here, here is that in policy gradient the log term is weighted by reward. Hence, it helps to weight the log term according to the goodness or badess of the trajectory which is defined by reward. Hence we can increase the liklihood of trajectory weighted by its reward. Reward help us to increase probabilities of certain policies whereas simply using maximum likelihood will increase probabilty of all policie&#x73;**. Hence the updated policy makes the trajectory with more reward more probable than the trajectory with less reward.**&#x20;
 
 ### Problems with Policy Gradient: High Variance
 
 * The gradient above is which is estimated by $$E_{\tau \sim \pi_\theta(\tau)}[\triangledown_\theta \log p_\theta(\tau)r(\tau)]$$ have high variance. Meaning if we estimate this quantity with finite number of samples and you repeat this process many times, everytime you reevaluate the graient, you will get different estimate and these estimates will be different from each other.&#x20;
 * This leads to poor convergence.&#x20;
-* Why do we have high varinace? Explanation: [https://youtu.be/XGmd3wcyDg8?list=PLkFD6\_40KJIxJMR-j5A1mkxK26gh\_qg37\&t=1690](https://youtu.be/XGmd3wcyDg8?list=PLkFD6\_40KJIxJMR-j5A1mkxK26gh\_qg37\&t=1690)&#x20;
+* Why do we have high varinace? Explanation: [https://youtu.be/XGmd3wcyDg8?list=PLkFD6\_40KJIxJMR-j5A1mkxK26gh\_qg37\&t=1690](https://youtu.be/XGmd3wcyDg8?list=PLkFD6_40KJIxJMR-j5A1mkxK26gh_qg37\&t=1690)&#x20;
 * The video will explain, that **this method is very senstive to the reward formulation. Just adding a constant to the reward function can affect the policy gradient very much.**&#x20;
 
 ### Reducing the Variance&#x20;
@@ -116,7 +116,7 @@ $$
 
 **The above formula is an unbiased estimater of the gradient.**
 
-_**Link:**_ [_**https://youtu.be/XGmd3wcyDg8?list=PLkFD6\_40KJIxJMR-j5A1mkxK26gh\_qg37**_](https://youtu.be/XGmd3wcyDg8?list=PLkFD6\_40KJIxJMR-j5A1mkxK26gh\_qg37)\
+_**Link:**_ [_**https://youtu.be/XGmd3wcyDg8?list=PLkFD6\_40KJIxJMR-j5A1mkxK26gh\_qg37**_](https://youtu.be/XGmd3wcyDg8?list=PLkFD6_40KJIxJMR-j5A1mkxK26gh_qg37)\
 _**The above part states that in finite horizon problme, a optimal policy is a time variant policy i.e it changes with time. But when using neural network we restrict our policy class to be time invarient policy as same network is used at every time step.**_ &#x20;
 
 ### Analysing the Variance in Gradient

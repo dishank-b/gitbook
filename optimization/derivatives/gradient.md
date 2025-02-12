@@ -18,7 +18,7 @@ $$
 
 Imagine a 3D graph, which is like hills and valleys. $$x$$and $$y$$ are two dimension and $$f(x,y)$$ determines the hieght of graph at $$x,y$$. Now imagine a ball at any point on the surface of the graph. Now the if let the ball roll, the $$- \nabla f$$basically gives you the direction of where the ball would roll towards.&#x20;
 
-**Think of the gradient as a vector field, ie, the gradient at every point basically tells where does that point is moving to have the fastest rate of change in function.  **<mark style="color:red;">**But why?**</mark>
+**Think of the gradient as a vector field, ie, the gradient at every point basically tells where does that point is moving to have the fastest rate of change in function. &#x20;**<mark style="color:red;">**But why?**</mark>
 
 ### Gradient as the direction of Steepest Ascent
 
@@ -26,7 +26,7 @@ Imagine a 3D graph, which is like hills and valleys. $$x$$and $$y$$ are two dime
 
 ### Relationship between Gradient and Derivative
 
-Gradient is the change in the input. <mark style="color:orange;">(Make this more clear),</mark> [<mark style="color:orange;">https://en.wikipedia.org/wiki/Gradient#Relationship\_with\_derivative</mark>](https://en.wikipedia.org/wiki/Gradient#Relationship\_with\_derivative)
+Gradient is the change in the input. <mark style="color:orange;">(Make this more clear),</mark> [<mark style="color:orange;">https://en.wikipedia.org/wiki/Gradient#Relationship\_with\_derivative</mark>](https://en.wikipedia.org/wiki/Gradient#Relationship_with_derivative)
 
 {% embed url="https://math.libretexts.org/Bookshelves/Calculus/Calculus_(OpenStax)/14%3A_Differentiation_of_Functions_of_Several_Variables/14.06%3A_Directional_Derivatives_and_the_Gradient" %}
 

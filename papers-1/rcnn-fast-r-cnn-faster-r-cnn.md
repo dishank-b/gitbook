@@ -8,8 +8,8 @@ description: Explaining different object detection papers
 
 * [https://lilianweng.github.io/lil-log/2017/12/31/object-recognition-for-dummies-part-3.html](https://lilianweng.github.io/lil-log/2017/12/31/object-recognition-for-dummies-part-3.html)
 * [https://lilianweng.github.io/lil-log/2018/12/27/object-detection-part-4.html#retinanet](https://lilianweng.github.io/lil-log/2018/12/27/object-detection-part-4.html#retinanet)
-* [https://medium.com/@jonathan\_hui/object-detection-speed-and-accuracy-comparison-faster-r-cnn-r-fcn-ssd-and-yolo-5425656ae359](https://medium.com/@jonathan\_hui/object-detection-speed-and-accuracy-comparison-faster-r-cnn-r-fcn-ssd-and-yolo-5425656ae359)&#x20;
-* [https://medium.com/@jonathan\_hui/real-time-object-detection-with-yolo-yolov2-28b1b93e2088](https://medium.com/@jonathan\_hui/real-time-object-detection-with-yolo-yolov2-28b1b93e2088)
+* [https://medium.com/@jonathan\_hui/object-detection-speed-and-accuracy-comparison-faster-r-cnn-r-fcn-ssd-and-yolo-5425656ae359](https://medium.com/@jonathan_hui/object-detection-speed-and-accuracy-comparison-faster-r-cnn-r-fcn-ssd-and-yolo-5425656ae359)&#x20;
+* [https://medium.com/@jonathan\_hui/real-time-object-detection-with-yolo-yolov2-28b1b93e2088](https://medium.com/@jonathan_hui/real-time-object-detection-with-yolo-yolov2-28b1b93e2088)
 * [https://towardsdatascience.com/deep-learning-for-object-detection-a-comprehensive-review-73930816d8d9](https://towardsdatascience.com/deep-learning-for-object-detection-a-comprehensive-review-73930816d8d9)
 
 ## RCNN
@@ -78,7 +78,7 @@ They use all the independent models here without any shared computation and trai
 
 The RoI pooling layer uses max pooling to convert the features inside any valid region of interest into a small fea- ture map with a fixed spatial extent ofH×W (e.g., 7 × 7). An RoI is a rectangular window into a conv feature map. Hence each region proposal in image is mapped to RoI in conv feature map. Each RoI is defined by a four-tuple (r, c, h,w) that specifies its top-left corner (r, c) and its height and width (h,w)\
 \
-\-> Lets say you have region proposal of say 50x50 in the image, this say becomes 20x20 into feature map. Now this 20x20 is max pooled using RoI layer to 7x7. \
+-> Lets say you have region proposal of say 50x50 in the image, this say becomes 20x20 into feature map. Now this 20x20 is max pooled using RoI layer to 7x7. \
 Hence even if region of proposals are of differnt size, we get contant size feature represemataion (HxW).&#x20;
 
 It is a type of max pooling to convert features in the projected region of the image of any size, h x w, into a small fixed window, H x W. The input region is divided into H x W grids, approximately every subwindow of size h/H x w/W. Then apply max-pooling in each grid.
@@ -173,7 +173,7 @@ To generate region proposals, we slide a small network over the convolutional fe
 Every ‘pixel’ of the feature image is considered an anchor. Each anchor corresponds to a larger set of squares of pixel in the original image.&#x20;
 
 At each sliding-window location in feature map, we simultaneously predict k region proposals. So the reg layer has 4k outputs encoding the coordinates of k boxes, and the cls layer outputs 2k scores that estimate probability of object or not object for each proposal. The k proposals are parameterized relative to k reference boxes, which we call **anchors boxes**. An anchor box is centered at the sliding window (see above figure), and is associated with a scale and aspect ratio. By default we use 3 scales and 3 aspect ratios, yielding k = 9 anchors at each sliding position. For a convolutional feature map of a size W×H (typically ∼2,400), there are WHk anchors in total.\
-_The input that is required from the feature generation layer to generate anchor boxes is the shape of the tensor, not the full feature tensor itself_.
+&#xNAN;_&#x54;he input that is required from the feature generation layer to generate anchor boxes is the shape of the tensor, not the full feature tensor itself_.
 
 **It’s important to understand that even though anchors are defined based on the convolutional feature map, the final anchors reference the original image.** Description as follows:\
 Since we only have convolutional and pooling layers, the dimensions of the feature map will be proportional to those of the original image. Mathematically, if the image was $$w \times h$$ , the feature map will end up $$w/r \times h/r$$ where $$r$$ is called _subsampling ratio_. If we define one anchor per spatial position of the feature map, the final image will end up with a bunch of anchors separated by rr pixels. In the case of VGG, **r = 16**.
@@ -210,8 +210,8 @@ Crop the convolutional feature map using each proposal and then resize each crop
 
 * **Classification:** \
   We assign a binary class label (if object is in the region or not) to each bouding box (anchor box). We assign:\
-  _Positive:_ label to two kinds of anchors: (i) the anchor/anchors with the highest Intersection-over- Union (IoU) overlap with a ground-truth box, or (ii) an anchor that has an IoU overlap higher than 0.7 with any ground-truth box. Usually the second condition is sufficient to determine the positive samples; but we still adopt the first condition for the reason that in some rare cases the second condition may find no positive sample. \
-  _Negative_**:** to a non-positive anchor if its IoU ratio is lower than 0.3 for all ground-truth boxes. \
+  &#xNAN;_&#x50;ositive:_ label to two kinds of anchors: (i) the anchor/anchors with the highest Intersection-over- Union (IoU) overlap with a ground-truth box, or (ii) an anchor that has an IoU overlap higher than 0.7 with any ground-truth box. Usually the second condition is sufficient to determine the positive samples; but we still adopt the first condition for the reason that in some rare cases the second condition may find no positive sample. \
+  &#xNAN;_&#x4E;egative_**:** to a non-positive anchor if its IoU ratio is lower than 0.3 for all ground-truth boxes. \
   Anchors that are neither positive nor negative do not contribute to the training objective.
 *   **Bounding Box regression:** \
     **T**o tighten the center and the size of the anchor boxes around the target.\
@@ -307,7 +307,7 @@ Mask R-CNN ([He et al., 2017](https://arxiv.org/pdf/1703.06870.pdf)) extends Fas
 
 Because pixel-level segmentation requires much more fine-grained alignment than bounding boxes, mask R-CNN improves the RoI pooling layer (named “RoIAlign layer”) so that RoI can be better and more precisely mapped to the regions of the original image.
 
-The RoIAlign layer is designed to fix the location misalignment caused by quantization in the RoI pooling. RoIAlign removes the hash quantization, for example, by using x/16 instead of \[x/16], so that the extracted features can be properly aligned with the input pixels. [Bilinear interpolation](https://en.wikipedia.org/wiki/Bilinear\_interpolation) is used for computing the floating-point location values in the input.
+The RoIAlign layer is designed to fix the location misalignment caused by quantization in the RoI pooling. RoIAlign removes the hash quantization, for example, by using x/16 instead of \[x/16], so that the extracted features can be properly aligned with the input pixels. [Bilinear interpolation](https://en.wikipedia.org/wiki/Bilinear_interpolation) is used for computing the floating-point location values in the input.
 
 ### Loss Function
 
@@ -410,7 +410,7 @@ RetinaNet uses feature pyramid levels P3 to P7, where P3 to P5 are computed from
 #### Anchors
 
 We use translation-invariant anchor boxes simi- lar to those in the RPN variant in \[20]. The anchors have areas of 322 to 5122 on pyramid levels P3 to P7, respec- tively. As in \[20], at each pyramid level we use anchors at three aspect ratios {1:2, 1:1, 2:1}. For denser scale cover- age than in \[20], at each level we add anchors of sizes {20, 21/3, 22/3} of the original set of 3 aspect ratio anchors. This improve AP in our setting. In total there are A = 9 anchors per level and across levels they cover the scale range 32 - 813 pixels with respect to the network’s input image. Each anchor is assigned a length K one-hot vector of classification targets, where K is the number of object classes, and a 4-vector of box regression targets. We use the assignment rule from RPN \[28] but modified for multi- class detection and with adjusted thresholds. Specifically, anchors are assigned to ground-truth object boxes using an intersection-over-union (IoU) threshold of 0.5; and to back- ground if their IoU is in \[0, 0.4). As each anchor is assigned to at most one object box, we set the corresponding entry in its length K label vector to 1 and all other entries to 0. If an anchor is unassigned, which may happen with overlap in \[0.4, 0.5), it is ignored during training.\
-**\[20] = FPN paper, \[28] = Faster RCNN paper**\
+&#xNAN;**\[20] = FPN paper, \[28] = Faster RCNN paper**\
 \
 **A surprisingly good AP (30.3) is achieved using just one square anchor. However, the AP can be improved by nearly 4 points (to 34.0) when using 3 scales and 3 aspect ratios per location.**&#x20;
 
@@ -420,7 +420,7 @@ The classification subnet predicts the probability of object presence at each sp
 
 #### **Bounding Box Regressor SubNetwork**
 
-In parallel with the object classi- fication subnet, we attach another small FCN to each pyra- mid level for the purpose of regressing the offset from each anchor box to a nearby ground-truth object, if one exists. The design of the box regression subnet is identical to the classification subnet except that it terminates in 4A linear outputs per spatial location**.**
+In parallel with the object classi- fication subnet, we attach another small FCN to each pyra- mid level for the purpose of regressing the offset from each anchor box to a nearby ground-truth object, if one exists. The design of the box regression subnet is identical to the classification subnet except that it terminates in 4A linear outputs per spatial locatio&#x6E;**.**
 
 ### **Implementation and Training**
 
@@ -448,7 +448,7 @@ Parameters that impact detector performance:
 
 ### Benchmarking&#x20;
 
-[https://medium.com/@jonathan\_hui/object-detection-speed-and-accuracy-comparison-faster-r-cnn-r-fcn-ssd-and-yolo-5425656ae359](https://medium.com/@jonathan\_hui/object-detection-speed-and-accuracy-comparison-faster-r-cnn-r-fcn-ssd-and-yolo-5425656ae359) - \
+[https://medium.com/@jonathan\_hui/object-detection-speed-and-accuracy-comparison-faster-r-cnn-r-fcn-ssd-and-yolo-5425656ae359](https://medium.com/@jonathan_hui/object-detection-speed-and-accuracy-comparison-faster-r-cnn-r-fcn-ssd-and-yolo-5425656ae359) - \
 **Wonderfull post for benchmarking of different object detection models.**
 
 | Method                             |                     Dataset                     |                 Image size                 |                     mAP                    |              FPS             |
@@ -465,7 +465,7 @@ Bottomline is:
 
 ### Google Comparision
 
-[**https://arxiv.org/pdf/1611.10012.pdf?source=post\_page---------------------------**](https://arxiv.org/pdf/1611.10012.pdf?source=post\_page---------------------------)\
+[**https://arxiv.org/pdf/1611.10012.pdf?source=post\_page---------------------------**](https://arxiv.org/pdf/1611.10012.pdf?source=post_page---------------------------)\
 **This is paper from google which compared Speed and Accuracy Trade-offs for Faster RCNN, RFCN and SSD. Must Read**
 
 ![Image from the paper](<../.gitbook/assets/image (54).png>)
