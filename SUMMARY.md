@@ -149,6 +149,7 @@
   * [Multi-head Attention Block](transformers/multi-head-attention-block.md)
   * [Time Complexities of Self-Attention](transformers/time-complexities-of-self-attention.md)
   * [KV Cache](transformers/kv-cache.md)
+  * [Multi-head Latent Attention](transformers/multi-head-latent-attention.md)
   * [Speculative Decoding](transformers/speculative-decoding.md)
   * [Flash Attention](transformers/flash-attention.md)
   * [Metrics](transformers/metrics.md)
