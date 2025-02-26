@@ -158,6 +158,7 @@
   * [LLM Post-training](llms/llm-post-training.md)
   * [Inference/Test Time Scaling](llms/inference-test-time-scaling.md)
   * [Reasoning Models](llms/reasoning-models.md)
+  * [Reward Hacking](llms/reward-hacking.md)
 * [Diffusion Models](diffusion-models/README.md)
   * [ImageGen](diffusion-models/imagegen.md)
 * [Distributed Training](distributed-training.md)
