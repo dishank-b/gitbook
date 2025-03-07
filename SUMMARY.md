@@ -207,6 +207,7 @@
   * [Packages](python-tricks-and-tips/packages/README.md)
     * [Pip](python-tricks-and-tips/packages/pip.md)
   * [Gotchas](python-tricks-and-tips/gotchas.md)
+* [Computer Science](computer-science.md)
 * [TensorFlow](tensorflow.md)
 * [Pytorch](pytorch/README.md)
   * [RNN/LSTM in Pytorch](pytorch/rnn-lstm-in-pytorch.md)
