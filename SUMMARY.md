@@ -11,6 +11,7 @@
 * [Basic Principles](basic-principles.md)
 * [Information Theory](information-theory/README.md)
   * [Entropy](information-theory/entropy.md)
+  * [Log Probability](information-theory/log-probability.md)
 * [Probability & Statistics](probability-and-statistics-1/README.md)
   * [Random Variables](probability-and-statistics-1/random-variables.md)
   * [Probability](probability-and-statistics-1/probability/README.md)
