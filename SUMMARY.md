@@ -208,6 +208,7 @@
   * [Packages](python-tricks-and-tips/packages/README.md)
     * [Pip](python-tricks-and-tips/packages/pip.md)
   * [Gotchas](python-tricks-and-tips/gotchas.md)
+  * [Async functions](python-tricks-and-tips/async-functions.md)
 * [Computer Science](computer-science.md)
 * [TensorFlow](tensorflow.md)
 * [Pytorch](pytorch/README.md)
