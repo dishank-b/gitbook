@@ -203,6 +203,7 @@
   * [Chapter 4: Optimization](deep-learning-book/numerical-computations.md)
   * [Chapter 5: Machine Learning Basics](deep-learning-book/chapter-5-machine-learning-basics.md)
   * [Chapter 6: Deep FeedForward Networks](deep-learning-book/chapter-6-deep-feedforward-networks.md)
+* [Project Euler](project-euler.md)
 * [Python](python-tricks-and-tips/README.md)
   * [Decorators](python-tricks-and-tips/concepts.md)
   * [Packages](python-tricks-and-tips/packages/README.md)
