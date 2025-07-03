@@ -165,6 +165,7 @@
   * [Masked Autoencoders](ssl-vit-latest-vision-learning-spring/masked-autoencoders.md)
 * [Diffusion Models](diffusion-models/README.md)
   * [ImageGen](diffusion-models/imagegen.md)
+  * [Denoising Autoencoders](diffusion-models/denoising-autoencoders.md)
 * [Distributed Training](distributed-training.md)
 * [State Space Models](state-space-models.md)
 * [RLHF](rlhf.md)
