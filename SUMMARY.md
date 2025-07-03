@@ -160,6 +160,8 @@
   * [Inference/Test Time Scaling](llms/inference-test-time-scaling.md)
   * [Reasoning Models](llms/reasoning-models.md)
   * [Reward Hacking](llms/reward-hacking.md)
+* [SSL, ViT, Latest vision learning spring](ssl-vit-latest-vision-learning-spring/README.md)
+  * [Vision Transformers ViT](ssl-vit-latest-vision-learning-spring/vision-transformers-vit.md)
 * [Diffusion Models](diffusion-models/README.md)
   * [ImageGen](diffusion-models/imagegen.md)
 * [Distributed Training](distributed-training.md)
