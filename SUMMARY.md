@@ -162,6 +162,7 @@
   * [Reward Hacking](llms/reward-hacking.md)
 * [SSL, ViT, Latest vision learning spring](ssl-vit-latest-vision-learning-spring/README.md)
   * [Vision Transformers ViT](ssl-vit-latest-vision-learning-spring/vision-transformers-vit.md)
+  * [Masked Autoencoders](ssl-vit-latest-vision-learning-spring/masked-autoencoders.md)
 * [Diffusion Models](diffusion-models/README.md)
   * [ImageGen](diffusion-models/imagegen.md)
 * [Distributed Training](distributed-training.md)

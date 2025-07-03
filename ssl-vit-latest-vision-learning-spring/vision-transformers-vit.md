@@ -9,6 +9,8 @@
 * Trained using Cross entropy loss similar to CNNs
 * Just instead of using CNNs, it uses transformers architecture.&#x20;
 * Because of using transformers, we have to represent an image as patches, which means tokens.&#x20;
+* JFT Dataset, used for pre-training - 300M images.&#x20;
+* This works better when a higher number of images, ie lots of data, since transformers have less inductive biases compared to other architectures.&#x20;
 
 ### How Image is tokenized and embedded
 
