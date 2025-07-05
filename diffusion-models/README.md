@@ -20,6 +20,16 @@ In this, a neural network is trained to reverse the noise-adding process. In thi
 
 Very good way to understand image generation from auto-regression to diffusion point of view.&#x20;
 
+Diffusion model from the perspective of samples lying on data manifold and probablility density assosiated with them&#x20;
+
+{% embed url="https://youtu.be/1pgiu--4W3I" %}
+
+Diffusion model from the perspective of score matching, langevin-dynamics,&#x20;
+
+{% embed url="https://youtu.be/Fk2I6pa6UeA" %}
+
+Spectrum of diffusion vs Auto-regression
+
 {% embed url="https://youtu.be/zc5NTeJbk-k?list=PLXmbE5IFg3EEoSAzuqbu7o8Kh8FFhTFPc" %}
 
 {% embed url="https://youtu.be/i2qSxMVeVLI" %}

@@ -125,7 +125,7 @@ _**The above part states that in finite horizon problme, a optimal policy is a t
 
 ## Policy Objective in term of Action-Value function
 
-![](<../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1).png>)
+![](<../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1).png>)
 
 Here we write the policy optimization objective in terms of action-value of $$S_1$$ .
 

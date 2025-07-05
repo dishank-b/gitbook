@@ -7,7 +7,7 @@ Two types of auto-differentiation:
 * Forward Mode
 * Reverse Mode
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 {% embed url="https://theoryandpractice.org/stats-ds-book/autodiff-tutorial.html#recap" %}
 

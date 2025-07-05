@@ -20,7 +20,7 @@ Yes! Many machine learning models, especially language models, work with log pro
 
 #### **Intuition Behind Understanding Log Probability as a Concept of Its Own**
 
-Imagine you are dealing with a language model predicting the next word. Instead of thinking about a tiny probability like 0.000010.000010.00001, you might think of it as log⁡(0.00001)=−11.5\log(0.00001) = -11.5log(0.00001)=−11.5, which is easier to compare meaningfully against another log probability, like log⁡(0.01)=−4.6\log(0.01) = -4.6log(0.01)=−4.6.
+Imagine you are dealing with a language model predicting the next word. Instead of thinking about a tiny probability like 0.00001, you might think of it as log⁡(0.00001)=−11.5\log(0.00001) = -11.5log(0.00001)=−11.5, which is easier to compare meaningfully against another log probability, like log⁡(0.01)=−4.6\log(0.01) = -4.6log(0.01)=−4.6.
 
 Would you like an example where using log probabilities simplifies calculations?
 
@@ -112,7 +112,7 @@ Log probability is closely linked to **information theory**, where it represents
 
 This concept is formalized as **Shannon Information Content**:
 
-I(x)=−log⁡P(x)I(x) = -\log P(x)I(x)=−logP(x)
+$$I(x)=−log⁡P(x)$$
 
 **Example: Rolling a Die 🎲**
 
@@ -156,7 +156,7 @@ Great! Let’s dive into **log probability as a belief update**, using an exampl
 
 In Bayesian reasoning, we update our beliefs when we receive new evidence. This is expressed by **Bayes’ Theorem**:
 
-P(H∣E)=P(E∣H)P(H)P(E)P(H \mid E) = \frac{P(E \mid H) P(H)}{P(E)}P(H∣E)=P(E)P(E∣H)P(H)​
+$$P(H \mid E) = \frac{P(E \mid H) P(H)}{P(E)}$$
 
 where:
 
