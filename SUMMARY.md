@@ -150,6 +150,7 @@
   * [Encoder](transformers/encoder.md)
   * [Decoder](transformers/decoder.md)
   * [Multi-head Attention Block](transformers/multi-head-attention-block.md)
+  * [Block Causal Attention](transformers/block-causal-attention.md)
   * [Time Complexities of Self-Attention](transformers/time-complexities-of-self-attention.md)
   * [KV Cache](transformers/kv-cache.md)
   * [Multi-head Latent Attention](transformers/multi-head-latent-attention.md)

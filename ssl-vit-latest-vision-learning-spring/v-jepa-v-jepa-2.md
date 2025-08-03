@@ -4,8 +4,6 @@
 
 <figure><img src="../.gitbook/assets/image (183).png" alt=""><figcaption></figcaption></figure>
 
-###
-
 ### Keypoints
 
 * Unsupervised/Self supervised learning for feature prediction/repsentation.
@@ -27,7 +25,7 @@
 
     <figure><img src="../.gitbook/assets/image (186).png" alt=""><figcaption></figcaption></figure>
 * Pooling stretegy to use feature presentation for downstream tasks
-  * Instead of using linear porbing - you train a linear layer taking feature/latent vector as input and output as being whatever your downstream tasks requires, they use attentive probing - we learn a cross-attention layer with a learnable query token. The output of the crossattention layer is then added back to the query token (residual connection), and then fed into two-layer MLP with a single GeLU activation, followed by a LayerNorm, and finally a linear classifier.
+  * Instead of using linear probing - you train a linear layer taking feature/latent vector as input and output as being whatever your downstream tasks requires, they use attentive probing - we learn a cross-attention layer with a learnable query token. The output of the crossattention layer is then added back to the query token (residual connection), and then fed into two-layer MLP with a single GeLU activation, followed by a LayerNorm, and finally a linear classifier.
 
 
 
