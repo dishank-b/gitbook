@@ -87,7 +87,6 @@
   * [Powell's dog leg](optimization/powells-dog-leg.md)
   * [Laplace Approximation](optimization/laplace-approximation.md)
   * [Cross Entropy Method](optimization/cross-entropy-method.md)
-  * [Implicit Function Theorem](optimization/implicit-function-theorem.md)
 * [Statistical Learning Theory](statistical-learning-theory.md)
   * [Expectation Maximization](statistical-learning-theory/expectation-maximization.md)
 * [Machine Learning](machine-learning/README.md)

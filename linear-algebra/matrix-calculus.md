@@ -24,9 +24,15 @@ The $$\text{grad}$$ $$\nabla_\mathbf w f(\mathbf w)$$is supposed to be also a ho
 * The gradients are perpendicular to the contour lines of the curve $$f$$.
 * The gradient of $$f$$points in the direction of the steepest ascent. Why? Think using directional derivatives.&#x20;
 
+{% hint style="info" %}
+Something I get confused it gradient should be a row or column vector? **Look here**&#x20;
+
+[https://math.stackexchange.com/a/3350122](https://math.stackexchange.com/a/3350122)
+{% endhint %}
+
 ### Gradient in Matrix, Vector forms
 
-Let's say that $$f( \mathbf w) = \mathbf w\cdot \mathbf x = \mathbf w^T\mathbf x = \mathbf x^T \mathbf w$$ which is simply a linear function. Here x is some input vector of dimension same as . Then we have&#x20;
+Let's say that $$f( \mathbf w) = \mathbf w\cdot \mathbf x = \mathbf w^T\mathbf x = \mathbf x^T \mathbf w$$ which is simply a linear function. Here x is some input vector of dimension same as w. Then we have&#x20;
 
 $$
 \nabla_{\mathbf w} f(\mathbf w) = \nabla_\mathbf w (\mathbf w^T \mathbf x) = \mathbf x
@@ -55,7 +61,7 @@ $$
 <figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Dimension of reulting Jacobian shape based on function and input shape</p></figcaption></figure>
 
 {% hint style="info" %}
-Note: Jacobian and Gradient are transpose of each other. So, if you try to calculate derivative of single value function with respect to a vector using Jacobian, it would be a row vector. So to get a gradient you have transpose it.&#x20;
+~~Note: Jacobian and Gradient are transpose of each other. So, if you try to calculate derivative of single value function with respect to a vector using Jacobian, it would be a row vector. So to get a gradient you have transpose it.~~     -- Not sure about this anymore
 {% endhint %}
 
 ## Chain Rule
