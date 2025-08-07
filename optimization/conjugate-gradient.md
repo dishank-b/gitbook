@@ -2,7 +2,7 @@
 
 ## Background
 
-The conjugate gradient method is often implemented as an [iterative algorithm](https://en.wikipedia.org/wiki/Iterative\_method), applicable to [sparse](https://en.wikipedia.org/wiki/Sparse\_matrix) systems that are too large to be handled by a direct implementation or other direct methods such as the [Cholesky decomposition](https://en.wikipedia.org/wiki/Cholesky\_decomposition).
+The conjugate gradient method is often implemented as an [iterative algorithm](https://en.wikipedia.org/wiki/Iterative_method), applicable to [sparse](https://en.wikipedia.org/wiki/Sparse_matrix) systems that are too large to be handled by a direct implementation or other direct methods such as the [Cholesky decomposition](https://en.wikipedia.org/wiki/Cholesky_decomposition).
 
 Iterative methods like CG are suited for use with sparse matrices. If $$A$$ is dense, your best course of action is probably to factor and solve the equation by backsubstitution. The time spent factoring a dense  is roughly equivalent to the time spent solving the system iteratively; and once  is factored, the system can be backsolved quickly for multiple values of  $$b$$. Compare this dense matrix with a sparse matrix of larger size that fills the same amount of memory. The triangular factors of a sparse $$A$$ usually have many more nonzero elements than$$A$$ itself. Factoring may be impossible due to limited memory, and will be time-consuming as well; even the backsolving step may be slower than iterative solution. On the other hand, most iterative methods are memory-efficient and run quickly with sparse matrices.
 
@@ -131,27 +131,27 @@ Hence the algorithm consists to steps:
 {% hint style="info" %}
 Why do n mutually conjugate vectors form a basis for R^n?&#x20;
 
-Ans: [https://home.cc.umanitoba.ca/\~lovetrij/cECE7670/2005/Slides/slides4.pdf](https://home.cc.umanitoba.ca/\~lovetrij/cECE7670/2005/Slides/slides4.pdf)
+Ans: [https://home.cc.umanitoba.ca/\~lovetrij/cECE7670/2005/Slides/slides4.pdf](https://home.cc.umanitoba.ca/~lovetrij/cECE7670/2005/Slides/slides4.pdf)
 {% endhint %}
 
 
 
 ### Iterative Method
 
-
-
 #### Orthogonal gradient descents
 
 Generally to minimize the f(x), we can use gradient descent. Start with initial $$x$$, and move into the direction of gradient descents to iterate to new $$x$$.&#x20;
 
-Conjugate gradient descent is different in the way that in conjugate gradient descent, the gradients updates are conjugate to each other or orthogonal to each other wrt matrix $$A$$. To do this, we use [Gram-Schmidt orthonormalization](https://en.wikipedia.org/wiki/Gram%E2%80%93Schmidt\_process). Basically we subtract any components of previous gradient directions from the current gradient direction which we get from gradient descent direction.&#x20;
+Conjugate gradient descent is different in the way that in conjugate gradient descent, the gradients updates are conjugate to each other or orthogonal to each other wrt matrix $$A$$. To do this, we use [Gram-Schmidt orthonormalization](https://en.wikipedia.org/wiki/Gram%E2%80%93Schmidt_process). Basically we subtract any components of previous gradient directions from the current gradient direction which we get from gradient descent direction.&#x20;
 
 ### Properties of CGD
 
-* The matrix $$A$$need to be PSD.&#x20;
+* The matrix $$A$$ need to be PSD.&#x20;
 * For a system of n variables. The CGD should converge in n iterations.&#x20;
 
 ## &#x20;Resources
+
+{% embed url="https://discuss.pytorch.org/t/efficient-o-n-hessian-vector-product-with-pearlmutter-trick/59037" %}
 
 {% embed url="https://gregorygundersen.com/blog/2022/03/20/conjugate-gradient-descent/" %}
 
