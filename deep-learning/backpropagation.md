@@ -25,6 +25,8 @@ Two types of auto-differentiation:
 
 ## Hessians in AD
 
+{% embed url="https://www.bcl.hamilton.ie/~barak/papers/nc-hessian.pdf" %}
+
 {% embed url="https://iclr-blogposts.github.io/2024/blog/bench-hvp/" %}
 
 ### Intuitive way of learning why the hessian vector product is all that we need?&#x20;

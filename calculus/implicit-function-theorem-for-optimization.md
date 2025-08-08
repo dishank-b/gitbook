@@ -25,6 +25,8 @@ Now this $$\frac{dy}{dx}$$ defines a locally applicable $$y=h(x)$$, as you can j
 
 ## Using HvP and CG, to calculate gradients involving implicit gradients
 
+{% embed url="https://www.bcl.hamilton.ie/~barak/papers/nc-hessian.pdf" %}
+
 {% embed url="https://chatgpt.com/c/689539d9-f968-8328-8b7d-0a4d917cfc52" %}
 
 ### Resources
