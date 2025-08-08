@@ -23,7 +23,11 @@ Now this $$\frac{dy}{dx}$$ defines a locally applicable $$y=h(x)$$, as you can j
 
 {% embed url="https://torchopt.readthedocs.io/en/latest/implicit_diff/implicit_diff.html" %}
 
+## Using HvP and CG, to calculate gradients involving implicit gradients
 
+{% embed url="https://chatgpt.com/c/689539d9-f968-8328-8b7d-0a4d917cfc52" %}
+
+### Resources
 
 {% embed url="https://mml-book.github.io/neurips2020/09-implicit-diff.pdf" %}
 
@@ -32,3 +36,4 @@ Now this $$\frac{dy}{dx}$$ defines a locally applicable $$y=h(x)$$, as you can j
 
 
 {% embed url="http://mathonline.wikidot.com/the-implicit-differentiation-formulas" %}
+
