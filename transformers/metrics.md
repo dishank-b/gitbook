@@ -22,6 +22,8 @@ Can do this for difference value of n.&#x20;
 
 ## Perplexity
 
+This is piece about relation between - perplexity and bits-per-character (from information in sentence perspective), this helps understand how perplexity/cross entropy relates to information-theoretic motivation.
+
 Metric to evaluate language models.
 
 Perplexity is an exponent of cross entropy loss of generated output.&#x20;
