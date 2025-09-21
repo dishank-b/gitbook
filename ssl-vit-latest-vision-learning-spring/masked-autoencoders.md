@@ -31,4 +31,4 @@
 
 
 
-<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption><p>Not great reconstruction quality for images</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption><p>Not great reconstruction quality for images</p></figcaption></figure>

@@ -2,7 +2,7 @@
 
 Very crucial paper in terms of getting text and images onto the same representation space. This paper introduces, how to learn embedding for both images and text on to shared representation space.&#x20;
 
-<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Kye points
 
@@ -112,4 +112,4 @@ Very crucial paper in terms of getting text and images onto the same representat
 
 
 
-<figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>

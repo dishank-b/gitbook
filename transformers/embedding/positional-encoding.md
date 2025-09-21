@@ -16,6 +16,10 @@ Different types of position encoding:
 The positional encoding are added to the word embeddings to get the final input to the transofrmer model. But note that we can also just concatenate the position encoding to the word embedding instead of adding them. But this will end up increase the model size - the dimension of vector per token that's input to the model.  &#x20;
 {% endhint %}
 
+### Progression of Positional Encoding
+
+{% embed url="https://towardsdatascience.com/master-positional-encoding-part-i-63c05d90a0c3/" %}
+
 {% embed url="https://kazemnejad.com/blog/transformer_architecture_positional_encoding/" %}
 
 **Position Embedding**
@@ -39,4 +43,24 @@ So in case of embedding, they are learned vector representation similar to how w
 Let's say you train your LLM with max sequence length of 100. Now if you want to test with sequence length of 200, you can do so but the model might not do well. Because now the positional embedding will be added for extra added tokens which your LLM hasn't seen during training. Hence these extra positional input embedding might cause generalization error when testing on longer sequences.
 
 ## Rotary Position Embedding
+
+{% embed url="https://blog.eleuther.ai/rotary-embeddings/" %}
+
+We don’t add positioinal embedding to the input. Instead the positional encoding are only needed during attention, so just before attention we using the rotation matrix to get the positionally adjusted q and k. Hence we sort of use positional encoding just before attention. In this manor, v is never affected by position embedding.
+
+Essentially, positional encoding in this cases is added to query/key vector, such that when we multiply two vector, the resultant only cares about the relative difference in those positions.&#x20;
+
+![](../../.gitbook/assets/image.png)&#x20;
+
+## AliBi - Attention with Linear Biases
+
+BAsically, add penalty to attention scores between tokens based on the relative distance between tokens.&#x20;
+
+<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+
+_`Attention score = query_i . key_j — m.(i-j)`_
+
+## Very good Intuitive resource
+
+{% embed url="https://huggingface.co/blog/designing-positional-encoding" %}
 
