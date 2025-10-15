@@ -7,6 +7,7 @@
   * [Linear Algebra](intuitive-maths-behind-ai/linear-algebra.md)
   * [Calculus](intuitive-maths-behind-ai/calculus.md)
 * [Overview](overview.md)
+* [Cool Reading list](cool-reading-list.md)
 * [Research Ideas and Philosophy](research-ideas-and-philosophy.md)
 * [Basic Principles](basic-principles.md)
 * [Information Theory](information-theory/README.md)
