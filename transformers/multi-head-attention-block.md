@@ -2,7 +2,7 @@
 
 ## Attention Block
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1).png" alt="" width="342"><figcaption><p>Scaled dot-product attension</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1).png" alt="" width="342"><figcaption><p>Scaled dot-product attension</p></figcaption></figure>
 
 Each of $$Q,K,V$$ are linear projection of token embeddings.&#x20;
 

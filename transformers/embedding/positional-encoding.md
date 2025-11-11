@@ -50,13 +50,13 @@ We don’t add positioinal embedding to the input. Instead the positional encodi
 
 Essentially, positional encoding in this cases is added to query/key vector, such that when we multiply two vector, the resultant only cares about the relative difference in those positions.&#x20;
 
-![](../../.gitbook/assets/image.png)&#x20;
+![](<../../.gitbook/assets/image (1).png>)&#x20;
 
 ## AliBi - Attention with Linear Biases
 
 BAsically, add penalty to attention scores between tokens based on the relative distance between tokens.&#x20;
 
-<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 _`Attention score = query_i . key_j — m.(i-j)`_
 

@@ -47,6 +47,7 @@
   * [Monte Carlo](probability-and-statistics-1/monte-carlo/README.md)
     * [Monte Carlo Estimators](probability-and-statistics-1/monte-carlo/monte-carlo-estimators.md)
     * [Importance Sampling](probability-and-statistics-1/monte-carlo/importance-sampling.md)
+    * [MCMC - Monte Carlo Markov Chain](probability-and-statistics-1/monte-carlo/mcmc-monte-carlo-markov-chain.md)
   * [Kernel Density Estimation](probability-and-statistics-1/kernel-density-estimation.md)
   * [Gaussian Processes](probability-and-statistics-1/gaussian-processes.md)
   * [Gaussian Soap Bubble](probability-and-statistics-1/gaussian-soap-bubble.md)
