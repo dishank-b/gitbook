@@ -52,4 +52,12 @@ The two quanties on LHS and RHS are net probaility of  \[being in y and going to
 
 **Can we seen as : In equilibrium, the "flow" from state x to state y should equal the flow from y to x.**
 
-\
+You can write similar equation for $$\pi(x)$$, and would get at the same result.&#x20;
+
+What we saw above is the fixed point equation, which generally is used for systems in terminal/ equilibrium state. For all states, the equation is written as follows.
+
+$$
+\pi = \pi P
+$$
+
+where $$\pi$$ is the stationary distribution and $$P$$ is the transition probability distribution.&#x20;
