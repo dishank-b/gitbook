@@ -6,12 +6,6 @@
 
 This video gives good description of how does **MCMC sampling** works. What's described in this video is Metropolis–Hastings algorithm - which is a type of MCMC sampling method.&#x20;
 
-#### Metropolis–Hastings algorithm
-
-<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
-
-This algorithm converge to the pdf in the limit of infinite samples.&#x20;
-
 ### What does MCMC do?&#x20;
 
 Let's say you have a pdf. Actually let's loosen the assumption, **let's say you a function that's proportional to pdf**, which is basically called unnormalised pdf. Then how can you draw samples from it?&#x20;
@@ -61,3 +55,11 @@ $$
 $$
 
 where $$\pi$$ is the stationary distribution and $$P$$ is the transition probability distribution.&#x20;
+
+### Demos
+
+{% embed url="https://chi-feng.github.io/mcmc-demo/app.html?algorithm=MALA&target=banana" %}
+
+### Resources
+
+{% embed url="https://twiecki.io/blog/2015/11/10/mcmc-sampling/" %}
